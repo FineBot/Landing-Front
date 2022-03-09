@@ -10,7 +10,7 @@
     "buildWin": "rmdir /s /q \"build\" 2> nul & parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache && parcel build ./src/achievements/*.pug ./src/projects/*.pug --out-dir build --public-url ../ --no-minify --no-cache",
     "build": "rm -rf build && parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache && parcel build ./src/achievements/*.pug ./src/projects/*.pug --out-dir build --public-url ../ --no-minify --no-cache",
     "predeploy": "jake",
-    "deploy": "jake && gh-pages -d build"
+    "deploy": "npm ci && jake && gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "cssnano": "^5.1.0",
     "gh-pages": "^3.2.3",
+    "jake": "^10.8.2",
     "parcel-plugin-clean-easy": "^1.0.2",
     "postcss": "^8.4.7",
     "prettier": "2.5.1",
