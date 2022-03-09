@@ -29,11 +29,14 @@ deploy/landing-build
 SERVER.json
 
 
-# Python virtual environment
 venv/
 env/
 .env/
 .venv/
+.idea
+.vs
+.vscode
+.cache
 
 
 __pycache__
