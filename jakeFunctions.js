@@ -141,7 +141,7 @@ module.exports.generateProjectsFile = function () {
             );
           } else {
             generateProjectsTemplates(
-              "rm -rf ./src/projects & mkdir ./src/projects",
+              "rm -rf ./src/projects && mkdir ./src/projects",
               resolve
             );
           }
