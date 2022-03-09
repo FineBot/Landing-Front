@@ -1,5 +1,5 @@
 {
-  "homepage": "https://baikinkirill.github.io/landingTestBuild",
+  "homepage": "https://rtuitlab.github.io/landingTestBuild",
   "name": "RTUITLab",
   "version": "2.0.0",
   "description": "",
@@ -9,8 +9,8 @@
     "start": "parcel ./src/index.pug --open -p 3000 --out-dir build --no-cache",
     "buildWin": "rmdir /s /q \"build\" 2> nul & parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache && parcel build ./src/achievements/*.pug ./src/projects/*.pug --out-dir build --public-url ../ --no-minify --no-cache",
     "build": "rm -rf build && parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache && parcel build ./src/achievements/*.pug ./src/projects/*.pug --out-dir build --public-url ../ --no-minify --no-cache",
-    "predeploy": "npm ci",
-    "deploy": "jake && gh-pages -d build"
+    "predeploy": "npm ci && jake",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
