@@ -9,8 +9,8 @@
     "start": "parcel ./src/index.pug --open -p 3000 --out-dir build --no-cache",
     "buildWin": "rmdir /s /q \"build\" 2> nul & parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache && parcel build ./src/achievements/*.pug ./src/projects/*.pug --out-dir build --public-url ../ --no-minify --no-cache",
     "build": "rm -rf build && parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache && parcel build ./src/achievements/*.pug ./src/projects/*.pug --out-dir build --public-url ../ --no-minify --no-cache",
-    "predeploy": "jake",
-    "deploy": "npm ci && jake && gh-pages -d build"
+    "predeploy": "npm ci",
+    "deploy": "jake && gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
