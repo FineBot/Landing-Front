@@ -50,11 +50,9 @@ jobs:
           date +%s > new-report.txt
           git add .
           git commit -m "Add untracked file during workflow"
+          git push
       - name: Uncommitted change
         run: date +%s > report.txt
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          branch: gh-pages-pr
+      
           
     
