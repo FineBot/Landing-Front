@@ -33,14 +33,19 @@ jobs:
     
   notify:
     needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          commit-message: update authors
-          title: Update AUTHORS
-          body: Credit new contributors by updating AUTHORS
-          branch: gh-pages-pr
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        commit-message: New build
+        title: New build
+        body: New landing build
+        branch: gh-pages-pr
 
     
