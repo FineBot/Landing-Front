@@ -10,7 +10,8 @@
     "buildWin": "rmdir /s /q \"build\" 2> nul & parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache && parcel build ./src/achievements/*.pug ./src/projects/*.pug --out-dir build --public-url ../ --no-minify --no-cache",
     "build": "rm -rf build && parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache && parcel build ./src/achievements/*.pug ./src/projects/*.pug --out-dir build --public-url ../ --no-minify --no-cache",
     "predeploy": "npm ci && jake",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+	"s": "exit 1"
   },
   "author": "",
   "license": "ISC",
