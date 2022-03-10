@@ -30,19 +30,11 @@ jobs:
         branch: gh-pages-pr
         folder: build
         clean: true
-    
-  notify:
-    needs: build
-    runs-on: ubuntu-latest
-    
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          ref: gh-pages
+  
+    - run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token 
+    - run: gh pr create --title "New landing build" --base gh-pages --head gh-pages-pr --body "" -a baikinkirill
 
-      - run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token 
-      - run: gh pr create --title "New landing build" --base gh-pages --head gh-pages-pr --body "" -a @baikinkirill
+     
 
           
     
