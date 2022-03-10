@@ -34,24 +34,13 @@ jobs:
   notify:
     needs: build
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          ref: gh-pages-pr
-
-      - run: git push
-
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
           ref: gh-pages
-        
-      - run: git push
-     
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          branch: gh-pages-pr
+
+      - run: gh pr create --title "fds"
           
     
