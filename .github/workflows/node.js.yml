@@ -44,6 +44,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+      - run: npm run predeploy
     
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
