@@ -38,11 +38,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
-        with: 
-          commit-message: New build
-          title: New build
-          body: New landing build
-          base: gh-pages
+        with:
+          commit-message: update authors
+          title: Update AUTHORS
+          body: Credit new contributors by updating AUTHORS
           branch: gh-pages-pr
 
     
