@@ -40,4 +40,4 @@ jobs:
         title: Update AUTHORS
         body: Credit new contributors by updating AUTHORS
         branch: gh-pages
-        base: gh-pages-pr
+
