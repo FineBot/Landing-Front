@@ -28,11 +28,3 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run predeploy
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        commit-message: New build
-        title: New build
-        body: test
-        branch: gh-pages
-        
