@@ -42,12 +42,6 @@ jobs:
         with:
           ref: gh-pages-pr
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-    
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
