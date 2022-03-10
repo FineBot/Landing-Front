@@ -54,6 +54,6 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          branch: gh-pages-pr
-          base: gh-pages
+          branch: origin/gh-pages-pr
+          base: origin/gh-pages
     
