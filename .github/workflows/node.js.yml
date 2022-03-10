@@ -32,10 +32,10 @@ jobs:
         clean: true
     - uses: actions/checkout@v2
       with:
-        ref: 
+        ref: gh-pages-pr
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
-      with: gh-pages-pr
+      with: 
         commit-message: New build
         title: New build
         body: New landing build
