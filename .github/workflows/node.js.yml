@@ -31,9 +31,11 @@ jobs:
         folder: build
         clean: true
     - uses: actions/checkout@v2
+      with:
+        ref: 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
-      with:
+      with: gh-pages-pr
         commit-message: New build
         title: New build
         body: New landing build
