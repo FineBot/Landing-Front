@@ -32,11 +32,4 @@ jobs:
       with:
         branch: gh-pages-pr
         folder: build
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        commit-message: update authors
-        title: Update AUTHORS
-        body: Credit new contributors by updating AUTHORS
-        branch: gh-pages-pr
-
+   
