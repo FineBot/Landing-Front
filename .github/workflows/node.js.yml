@@ -43,9 +43,9 @@ jobs:
           fetch-depth: 0
           ref: gh-pages
 
-       - name: Create Pull Request
-         uses: peter-evans/create-pull-request@v3
-         with:
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
           token: ${{ secrets.PAT }}
           commit-message: Add report file
           committer: Peter Evans <peter-evans@users.noreply.github.com>
