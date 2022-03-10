@@ -44,6 +44,7 @@ jobs:
           git config user.name 'baikinkirill'
           git config user.email 'baikinkirill@gmail.com'
           date +%s > report.txt
+          git add .
           git commit -am "Modify tracked file during workflow"
           date +%s > new-report.txt
           git add .
