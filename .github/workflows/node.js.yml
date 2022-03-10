@@ -52,5 +52,6 @@ jobs:
           commit-message: New build
           title: New build
           body: New landing build
+          base: gh-pages
           branch: gh-pages-pr
     
