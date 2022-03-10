@@ -31,13 +31,17 @@ jobs:
         folder: build
         clean: true
     
-    
+  notify:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with: 
+          commit-message: New build
+          title: New build
+          body: New landing build
+          base: gh-pages
+          branch: gh-pages-pr
 
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with: 
-        commit-message: New build
-        title: New build
-        body: New landing build
-        base: gh-pages
-        branch: gh-pages-pr
+    
