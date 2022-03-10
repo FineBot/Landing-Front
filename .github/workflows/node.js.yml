@@ -35,3 +35,4 @@ jobs:
         title: New build
         body: New landing build
         branch: gh-pages-pr
+        base: gh-pages
