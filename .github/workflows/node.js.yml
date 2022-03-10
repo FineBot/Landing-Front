@@ -26,8 +26,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - uses: actions/labeler@v2
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
     - run: npm run predeploy
-    - run: npm run deploy
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        branch: gh-pages
+        folder: build
