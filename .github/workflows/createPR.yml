@@ -1,8 +1,10 @@
 name: onGhPagesPush
 on:
   push:
-    branches:
-      - gh-pages-pr
+    branches: [ gh-pages-pr ]
+  pull_request:
+    branches: [ gh-pages-pr ]
+    
 jobs:
   updateAuthors:
     runs-on: ubuntu-latest
