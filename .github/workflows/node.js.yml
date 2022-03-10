@@ -40,6 +40,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          fetch-depth: 0
           ref: master
 
       - name: Create Pull Request
@@ -48,5 +49,6 @@ jobs:
           commit-message: New build
           title: New build
           body: New landing build
-          branch: gh-pages
+          base: gh-pages
+          branch: gh-pages-pr
     
