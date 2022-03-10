@@ -55,5 +55,5 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           branch: origin/gh-pages-pr
-          base: origin/gh-pages
+          base: gh-pages
     
