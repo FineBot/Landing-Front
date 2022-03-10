@@ -41,6 +41,8 @@ jobs:
           fetch-depth: 0
           ref: gh-pages
 
+      - run: gh auth login --with-token ${{ secrets.PAT }}
       - run: gh pr create --title "fds"
+
           
     
