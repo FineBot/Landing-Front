@@ -33,5 +33,10 @@ jobs:
         branch: gh-pages-pr
         folder: build
         clean: true
-   
-   
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        commit-message: New build
+        title: New build
+        body: New landing build
+        branch: gh-pages-pr
