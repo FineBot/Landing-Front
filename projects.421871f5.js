@@ -152,35 +152,6 @@ var data = [{
   }],
   "date": "02/03/2022"
 }, {
-  "title": "ITLab (система управления лабораторией)",
-  "description": "Для организации работы людей в лаборатории создана система, учитывающая активность людей, участие в мероприятиях, оплату работы сотрудников. Система позволяет распределять нагрузку, обеспечивать прозрачность выполняемых действий и мероприятий. Сайт создан для внутреннего использования и доступ к имеют только сотрудники лаборатории.\nПроект состоит из нескольких бекендов, написанный на разных языках программирования, таких как C#, GO, Kotlin. Фронтенд реализован на фреймворке Vue.JS. Мобильное приложение для iOS реализовано на языке Swift с использованием фреймворка SwiftUI.\nТак же система имеет возможность уведомлять людей о изменениях, при помощи бота вконтакте или почты.",
-  "images": ["https://github.com/RTUITLab/ITLab/raw/master/landing/1.png", "https://github.com/RTUITLab/ITLab/raw/master/landing/2.png", "https://github.com/RTUITLab/ITLab/raw/master/landing/ios_1.png", "https://github.com/RTUITLab/ITLab/raw/master/landing/ios_2.png"],
-  "videos": [],
-  "tags": ["Frontend", "Backend", "Mobile"],
-  "tech": ["Vue", "ASP", "Ktor", "Swift"],
-  "developers": ["Макущенко М.А.", "Романов Д.Е.", "Комар Б.Г.", "Кузнецов А.А.", "Иванов М.Е."],
-  "site": null,
-  "sourceCode": [{
-    "name": "Фронтенд",
-    "link": "https://github.com/RTUITLab/ITLab-Front"
-  }, {
-    "name": "Система событий/оборудования",
-    "link": "https://github.com/RTUITLab/ITLab-Back"
-  }, {
-    "name": "Система уведомлений",
-    "link": "https://github.com/RTUITLab/ITLab-Notify"
-  }, {
-    "name": "Система записей о работе",
-    "link": "https://github.com/RTUITLab/ITLab-Reports"
-  }, {
-    "name": "Система учета зарплат",
-    "link": "https://github.com/RTUITLab/ITLab-Salary"
-  }, {
-    "name": "Приложение для iOS",
-    "link": "https://github.com/RTUITLab/ITLab-iOS"
-  }],
-  "date": "02/03/2022"
-}, {
   "title": "GyroBall",
   "description": "Мобильное приложение – игра для проверки удобства использования механики акселерометра.\nИспользование поворотов телефона для управления шариком. У шарика предполагается 4 состояния, соответствующих стихиям, каждое состояние несёт в себе определённую соответствующую механику. Локации к игре будут соответствовать стихийной тематике.",
   "images": ["https://github.com/RTUITLab/GyroBall/raw/main/landing/23.JPG", "https://github.com/RTUITLab/GyroBall/raw/main/landing/21.JPG", "https://github.com/RTUITLab/GyroBall/raw/main/landing/1.png", "https://github.com/RTUITLab/GyroBall/raw/main/landing/2.png", "https://github.com/RTUITLab/GyroBall/raw/main/landing/3.png"],
@@ -193,17 +164,6 @@ var data = [{
     "name": "Проект",
     "link": "https://github.com/RTUITLab/GyroBall"
   }],
-  "date": "02/03/2022"
-}, {
-  "title": "MicroFileServer (файловый сервер для небольших файлов)",
-  "description": "Данный сервис был разработан для добавления к отчетам сотрудников лаборатории\nдополнительных файлов (референсных картинок, видеодемонстраций и т.д.)",
-  "images": ["https://github.com/RTUITLab/ITLab-MFS/raw/master/"],
-  "videos": [],
-  "tags": ["Backend"],
-  "tech": ["Go", "MongoDB"],
-  "developers": ["Комар Б.Г."],
-  "site": null,
-  "sourceCode": [],
   "date": "02/03/2022"
 }, {
   "title": "GeoHelper",
@@ -224,6 +184,17 @@ var data = [{
     "name": "Unity проект (приложение для Android или Ios)",
     "link": "https://github.com/RTUITLab/GeoHelperUnity"
   }],
+  "date": "02/03/2022"
+}, {
+  "title": "MicroFileServer (файловый сервер для небольших файлов)",
+  "description": "Данный сервис был разработан для добавления к отчетам сотрудников лаборатории\nдополнительных файлов (референсных картинок, видеодемонстраций и т.д.)",
+  "images": ["https://github.com/RTUITLab/ITLab-MFS/raw/master/"],
+  "videos": [],
+  "tags": ["Backend"],
+  "tech": ["Go", "MongoDB"],
+  "developers": ["Комар Б.Г."],
+  "site": null,
+  "sourceCode": [],
   "date": "02/03/2022"
 }, {
   "title": "ЗИЛ",
@@ -254,6 +225,35 @@ var data = [{
   }],
   "date": "02/03/2022"
 }, {
+  "title": "ITLab (система управления лабораторией)",
+  "description": "Для организации работы людей в лаборатории создана система, учитывающая активность людей, участие в мероприятиях, оплату работы сотрудников. Система позволяет распределять нагрузку, обеспечивать прозрачность выполняемых действий и мероприятий. Сайт создан для внутреннего использования и доступ к имеют только сотрудники лаборатории.\nПроект состоит из нескольких бекендов, написанный на разных языках программирования, таких как C#, GO, Kotlin. Фронтенд реализован на фреймворке Vue.JS. Мобильное приложение для iOS реализовано на языке Swift с использованием фреймворка SwiftUI.\nТак же система имеет возможность уведомлять людей о изменениях, при помощи бота вконтакте или почты.",
+  "images": ["https://github.com/RTUITLab/ITLab/raw/master/landing/1.png", "https://github.com/RTUITLab/ITLab/raw/master/landing/2.png", "https://github.com/RTUITLab/ITLab/raw/master/landing/ios_1.png", "https://github.com/RTUITLab/ITLab/raw/master/landing/ios_2.png"],
+  "videos": [],
+  "tags": ["Frontend", "Backend", "Mobile"],
+  "tech": ["Vue", "ASP", "Ktor", "Swift"],
+  "developers": ["Макущенко М.А.", "Романов Д.Е.", "Комар Б.Г.", "Кузнецов А.А.", "Иванов М.Е."],
+  "site": null,
+  "sourceCode": [{
+    "name": "Фронтенд",
+    "link": "https://github.com/RTUITLab/ITLab-Front"
+  }, {
+    "name": "Система событий/оборудования",
+    "link": "https://github.com/RTUITLab/ITLab-Back"
+  }, {
+    "name": "Система уведомлений",
+    "link": "https://github.com/RTUITLab/ITLab-Notify"
+  }, {
+    "name": "Система записей о работе",
+    "link": "https://github.com/RTUITLab/ITLab-Reports"
+  }, {
+    "name": "Система учета зарплат",
+    "link": "https://github.com/RTUITLab/ITLab-Salary"
+  }, {
+    "name": "Приложение для iOS",
+    "link": "https://github.com/RTUITLab/ITLab-iOS"
+  }],
+  "date": "02/03/2022"
+}, {
   "title": "Шутер в виртуальной реальности",
   "description": "\nШутер в формате виртуальной реальности, позволяющий оттачивать стрельбу из оружия разных видов и уворачиваться от вражеских пуль.\n\nВ игре можно бросить вызов сразу нескольким противникам, либо сначала потренироваться в спокойной обстановке. В таком режиме у пользователя есть возможность стрелять по бутылкам в баре и мишеням в тире.\n\nНа выбор представлено 5 моделей оружия, 4 локации и 3 уровня сложности.",
   "images": ["https://user-images.githubusercontent.com/57914366/148579235-a4f9e25e-dc3c-49d8-b1a6-7dbabfa52a99.jpg", "https://user-images.githubusercontent.com/57914366/148580147-297f79e2-15e3-4b34-8108-9550982b0fe2.jpg", "https://user-images.githubusercontent.com/57914366/148580160-84ee7b40-83f9-439c-a37e-4e1184bd4dd5.jpg", "https://user-images.githubusercontent.com/57914366/148580059-71f366be-9f6c-44bf-a662-abf7e3e00003.jpg"],
@@ -279,20 +279,6 @@ var data = [{
   "sourceCode": [],
   "date": "02/03/2022"
 }, {
-  "title": "VRTherapy - Приложение для релаксации в VR со множеством разнообразных активностей",
-  "description": "В VRTherapy вы можете погрузиться в захватывающую и успокаивающую виртуальную реальность с приятным звуковым сопровождением.\n\nОтдохните у виртуального костра, прогуляйтесь по летнему лесу, послушайте шум прибоя или же сыграйте в мини-игру, где вам предстоит управлять бумажным самолётиком на ветру.\n\nДанная игра предназначена исключительно для запуска в портативном VR-шлеме для Android, например, Google Cardboard.",
-  "images": ["https://github.com/RTUITLab/VRTherapy/raw/AfterJunction/LANDING/screenshot1.png", "https://github.com/RTUITLab/VRTherapy/raw/AfterJunction/LANDING/screenshot2.png", "https://github.com/RTUITLab/VRTherapy/raw/AfterJunction/LANDING/screenshot3.png", "https://github.com/RTUITLab/VRTherapy/raw/AfterJunction/LANDING/screenshot4.png"],
-  "videos": [],
-  "tags": ["VR", "Game", "Simulator", "Arcade"],
-  "tech": ["Unity", "Android", "Google VR", "Google Cardboard"],
-  "developers": ["Баканова М.", "Левандровский А.", "Матчин А.", "Новаков Н."],
-  "site": null,
-  "sourceCode": [{
-    "name": "Проект",
-    "link": "https://github.com/RTUITLab/VRTherapy"
-  }],
-  "date": "02/03/2022"
-}, {
   "title": "BunnyHuntVR - Web VR шутер",
   "description": "VR игра, обороняйте грядки от проворных и назойливых зайцев. Узнайте сколько морковки вы сможете сохранить.",
   "images": ["https://github.com/RTUITLab/WebVRShoot/raw/master/LANDING/BunnyHuntVR.png", "https://github.com/RTUITLab/WebVRShoot/raw/master/LANDING/BunnyHuntVR2.png"],
@@ -306,6 +292,20 @@ var data = [{
     "link": "https://github.com/RTUITLab/WebVRShoot"
   }],
   "date": "25/01/2022"
+}, {
+  "title": "VRTherapy - Приложение для релаксации в VR со множеством разнообразных активностей",
+  "description": "В VRTherapy вы можете погрузиться в захватывающую и успокаивающую виртуальную реальность с приятным звуковым сопровождением.\n\nОтдохните у виртуального костра, прогуляйтесь по летнему лесу, послушайте шум прибоя или же сыграйте в мини-игру, где вам предстоит управлять бумажным самолётиком на ветру.\n\nДанная игра предназначена исключительно для запуска в портативном VR-шлеме для Android, например, Google Cardboard.",
+  "images": ["https://github.com/RTUITLab/VRTherapy/raw/AfterJunction/LANDING/screenshot1.png", "https://github.com/RTUITLab/VRTherapy/raw/AfterJunction/LANDING/screenshot2.png", "https://github.com/RTUITLab/VRTherapy/raw/AfterJunction/LANDING/screenshot3.png", "https://github.com/RTUITLab/VRTherapy/raw/AfterJunction/LANDING/screenshot4.png"],
+  "videos": [],
+  "tags": ["VR", "Game", "Simulator", "Arcade"],
+  "tech": ["Unity", "Android", "Google VR", "Google Cardboard"],
+  "developers": ["Баканова М.", "Левандровский А.", "Матчин А.", "Новаков Н."],
+  "site": null,
+  "sourceCode": [{
+    "name": "Проект",
+    "link": "https://github.com/RTUITLab/VRTherapy"
+  }],
+  "date": "02/03/2022"
 }];
 var _default = data;
 exports.default = _default;
@@ -705,4 +705,4 @@ gallery.setActiveView(Math.floor(_projectsData.default.length / 2));
 updateProjectsInfo();
 document.getElementById("projects__tags__all").checked = true;
 },{"../data/projectsData":"rSus","../gallery/gallery":"Z6W6"}]},{},["TB2l"], null)
-//# sourceMappingURL=projects.f8821d44.js.map
+//# sourceMappingURL=projects.421871f5.js.map
