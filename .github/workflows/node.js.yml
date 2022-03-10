@@ -33,16 +33,7 @@ jobs:
         branch: gh-pages-pr
         folder: build
         clean: true
-    - run: git checkout master
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        token: ${{ secrets.PAT }}
-        commit-message: New build
-        title: New build
-        body: New landing build
-        base: gh-pages
-        branch: gh-pages-pr
+    - run: echo ${{ secrets.PAT }}
         
         
         
