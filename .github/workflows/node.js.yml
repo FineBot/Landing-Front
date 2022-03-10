@@ -40,14 +40,14 @@ jobs:
           fetch-depth: 0
           ref: gh-pages-pr
 
-      - name: Create commits
-        run: |
-          git push
+      - run: git push
 
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
           ref: gh-pages
+        
+      - run: git push
      
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
