@@ -41,7 +41,7 @@ jobs:
           fetch-depth: 0
           ref: gh-pages
 
-      - run: gh auth login --with-token < ${{ secrets.GITHUB_TOKEN }}
+      - run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token 
       - run: gh pr create --title "fds"
 
           
