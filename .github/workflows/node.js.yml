@@ -33,7 +33,7 @@ jobs:
         branch: gh-pages-pr
         folder: build
         clean: true
-    - run: git checkout origin/master
+    - run: git checkout master
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
