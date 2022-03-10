@@ -42,7 +42,7 @@ jobs:
           ref: gh-pages
 
       - run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token 
-      - run: gh pr create --title "fds"
+      - run: gh pr create --title "fdsfff" --base gh-pages --head gh-pages-pr --body "test"
 
           
     
