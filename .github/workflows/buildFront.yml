@@ -18,6 +18,11 @@ jobs:
 
     steps:
 
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        ref: master
+
     - run: git checkout -b gh-pages-pr || true
     - run: git push --set-upstream origin gh-pages-pr || true
 
