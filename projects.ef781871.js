@@ -125,19 +125,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var data = [{
-  "title": "ARtillery",
-  "description": "Игровое приложение в дополненной реальности для Android (ранее Android, iOS).\nЗадача игрока – продержаться как можно дольше, отстреливаясь от противников, появляющихся в пространстве вокруг него. Для защиты игрок может перемещать и наклонять телефон, а также сбивать летящие в него снаряды. Для стрельбы нужно коснуться экрана. Со временем сложность увеличивается.\nСуществует три типа противников с разными моделями поведения и сложностью, каждый из которых появляется реже или чаще других.\nПриложение реализовано с использованием ARCore, что позволяет ему работать без привязки к печатной метке.\nРанняя версия приложения была реализована с использованием Vuforia, для работы требуется распечатать метку.",
-  "images": ["https://github.com/RTUITLab/ARtillery/raw/master/ReadmeMedia/ARtillery_Moment3.jpg", "https://github.com/RTUITLab/ARtillery/raw/master/ReadmeMedia/ARtillery_Moment-min.jpg", "https://github.com/RTUITLab/ARtillery/raw/master/ReadmeMedia/ARtillery_Moment2-min.jpg", "https://github.com/RTUITLab/ARtillery/raw/master/ReadmeMedia/ARtilleryAction.gif"],
-  "videos": ["https://www.youtube.com/embed/BIoWlE25bD4"],
-  "tags": ["AR", "Unity"],
-  "tech": ["Unity"],
-  "developers": ["Поздняков Д.В."],
-  "sourceCode": [{
-    "name": "Проект",
-    "link": "https://github.com/RTUITLab/ARtillery"
-  }],
-  "date": "02/03/2022"
-}, {
   "title": "Многопользовательская сборка ракетного двигателя",
   "description": "\nПриложение дает пользователям возможность осуществлять процесс сборки предоставленной модели в формате виртуальной реальности. Люди могут собирать ракетный двигатель как самостоятельно, так и в многопользовательской комнате, объединившись с напарниками.\nПроцесс сопровождают различные подсказки и тексты с описаниями деталей. Все это, вкупе с глубоким погружением, способствует быстрому усвоению материала. При окончании сборки модель становится анимированной и демонстрирует свой принцип работы.",
   "images": ["https://user-images.githubusercontent.com/46666053/141160470-a31d20dd-86bd-4be8-9308-a631227b5ba0.png", "https://user-images.githubusercontent.com/46666053/141155619-bb28a0e8-fd3b-4359-97e5-36f3d1cf71c3.png", "https://user-images.githubusercontent.com/46666053/141155697-f247130d-e9a9-4f7d-812c-7a328e3022af.png", "https://user-images.githubusercontent.com/46666053/141155722-2e5c8eab-dfef-42f7-ae67-daf43e1756d6.png"],
@@ -152,49 +139,17 @@ var data = [{
   }],
   "date": "02/03/2022"
 }, {
-  "title": "GeoHelper",
-  "description": "\nПроект для реализации AR-слоя мира, в котором отображаются объекты дополненной реальности в зависимости от заданного географического положения.\nПроект состоит из сайта и приложений для платформ Android и IOS.\nСайт предназначен для менеджмента данными, представляемых в AR-слое.\nМобильное приложение служит для отображения AR-слоя мира на экране используемого устройства.",
-  "images": ["https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/1.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/2.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/3.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/4.png"],
-  "videos": [],
-  "tags": ["Frontend", "Backend", "Mobile", "AR"],
-  "tech": ["Vue", "Node.js", "Unity", "AR Foundation", "C#"],
-  "developers": ["Лаптев И.А.", "Китанин С.С.", "Быковская О.C.", "Смирнов Я.А."],
-  "site": null,
-  "sourceCode": [{
-    "name": "Фронтенд",
-    "link": "https://github.com/RTUITLab/GeoHelper-Front"
-  }, {
-    "name": "Бэкенд",
-    "link": "https://github.com/RTUITLab/GeoHelper-Back"
-  }, {
-    "name": "Unity проект (приложение для Android или Ios)",
-    "link": "https://github.com/RTUITLab/GeoHelperUnity"
-  }],
-  "date": "02/03/2022"
-}, {
-  "title": "GyroBall",
-  "description": "Мобильное приложение – игра для проверки удобства использования механики акселерометра.\nИспользование поворотов телефона для управления шариком. У шарика предполагается 4 состояния, соответствующих стихиям, каждое состояние несёт в себе определённую соответствующую механику. Локации к игре будут соответствовать стихийной тематике.",
-  "images": ["https://github.com/RTUITLab/GyroBall/raw/main/landing/23.JPG", "https://github.com/RTUITLab/GyroBall/raw/main/landing/21.JPG", "https://github.com/RTUITLab/GyroBall/raw/main/landing/1.png", "https://github.com/RTUITLab/GyroBall/raw/main/landing/2.png", "https://github.com/RTUITLab/GyroBall/raw/main/landing/3.png"],
-  "videos": [],
-  "tags": ["Mobile"],
-  "tech": ["C#", "3D modeling", "Unity 3D"],
-  "developers": ["Баканова М.В.", "Новаков Н.Ю."],
-  "site": null,
+  "title": "ARtillery",
+  "description": "Игровое приложение в дополненной реальности для Android (ранее Android, iOS).\nЗадача игрока – продержаться как можно дольше, отстреливаясь от противников, появляющихся в пространстве вокруг него. Для защиты игрок может перемещать и наклонять телефон, а также сбивать летящие в него снаряды. Для стрельбы нужно коснуться экрана. Со временем сложность увеличивается.\nСуществует три типа противников с разными моделями поведения и сложностью, каждый из которых появляется реже или чаще других.\nПриложение реализовано с использованием ARCore, что позволяет ему работать без привязки к печатной метке.\nРанняя версия приложения была реализована с использованием Vuforia, для работы требуется распечатать метку.",
+  "images": ["https://github.com/RTUITLab/ARtillery/raw/master/ReadmeMedia/ARtillery_Moment3.jpg", "https://github.com/RTUITLab/ARtillery/raw/master/ReadmeMedia/ARtillery_Moment-min.jpg", "https://github.com/RTUITLab/ARtillery/raw/master/ReadmeMedia/ARtillery_Moment2-min.jpg", "https://github.com/RTUITLab/ARtillery/raw/master/ReadmeMedia/ARtilleryAction.gif"],
+  "videos": ["https://www.youtube.com/embed/BIoWlE25bD4"],
+  "tags": ["AR", "Unity"],
+  "tech": ["Unity"],
+  "developers": ["Поздняков Д.В."],
   "sourceCode": [{
     "name": "Проект",
-    "link": "https://github.com/RTUITLab/GyroBall"
+    "link": "https://github.com/RTUITLab/ARtillery"
   }],
-  "date": "02/03/2022"
-}, {
-  "title": "MicroFileServer (файловый сервер для небольших файлов)",
-  "description": "Данный сервис был разработан для добавления к отчетам сотрудников лаборатории\nдополнительных файлов (референсных картинок, видеодемонстраций и т.д.)",
-  "images": ["https://github.com/RTUITLab/ITLab-MFS/raw/master/"],
-  "videos": [],
-  "tags": ["Backend"],
-  "tech": ["Go", "MongoDB"],
-  "developers": ["Комар Б.Г."],
-  "site": null,
-  "sourceCode": [],
   "date": "02/03/2022"
 }, {
   "title": "ITLab (система управления лабораторией)",
@@ -226,17 +181,48 @@ var data = [{
   }],
   "date": "02/03/2022"
 }, {
-  "title": "ЗИЛ",
-  "description": "Проект для futurift кресла, который помещает игрока в зону боевых действий, где необходимо оторваться от преследования.",
-  "images": ["https://github.com/RTUITLab/Project-3IL/raw/master/landing/0.png", "https://github.com/RTUITLab/Project-3IL/raw/master/landing/1.png", "https://github.com/RTUITLab/Project-3IL/raw/master/landing/2.png", "https://github.com/RTUITLab/Project-3IL/raw/master/landing/3.png"],
+  "title": "MicroFileServer (файловый сервер для небольших файлов)",
+  "description": "Данный сервис был разработан для добавления к отчетам сотрудников лаборатории\nдополнительных файлов (референсных картинок, видеодемонстраций и т.д.)",
+  "images": ["https://github.com/RTUITLab/ITLab-MFS/raw/master/"],
   "videos": [],
-  "tags": ["VR"],
-  "tech": ["Unity", "Steam VR", "C#"],
-  "developers": ["Смирнов М.А.", "Новаков Н.Ю.", "Егоркин Н.Е.", "Валяев Д.А.", "Макаров Д.В.", "Макущенко М.А.", "Баканова М.В.", "Шорин И.А.", "Иерусалимов И.Д."],
+  "tags": ["Backend"],
+  "tech": ["Go", "MongoDB"],
+  "developers": ["Комар Б.Г."],
+  "site": null,
+  "sourceCode": [],
+  "date": "02/03/2022"
+}, {
+  "title": "GyroBall",
+  "description": "Мобильное приложение – игра для проверки удобства использования механики акселерометра.\nИспользование поворотов телефона для управления шариком. У шарика предполагается 4 состояния, соответствующих стихиям, каждое состояние несёт в себе определённую соответствующую механику. Локации к игре будут соответствовать стихийной тематике.",
+  "images": ["https://github.com/RTUITLab/GyroBall/raw/main/landing/23.JPG", "https://github.com/RTUITLab/GyroBall/raw/main/landing/21.JPG", "https://github.com/RTUITLab/GyroBall/raw/main/landing/1.png", "https://github.com/RTUITLab/GyroBall/raw/main/landing/2.png", "https://github.com/RTUITLab/GyroBall/raw/main/landing/3.png"],
+  "videos": [],
+  "tags": ["Mobile"],
+  "tech": ["C#", "3D modeling", "Unity 3D"],
+  "developers": ["Баканова М.В.", "Новаков Н.Ю."],
   "site": null,
   "sourceCode": [{
-    "name": "Source code",
-    "link": "https://github.com/RTUITLab/Project-3IL"
+    "name": "Проект",
+    "link": "https://github.com/RTUITLab/GyroBall"
+  }],
+  "date": "02/03/2022"
+}, {
+  "title": "GeoHelper",
+  "description": "\nПроект для реализации AR-слоя мира, в котором отображаются объекты дополненной реальности в зависимости от заданного географического положения.\nПроект состоит из сайта и приложений для платформ Android и IOS.\nСайт предназначен для менеджмента данными, представляемых в AR-слое.\nМобильное приложение служит для отображения AR-слоя мира на экране используемого устройства.",
+  "images": ["https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/1.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/2.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/3.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/4.png"],
+  "videos": [],
+  "tags": ["Frontend", "Backend", "Mobile", "AR"],
+  "tech": ["Vue", "Node.js", "Unity", "AR Foundation", "C#"],
+  "developers": ["Лаптев И.А.", "Китанин С.С.", "Быковская О.C.", "Смирнов Я.А."],
+  "site": null,
+  "sourceCode": [{
+    "name": "Фронтенд",
+    "link": "https://github.com/RTUITLab/GeoHelper-Front"
+  }, {
+    "name": "Бэкенд",
+    "link": "https://github.com/RTUITLab/GeoHelper-Back"
+  }, {
+    "name": "Unity проект (приложение для Android или Ios)",
+    "link": "https://github.com/RTUITLab/GeoHelperUnity"
   }],
   "date": "02/03/2022"
 }, {
@@ -251,6 +237,20 @@ var data = [{
   "sourceCode": [{
     "name": "Source code",
     "link": "https://github.com/RTUITLab/PlainCrashSimulator"
+  }],
+  "date": "02/03/2022"
+}, {
+  "title": "ЗИЛ",
+  "description": "Проект для futurift кресла, который помещает игрока в зону боевых действий, где необходимо оторваться от преследования.",
+  "images": ["https://github.com/RTUITLab/Project-3IL/raw/master/landing/0.png", "https://github.com/RTUITLab/Project-3IL/raw/master/landing/1.png", "https://github.com/RTUITLab/Project-3IL/raw/master/landing/2.png", "https://github.com/RTUITLab/Project-3IL/raw/master/landing/3.png"],
+  "videos": [],
+  "tags": ["VR"],
+  "tech": ["Unity", "Steam VR", "C#"],
+  "developers": ["Смирнов М.А.", "Новаков Н.Ю.", "Егоркин Н.Е.", "Валяев Д.А.", "Макаров Д.В.", "Макущенко М.А.", "Баканова М.В.", "Шорин И.А.", "Иерусалимов И.Д."],
+  "site": null,
+  "sourceCode": [{
+    "name": "Source code",
+    "link": "https://github.com/RTUITLab/Project-3IL"
   }],
   "date": "02/03/2022"
 }, {
@@ -705,4 +705,4 @@ gallery.setActiveView(Math.floor(_projectsData.default.length / 2));
 updateProjectsInfo();
 document.getElementById("projects__tags__all").checked = true;
 },{"../data/projectsData":"rSus","../gallery/gallery":"Z6W6"}]},{},["TB2l"], null)
-//# sourceMappingURL=projects.063473ca.js.map
+//# sourceMappingURL=projects.ef781871.js.map
