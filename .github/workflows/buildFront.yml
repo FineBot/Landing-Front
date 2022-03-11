@@ -21,16 +21,22 @@ jobs:
       with:
         fetch-depth: 0
         ref: gh-pages-pr
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
 
     - run: git merge gh-pages --allow-unrelated-histories -X gh-pages
     - run: git add .
     - run: git commit -m "Merge branch gh-pages into gh-pages-pr"
     - run: git push
+
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        ref: master
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
 
     - run: npm run predeploy
     - name: Deploy 🚀
