@@ -27,7 +27,7 @@ jobs:
 
     - run: git merge origin/gh-pages --allow-unrelated-histories -X gh-pages
     - run: git add .
-    - run: git commit -m "Merge branch gh-pages into gh-pages-pr" 1> /dev/null 2> /dev/null && exit 0
+    - run: git commit -m "Merge branch gh-pages into gh-pages-pr" 1> /dev/null 2> /dev/null || true
     - run: git push
 
     - uses: actions/checkout@v2
