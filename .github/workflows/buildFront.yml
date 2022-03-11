@@ -22,7 +22,7 @@ jobs:
         fetch-depth: 0
         ref: gh-pages-pr
 
-    - run: git merge gh-pages --allow-unrelated-histories -X gh-pages
+    - run: git merge origin/gh-pages --allow-unrelated-histories -X gh-pages
     - run: git add .
     - run: git commit -m "Merge branch gh-pages into gh-pages-pr"
     - run: git push
