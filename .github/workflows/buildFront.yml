@@ -24,8 +24,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
-    - run: git checkout origin/gh-pages-pr
-    - run: git merge origin/gh-pages --allow-unrelated-histories -X gh-pages
+    - run: git checkout gh-pages-pr
+    - run: git merge gh-pages --allow-unrelated-histories -X gh-pages
     - run: git add .
     - run: git commit -m "Merge branch gh-pages into gh-pages-pr"
     - run: git push
