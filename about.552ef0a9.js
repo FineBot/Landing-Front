@@ -117,14 +117,21 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"NENU":[function(require,module,exports) {
-var swiper = new Swiper(".achievements__swiperParent", {
-  slidesPerView: "auto",
-  spaceBetween: 15,
-  pagination: {
-    el: ".achievements__swiperPagination",
-    clickable: true
+})({"lDcJ":[function(require,module,exports) {
+var parallaxInstance;
+var enabled = window.innerWidth < 1000;
+window.addEventListener("resize", setParallax);
+
+function setParallax() {
+  if (window.innerWidth < 1000 && enabled) {
+    if (parallaxInstance) parallaxInstance.destroy();
+    enabled = false;
+  } else if (!enabled) {
+    parallaxInstance = new Parallax(document.getElementById("scene"));
+    enabled = true;
   }
-});
-},{}]},{},["NENU"], null)
-//# sourceMappingURL=achievements.680a2853.js.map
+}
+
+setParallax();
+},{}]},{},["lDcJ"], null)
+//# sourceMappingURL=about.552ef0a9.js.map

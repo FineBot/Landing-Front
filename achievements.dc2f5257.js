@@ -117,42 +117,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"N0LX":[function(require,module,exports) {
-window.addEventListener("scroll", scrollFunction, {
-  passive: true
+})({"NENU":[function(require,module,exports) {
+var swiper = new Swiper(".achievements__swiperParent", {
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  pagination: {
+    el: ".achievements__swiperPagination",
+    clickable: true
+  }
 });
-var children = Array.from(document.getElementById("pageContentParent").children);
-var headersChildren = Array.from(document.getElementById("headerElements").children);
-var lastActive = 0;
-
-function scrollFunction() {
-  var obj = document.getElementById("header");
-
-  if (window.scrollY > 50) {
-    obj.setAttribute("scroll", "true");
-  } else {
-    obj.setAttribute("scroll", "false");
-  }
-
-  var activeTab = lastActive;
-
-  for (var i = 0; i < children.length; i++) {
-    if (window.scrollY + window.innerHeight / 4 * 3 >= children[i].offsetTop) {
-      activeTab = i;
-    }
-  }
-
-  if (activeTab !== lastActive) {
-    setTab(activeTab);
-  }
-}
-
-function setTab(activeTab) {
-  headersChildren[lastActive].setAttribute("active", "false");
-  headersChildren[activeTab].setAttribute("active", "true");
-  lastActive = activeTab;
-}
-
-setTab(lastActive);
-},{}]},{},["N0LX"], null)
-//# sourceMappingURL=header.810d2277.js.map
+},{}]},{},["NENU"], null)
+//# sourceMappingURL=achievements.dc2f5257.js.map

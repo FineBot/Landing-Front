@@ -117,29 +117,42 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"nEPs":[function(require,module,exports) {
+})({"N0LX":[function(require,module,exports) {
+window.addEventListener("scroll", scrollFunction, {
+  passive: true
+});
+var children = Array.from(document.getElementById("pageContentParent").children);
+var headersChildren = Array.from(document.getElementById("headerElements").children);
+var lastActive = 0;
 
-},{}],"jM7F":[function(require,module,exports) {
+function scrollFunction() {
+  var obj = document.getElementById("header");
 
-},{}],"XEZO":[function(require,module,exports) {
-"use strict";
+  if (window.scrollY > 50) {
+    obj.setAttribute("scroll", "true");
+  } else {
+    obj.setAttribute("scroll", "false");
+  }
 
-require("./indexStyles.scss");
+  var activeTab = lastActive;
 
-require("./js/gallery/gallery.scss");
+  for (var i = 0; i < children.length; i++) {
+    if (window.scrollY + window.innerHeight / 4 * 3 >= children[i].offsetTop) {
+      activeTab = i;
+    }
+  }
 
-require("./layout/header/header.scss");
+  if (activeTab !== lastActive) {
+    setTab(activeTab);
+  }
+}
 
-require("./layout/about/about.scss");
+function setTab(activeTab) {
+  headersChildren[lastActive].setAttribute("active", "false");
+  headersChildren[activeTab].setAttribute("active", "true");
+  lastActive = activeTab;
+}
 
-require("./layout/projects/projects.scss");
-
-require("./layout/achievements/achievements.scss");
-
-require("./layout/equipment/equipment.scss");
-
-require("./layout/staff/staff.scss");
-
-require("./layout/footer/footer.scss");
-},{"./indexStyles.scss":"nEPs","./js/gallery/gallery.scss":"nEPs","./layout/header/header.scss":"nEPs","./layout/about/about.scss":"nEPs","./layout/projects/projects.scss":"nEPs","./layout/achievements/achievements.scss":"nEPs","./layout/equipment/equipment.scss":"nEPs","./layout/staff/staff.scss":"nEPs","./layout/footer/footer.scss":"nEPs"}]},{},["XEZO"], null)
-//# sourceMappingURL=styles.43573105.js.map
+setTab(lastActive);
+},{}]},{},["N0LX"], null)
+//# sourceMappingURL=header.9599579a.js.map

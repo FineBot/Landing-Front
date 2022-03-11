@@ -117,19 +117,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"yeke":[function(require,module,exports) {
-var swiper = new Swiper(".staff__swiper", {
-  spaceBetween: 10,
-  slidesPerView: "auto",
-  freeMode: true,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 00,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true
-  },
-  speed: 2200
-});
-},{}]},{},["yeke"], null)
-//# sourceMappingURL=staff.c15ef57b.js.map
+})({"XH5M":[function(require,module,exports) {
+
+},{}],"vmBW":[function(require,module,exports) {
+"use strict";
+
+require("../../layout/achievementPageTemplate/achievementPageTemplate.scss");
+},{"../../layout/achievementPageTemplate/achievementPageTemplate.scss":"XH5M"}]},{},["vmBW"], null)
+//# sourceMappingURL=../achievementPageTemplate.7cf689fc.js.map

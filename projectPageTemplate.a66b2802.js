@@ -117,11 +117,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"XH5M":[function(require,module,exports) {
-
-},{}],"vmBW":[function(require,module,exports) {
-"use strict";
-
-require("../../layout/achievementPageTemplate/achievementPageTemplate.scss");
-},{"../../layout/achievementPageTemplate/achievementPageTemplate.scss":"XH5M"}]},{},["vmBW"], null)
-//# sourceMappingURL=../achievementPageTemplate.b35240bb.js.map
+})({"zO5S":[function(require,module,exports) {
+var swiper = new Swiper(".projectsSwiperParent", {
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  pagination: {
+    el: ".projectsSwiperPagination",
+    clickable: true
+  }
+});
+},{}]},{},["zO5S"], null)
+//# sourceMappingURL=../projectPageTemplate.a66b2802.js.map

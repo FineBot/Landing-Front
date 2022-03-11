@@ -117,14 +117,19 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"zO5S":[function(require,module,exports) {
-var swiper = new Swiper(".projectsSwiperParent", {
+})({"yeke":[function(require,module,exports) {
+var swiper = new Swiper(".staff__swiper", {
+  spaceBetween: 10,
   slidesPerView: "auto",
-  spaceBetween: 15,
-  pagination: {
-    el: ".projectsSwiperPagination",
-    clickable: true
-  }
+  freeMode: true,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 00,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true
+  },
+  speed: 2200
 });
-},{}]},{},["zO5S"], null)
-//# sourceMappingURL=../projectPageTemplate.42fb585e.js.map
+},{}]},{},["yeke"], null)
+//# sourceMappingURL=staff.95e90df2.js.map
