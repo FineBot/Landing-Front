@@ -152,40 +152,6 @@ var data = [{
   }],
   "date": "02/03/2022"
 }, {
-  "title": "GeoHelper",
-  "description": "\nПроект для реализации AR-слоя мира, в котором отображаются объекты дополненной реальности в зависимости от заданного географического положения.\nПроект состоит из сайта и приложений для платформ Android и IOS.\nСайт предназначен для менеджмента данными, представляемых в AR-слое.\nМобильное приложение служит для отображения AR-слоя мира на экране используемого устройства.",
-  "images": ["https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/1.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/2.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/3.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/4.png"],
-  "videos": [],
-  "tags": ["Frontend", "Backend", "Mobile", "AR"],
-  "tech": ["Vue", "Node.js", "Unity", "AR Foundation", "C#"],
-  "developers": ["Лаптев И.А.", "Китанин С.С.", "Быковская О.C.", "Смирнов Я.А."],
-  "site": null,
-  "sourceCode": [{
-    "name": "Фронтенд",
-    "link": "https://github.com/RTUITLab/GeoHelper-Front"
-  }, {
-    "name": "Бэкенд",
-    "link": "https://github.com/RTUITLab/GeoHelper-Back"
-  }, {
-    "name": "Unity проект (приложение для Android или Ios)",
-    "link": "https://github.com/RTUITLab/GeoHelperUnity"
-  }],
-  "date": "02/03/2022"
-}, {
-  "title": "GyroBall",
-  "description": "Мобильное приложение – игра для проверки удобства использования механики акселерометра.\nИспользование поворотов телефона для управления шариком. У шарика предполагается 4 состояния, соответствующих стихиям, каждое состояние несёт в себе определённую соответствующую механику. Локации к игре будут соответствовать стихийной тематике.",
-  "images": ["https://github.com/RTUITLab/GyroBall/raw/main/landing/23.JPG", "https://github.com/RTUITLab/GyroBall/raw/main/landing/21.JPG", "https://github.com/RTUITLab/GyroBall/raw/main/landing/1.png", "https://github.com/RTUITLab/GyroBall/raw/main/landing/2.png", "https://github.com/RTUITLab/GyroBall/raw/main/landing/3.png"],
-  "videos": [],
-  "tags": ["Mobile"],
-  "tech": ["C#", "3D modeling", "Unity 3D"],
-  "developers": ["Баканова М.В.", "Новаков Н.Ю."],
-  "site": null,
-  "sourceCode": [{
-    "name": "Проект",
-    "link": "https://github.com/RTUITLab/GyroBall"
-  }],
-  "date": "02/03/2022"
-}, {
   "title": "MicroFileServer (файловый сервер для небольших файлов)",
   "description": "Данный сервис был разработан для добавления к отчетам сотрудников лаборатории\nдополнительных файлов (референсных картинок, видеодемонстраций и т.д.)",
   "images": ["https://github.com/RTUITLab/ITLab-MFS/raw/master/"],
@@ -226,15 +192,38 @@ var data = [{
   }],
   "date": "02/03/2022"
 }, {
-  "title": "Виртуальный ситуационный центр",
-  "description": "Виртуальный ситуационный центр позволяет множеству людей в любой точке планеты взаимодействовать между собой в единой среде виртуальной реальности. При этом возможно использование любого доступного на данный момент шлема виртуальной реальности. Также сервисом можно пользоваться без шлема, используя клавиатуру и мышь.\nВ сервисе реализована концепция комнат, к которым подключаются люди, и их общение происходит только внутри данного пространства. Разговоры и обмен файлами не выйдут за пределы выделенного пространства, что обеспечивает конфиденциальность приватного общения.\nВнутри выделенного виртуального пространства люди могут общаться при помощи голосового чата, могут обмениваться документами из облачных хранилищ (OneDrive, Google drive…), просматривать их, комментировать и обсуждать.\nВ данный момент сервис находится на стадии открытого тестирования.",
-  "images": ["https://files.rtuitlab.dev/landing_src/situation_center/1.png", "https://files.rtuitlab.dev/landing_src/situation_center/2.png"],
-  "videos": ["https://www.youtube.com/embed/HRFRQa3tMcI"],
-  "tags": ["VR", "Social"],
-  "tech": ["NodeJS", "ASP. net core", "Unreal Engine"],
-  "developers": ["Макущенко М.А.", "Иванов И.Е."],
+  "title": "GyroBall",
+  "description": "Мобильное приложение – игра для проверки удобства использования механики акселерометра.\nИспользование поворотов телефона для управления шариком. У шарика предполагается 4 состояния, соответствующих стихиям, каждое состояние несёт в себе определённую соответствующую механику. Локации к игре будут соответствовать стихийной тематике.",
+  "images": ["https://github.com/RTUITLab/GyroBall/raw/main/landing/23.JPG", "https://github.com/RTUITLab/GyroBall/raw/main/landing/21.JPG", "https://github.com/RTUITLab/GyroBall/raw/main/landing/1.png", "https://github.com/RTUITLab/GyroBall/raw/main/landing/2.png", "https://github.com/RTUITLab/GyroBall/raw/main/landing/3.png"],
+  "videos": [],
+  "tags": ["Mobile"],
+  "tech": ["C#", "3D modeling", "Unity 3D"],
+  "developers": ["Баканова М.В.", "Новаков Н.Ю."],
   "site": null,
-  "sourceCode": [],
+  "sourceCode": [{
+    "name": "Проект",
+    "link": "https://github.com/RTUITLab/GyroBall"
+  }],
+  "date": "02/03/2022"
+}, {
+  "title": "GeoHelper",
+  "description": "\nПроект для реализации AR-слоя мира, в котором отображаются объекты дополненной реальности в зависимости от заданного географического положения.\nПроект состоит из сайта и приложений для платформ Android и IOS.\nСайт предназначен для менеджмента данными, представляемых в AR-слое.\nМобильное приложение служит для отображения AR-слоя мира на экране используемого устройства.",
+  "images": ["https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/1.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/2.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/3.png", "https://github.com/RTUITLab/GeoHelperUnity/raw/master/landing/4.png"],
+  "videos": [],
+  "tags": ["Frontend", "Backend", "Mobile", "AR"],
+  "tech": ["Vue", "Node.js", "Unity", "AR Foundation", "C#"],
+  "developers": ["Лаптев И.А.", "Китанин С.С.", "Быковская О.C.", "Смирнов Я.А."],
+  "site": null,
+  "sourceCode": [{
+    "name": "Фронтенд",
+    "link": "https://github.com/RTUITLab/GeoHelper-Front"
+  }, {
+    "name": "Бэкенд",
+    "link": "https://github.com/RTUITLab/GeoHelper-Back"
+  }, {
+    "name": "Unity проект (приложение для Android или Ios)",
+    "link": "https://github.com/RTUITLab/GeoHelperUnity"
+  }],
   "date": "02/03/2022"
 }, {
   "title": "Plane crash simulator",
@@ -251,20 +240,6 @@ var data = [{
   }],
   "date": "02/03/2022"
 }, {
-  "title": "Шутер в виртуальной реальности",
-  "description": "\nШутер в формате виртуальной реальности, позволяющий оттачивать стрельбу из оружия разных видов и уворачиваться от вражеских пуль.\n\nВ игре можно бросить вызов сразу нескольким противникам, либо сначала потренироваться в спокойной обстановке. В таком режиме у пользователя есть возможность стрелять по бутылкам в баре и мишеням в тире.\n\nНа выбор представлено 5 моделей оружия, 4 локации и 3 уровня сложности.",
-  "images": ["https://user-images.githubusercontent.com/57914366/148579235-a4f9e25e-dc3c-49d8-b1a6-7dbabfa52a99.jpg", "https://user-images.githubusercontent.com/57914366/148580147-297f79e2-15e3-4b34-8108-9550982b0fe2.jpg", "https://user-images.githubusercontent.com/57914366/148580160-84ee7b40-83f9-439c-a37e-4e1184bd4dd5.jpg", "https://user-images.githubusercontent.com/57914366/148580059-71f366be-9f6c-44bf-a662-abf7e3e00003.jpg"],
-  "videos": [],
-  "tags": ["VR", "Game"],
-  "tech": ["Unity", "C#"],
-  "developers": ["Егоркин Н.Е.", "Шорин И.А."],
-  "site": null,
-  "sourceCode": [{
-    "name": "Исходный код",
-    "link": "https://github.com/RTUITLab/VRDuel"
-  }],
-  "date": "02/03/2022"
-}, {
   "title": "ЗИЛ",
   "description": "Проект для futurift кресла, который помещает игрока в зону боевых действий, где необходимо оторваться от преследования.",
   "images": ["https://github.com/RTUITLab/Project-3IL/raw/master/landing/0.png", "https://github.com/RTUITLab/Project-3IL/raw/master/landing/1.png", "https://github.com/RTUITLab/Project-3IL/raw/master/landing/2.png", "https://github.com/RTUITLab/Project-3IL/raw/master/landing/3.png"],
@@ -276,6 +251,31 @@ var data = [{
   "sourceCode": [{
     "name": "Source code",
     "link": "https://github.com/RTUITLab/Project-3IL"
+  }],
+  "date": "02/03/2022"
+}, {
+  "title": "Виртуальный ситуационный центр",
+  "description": "Виртуальный ситуационный центр позволяет множеству людей в любой точке планеты взаимодействовать между собой в единой среде виртуальной реальности. При этом возможно использование любого доступного на данный момент шлема виртуальной реальности. Также сервисом можно пользоваться без шлема, используя клавиатуру и мышь.\nВ сервисе реализована концепция комнат, к которым подключаются люди, и их общение происходит только внутри данного пространства. Разговоры и обмен файлами не выйдут за пределы выделенного пространства, что обеспечивает конфиденциальность приватного общения.\nВнутри выделенного виртуального пространства люди могут общаться при помощи голосового чата, могут обмениваться документами из облачных хранилищ (OneDrive, Google drive…), просматривать их, комментировать и обсуждать.\nВ данный момент сервис находится на стадии открытого тестирования.",
+  "images": ["https://files.rtuitlab.dev/landing_src/situation_center/1.png", "https://files.rtuitlab.dev/landing_src/situation_center/2.png"],
+  "videos": ["https://www.youtube.com/embed/HRFRQa3tMcI"],
+  "tags": ["VR", "Social"],
+  "tech": ["NodeJS", "ASP. net core", "Unreal Engine"],
+  "developers": ["Макущенко М.А.", "Иванов И.Е."],
+  "site": null,
+  "sourceCode": [],
+  "date": "02/03/2022"
+}, {
+  "title": "Шутер в виртуальной реальности",
+  "description": "\nШутер в формате виртуальной реальности, позволяющий оттачивать стрельбу из оружия разных видов и уворачиваться от вражеских пуль.\n\nВ игре можно бросить вызов сразу нескольким противникам, либо сначала потренироваться в спокойной обстановке. В таком режиме у пользователя есть возможность стрелять по бутылкам в баре и мишеням в тире.\n\nНа выбор представлено 5 моделей оружия, 4 локации и 3 уровня сложности.",
+  "images": ["https://user-images.githubusercontent.com/57914366/148579235-a4f9e25e-dc3c-49d8-b1a6-7dbabfa52a99.jpg", "https://user-images.githubusercontent.com/57914366/148580147-297f79e2-15e3-4b34-8108-9550982b0fe2.jpg", "https://user-images.githubusercontent.com/57914366/148580160-84ee7b40-83f9-439c-a37e-4e1184bd4dd5.jpg", "https://user-images.githubusercontent.com/57914366/148580059-71f366be-9f6c-44bf-a662-abf7e3e00003.jpg"],
+  "videos": [],
+  "tags": ["VR", "Game"],
+  "tech": ["Unity", "C#"],
+  "developers": ["Егоркин Н.Е.", "Шорин И.А."],
+  "site": null,
+  "sourceCode": [{
+    "name": "Исходный код",
+    "link": "https://github.com/RTUITLab/VRDuel"
   }],
   "date": "02/03/2022"
 }, {
@@ -705,4 +705,4 @@ gallery.setActiveView(Math.floor(_projectsData.default.length / 2));
 updateProjectsInfo();
 document.getElementById("projects__tags__all").checked = true;
 },{"../data/projectsData":"rSus","../gallery/gallery":"Z6W6"}]},{},["TB2l"], null)
-//# sourceMappingURL=projects.e407e3e7.js.map
+//# sourceMappingURL=projects.57255099.js.map
