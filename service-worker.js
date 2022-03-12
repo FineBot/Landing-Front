@@ -2,7 +2,7 @@
 var doCache = true;
 
 // THIS MESSAGE FOR PARSER #name
-var CACHE_NAME = 'v56';
+var CACHE_NAME = 'v57';
 
 // Delete old caches that are not our current one!
 self.addEventListener("activate", event => {
@@ -77,10 +77,10 @@ self.addEventListener('install', function(event) {
 							"/projects/зил.html",
 							"/projects/многопользовательская_сборка_ракетного_двигателя.html",
 							"/projects/шутер_в_виртуальной_реальности.html",
-							"/projects.5bf2bbbb.js",
-							"/projects.5bf2bbbb.js.map",
 							"/projects.5da1ee48.css",
 							"/projects.5da1ee48.css.map",
+							"/projects.90aa79c1.js",
+							"/projects.90aa79c1.js.map",
 							"/service-worker.js.map",
 							"/staff.95e90df2.js",
 							"/staff.95e90df2.js.map",
