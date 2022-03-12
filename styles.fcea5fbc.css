@@ -1032,9 +1032,10 @@ h1 {
   border-radius: 15px;
 }
 .userscard__parent .userscard__info {
-  transition: all 250ms ease;
+  transition: opacity 250ms ease;
   opacity: 0;
   padding-top: 20px;
+  min-width: 300px;
 }
 .userscard__parent .userscard__info .userscard__fio {
   font-style: normal;
@@ -1048,6 +1049,7 @@ h1 {
   display: flex;
   row-gap: 5px;
   column-gap: 5px;
+  flex-wrap: wrap;
 }
 .userscard__parent .userscard__info .userscard__tagsParent div:nth-child(n) {
   background-color: white;
@@ -1136,4 +1138,4 @@ h1 {
   color: #f3f3f3;
 }
 
-/*# sourceMappingURL=styles.5f6b70c5.css.map */
+/*# sourceMappingURL=styles.fcea5fbc.css.map */

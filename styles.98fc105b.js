@@ -142,4 +142,4 @@ require("./layout/staff/staff.scss");
 
 require("./layout/footer/footer.scss");
 },{"./indexStyles.scss":"nEPs","./js/gallery/gallery.scss":"nEPs","./layout/header/header.scss":"nEPs","./layout/about/about.scss":"nEPs","./layout/projects/projects.scss":"nEPs","./layout/achievements/achievements.scss":"nEPs","./layout/equipment/equipment.scss":"nEPs","./layout/staff/staff.scss":"nEPs","./layout/footer/footer.scss":"nEPs"}]},{},["XEZO"], null)
-//# sourceMappingURL=styles.6d8051ac.js.map
+//# sourceMappingURL=styles.98fc105b.js.map
