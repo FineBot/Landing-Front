@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"Jkeh":[function(require,module,exports) {
+})({"Sx6z":[function(require,module,exports) {
 module.exports = {
   "short_name": "RTUITLab",
   "name": "RTUITLab",
@@ -139,5 +139,5 @@ module.exports = {
   "theme_color": "#000000",
   "background_color": "#ffffff"
 };
-},{}]},{},["Jkeh"], null)
-//# sourceMappingURL=__/manifest.js.map
+},{}]},{},["Sx6z"], null)
+//# sourceMappingURL=manifest.js.map
