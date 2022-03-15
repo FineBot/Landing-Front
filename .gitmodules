@@ -1,3 +1,3 @@
-[submodule "Landing-Front"]
-	path = Landing-Front
-	url = https://github.com/baikinkirill/Landing-Front.git
+[submodule "data"]
+	path = data
+	url = https://github.com/RTUITLab/Landing-Front.git

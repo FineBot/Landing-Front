@@ -20,8 +20,8 @@ html(lang="ru")
       "@type": "WebPage",
       "@id": "https://rtuitlab.dev"
       },
-      "headline": "#{title}",
-      "image": "#{cover}",
+      "headline": "#{obj.title}",
+      "image": "#{obj.images[0]}",
       "author": {
       "@type": "Organization",
       "name": "RTUITLab",
@@ -42,13 +42,13 @@ html(lang="ru")
     header
       section.buttonContainer
         button(onclick="window.history.back();")
-          img(src="/images/icons/buttonArrow.svg" alt="")
+          img(src="../images/icons/buttonArrow.svg" alt="")
           | Назад
 
         h1 #{obj.title}
 
       section.cover 
-        img(src=obj.images[0], alt="")
+        img(src="../"+obj.images[0], alt="")
 
 
     main 
@@ -56,9 +56,9 @@ html(lang="ru")
         .galleryParent
           .swiper.projectsSwiperParent
             .swiper-wrapper
-              each object in obj.images.splice(1,obj.images.length) 
+              each object in obj.images.splice(1,obj.images.length)
                 .swiper-slide
-                  img(src=object, alt="")
+                  img(src="../../src"+object, alt="")
           .swiper-pagination.projectsSwiperPagination
 
         section.info
@@ -84,7 +84,7 @@ html(lang="ru")
             .infoBlock 
               h3 Исходный код
               section.itemsParent
-                each object in obj.sourceCode 
+                each object in obj.sourcecode
                   .item
                     a(href=object.link target="_blank")
                       =object.name
