@@ -117,7 +117,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"AaGI":[function(require,module,exports) {
-
-},{}]},{},["AaGI"], null)
-//# sourceMappingURL=service-worker.js.map
+})({"WznH":[function(require,module,exports) {
+var swiper = new Swiper(".projectsSwiperParent", {
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  pagination: {
+    el: ".projectsSwiperPagination",
+    clickable: true
+  }
+});
+},{}]},{},["WznH"], null)
+//# sourceMappingURL=projectPageTemplate.392b58e2.js.map

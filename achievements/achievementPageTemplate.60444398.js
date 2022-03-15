@@ -117,7 +117,20 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"AaGI":[function(require,module,exports) {
+})({"XH5M":[function(require,module,exports) {
 
-},{}]},{},["AaGI"], null)
-//# sourceMappingURL=service-worker.js.map
+},{}],"vmBW":[function(require,module,exports) {
+"use strict";
+
+require("../../layout/achievementPageTemplate/achievementPageTemplate.scss");
+
+var swiper = new Swiper(".achievementsSwiperParent", {
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  pagination: {
+    el: ".achievementsSwiperPagination",
+    clickable: true
+  }
+});
+},{"../../layout/achievementPageTemplate/achievementPageTemplate.scss":"XH5M"}]},{},["vmBW"], null)
+//# sourceMappingURL=achievementPageTemplate.60444398.js.map
