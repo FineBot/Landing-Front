@@ -127,7 +127,7 @@ exports.default = void 0;
 var data = [{
   "title": "Многопользовательская сборка ракетного двигателя",
   "description": "Приложение дает пользователям возможность осуществлять процесс сборки предоставленной модели в формате виртуальной реальности. Люди могут собирать ракетный двигатель как самостоятельно, так и в многопользовательской комнате, объединившись с напарниками. Процесс сопровождают различные подсказки и тексты с описаниями деталей. Все это, вкупе с глубоким погружением, способствует быстрому усвоению материала. При окончании сборки модель становится анимированной и демонстрирует свой принцип работы.",
-  "images": ["/images/projects/Engine-VR/141160470-a31d20dd-86bd-4be8-9308-a631227b5ba0.png", "/images/projects/Engine-VR/141155619-bb28a0e8-fd3b-4359-97e5-36f3d1cf71c3.png", "/images/projects/Engine-VR/141155697-f247130d-e9a9-4f7d-812c-7a328e3022af.png", "/images/projects/Engine-VR/141155722-2e5c8eab-dfef-42f7-ae67-daf43e1756d6.png"],
+  "images": ["/images/projects/Engine-VR/141160470-a31d20dd-86bd-4be8-9308-a631227b5ba0.png?as=webp", "/images/projects/Engine-VR/141155619-bb28a0e8-fd3b-4359-97e5-36f3d1cf71c3.png?as=webp", "/images/projects/Engine-VR/141155697-f247130d-e9a9-4f7d-812c-7a328e3022af.png?as=webp", "/images/projects/Engine-VR/141155722-2e5c8eab-dfef-42f7-ae67-daf43e1756d6.png?as=webp"],
   "videos": ["https://youtu.be/6FTMDRp5fN4"],
   "tags": ["VR", "Game"],
   "tech": ["Unity", "C#"],
@@ -141,7 +141,7 @@ var data = [{
 }, {
   "title": "ITLab (система управления лабораторией)",
   "description": "Для организации работы людей в лаборатории создана система, учитывающая активность людей, участие в мероприятиях, оплату работы сотрудников. Система позволяет распределять нагрузку, обеспечивать прозрачность выполняемых действий и мероприятий. Сайт создан для внутреннего использования и доступ к имеют только сотрудники лаборатории. Проект состоит из нескольких бекендов, написанный на разных языках программирования, таких как C#, GO, Kotlin. Фронтенд реализован на фреймворке Vue.JS. Мобильное приложение для iOS реализовано на языке Swift с использованием фреймворка SwiftUI. Так же система имеет возможность уведомлять людей о изменениях, при помощи бота вконтакте или почты.",
-  "images": ["/images/projects/ITLab/1.png", "/images/projects/ITLab/2.png", "/images/projects/ITLab/ios_1.png", "/images/projects/ITLab/ios_2.png"],
+  "images": ["/images/projects/ITLab/1.png?as=webp", "/images/projects/ITLab/2.png?as=webp", "/images/projects/ITLab/ios_1.png?as=webp", "/images/projects/ITLab/ios_2.png?as=webp"],
   "videos": [],
   "tags": ["Frontend", "Backend", "Mobile"],
   "tech": ["Vue", "ASP", "Ktor", "Swift"],
@@ -170,7 +170,7 @@ var data = [{
 }, {
   "title": "Клавиатура с отслеживанием рук",
   "description": "Проект с механической клавиатурой в формате виртуальной реальности для шлемов Oculus Quest и Oculus Quest 2. Нажатия на клавиши осуществляются при помощи трекинга рук с камер шлема, никаких контроллеров! Текст, вводимый с клавиатуры, выводится на экран монитора. Клавиатура позволяет печатать на русском и английском языках.",
-  "images": ["/images/projects/Oculus-HandTracking-Keyboard/1.png", "/images/projects/Oculus-HandTracking-Keyboard/2.png", "/images/projects/Oculus-HandTracking-Keyboard/3.png"],
+  "images": ["/images/projects/Oculus-HandTracking-Keyboard/1.png?as=webp", "/images/projects/Oculus-HandTracking-Keyboard/2.png?as=webp", "/images/projects/Oculus-HandTracking-Keyboard/3.png?as=webp"],
   "videos": ["https://youtu.be/V3ekuwMH8WU"],
   "tags": ["VR", "Game"],
   "tech": ["Unity", "C#"],
@@ -184,7 +184,7 @@ var data = [{
 }, {
   "title": "Шутер в виртуальной реальности",
   "description": "Шутер в формате виртуальной реальности, позволяющий оттачивать стрельбу из оружия разных видов и уворачиваться от вражеских пуль. В игре можно бросить вызов сразу нескольким противникам, либо сначала потренироваться в спокойной обстановке. В таком режиме у пользователя есть возможность стрелять по бутылкам в баре и мишеням в тире. На выбор представлено 5 моделей оружия, 4 локации и 3 уровня сложности.",
-  "images": ["/images/projects/VRDuel/148579235-a4f9e25e-dc3c-49d8-b1a6-7dbabfa52a99.jpg", "/images/projects/VRDuel/148580147-297f79e2-15e3-4b34-8108-9550982b0fe2.jpg", "/images/projects/VRDuel/148580160-84ee7b40-83f9-439c-a37e-4e1184bd4dd5.jpg", "/images/projects/VRDuel/148580059-71f366be-9f6c-44bf-a662-abf7e3e00003.jpg"],
+  "images": ["/images/projects/VRDuel/148579235-a4f9e25e-dc3c-49d8-b1a6-7dbabfa52a99.jpg?as=webp", "/images/projects/VRDuel/148580147-297f79e2-15e3-4b34-8108-9550982b0fe2.jpg?as=webp", "/images/projects/VRDuel/148580160-84ee7b40-83f9-439c-a37e-4e1184bd4dd5.jpg?as=webp", "/images/projects/VRDuel/148580059-71f366be-9f6c-44bf-a662-abf7e3e00003.jpg?as=webp"],
   "videos": [],
   "tags": ["VR", "Game"],
   "tech": ["Unity", "C#"],
@@ -198,7 +198,7 @@ var data = [{
 }, {
   "title": "BunnyHuntVR - Web VR шутер",
   "description": "VR игра, обороняйте грядки от проворных и назойливых зайцев. Узнайте сколько морковки вы сможете сохранить.",
-  "images": ["/images/projects/WebVRShoot/BunnyHuntVR.png", "/images/projects/WebVRShoot/BunnyHuntVR2.png"],
+  "images": ["/images/projects/WebVRShoot/BunnyHuntVR.png?as=webp", "/images/projects/WebVRShoot/BunnyHuntVR2.png?as=webp"],
   "videos": [],
   "tags": ["VR", "Game", "Shooter"],
   "tech": ["A-Frame", "Javascript", "Html"],
@@ -615,4 +615,4 @@ gallery.setActiveView(Math.floor(_projectsData.default.length / 2));
 updateProjectsInfo();
 document.getElementById("projects__tags__all").checked = true;
 },{"../data/projectsData":"rSus","../gallery/gallery":"Z6W6"}]},{},["TB2l"], null)
-//# sourceMappingURL=../dist/projects.1553388d.js.map
+//# sourceMappingURL=../dist/projects.6da2e4fd.js.map
