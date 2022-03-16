@@ -43,7 +43,7 @@ async function downloadImagesMain(buff, i, type = "projects") {
     for (let j of buff.images) {
       if (j.match(/^(https?\:\/\/)/gim)) {
         newImages.push(
-          `/images/${type}/` + i + "/" + j.match(/([^\/]*)$/gim)[0]
+          `/images/${type}/` + i + "/" + j.match(/([^\/]*)$/gim)[0]+"?as=webp"
         );
         await download(
           j,
@@ -52,7 +52,7 @@ async function downloadImagesMain(buff, i, type = "projects") {
       } else {
         await downloadImages(i, j);
         newImages.push(
-          `/images/${type}/` + i + "/" + j.match(/([^\/]*)$/gim)[0]
+          `/images/${type}/` + i + "/" + j.match(/([^\/]*)$/gim)[0]+"?as=webp"
         );
       }
     }

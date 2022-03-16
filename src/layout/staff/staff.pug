@@ -9,7 +9,7 @@ article(class="staff__parent" id="staff")
         each obj in staffData 
           .swiper-slide
             .userscard__parent 
-              img(src="/images/background.webp" alt="")
+              img(src="/images/background.webp" alt="" loading="lazy")
               .userscard__info 
                 .userscard__fio 
                   = obj.name

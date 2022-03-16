@@ -55,7 +55,7 @@ html(lang="ru")
 						.swiper-wrapper
 							each object in achievementData.images
 								.swiper-slide
-									img(src="../../src"+object, alt="")
+									img(src="../../src"+object, alt="" loading='lazy')
 							each object in achievementData.videos
 								.swiper-slide
 									video(src=object, alt="" loop autoplay muted)
