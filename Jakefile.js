@@ -164,18 +164,14 @@ task("buildFrontProd", function () {
   return new Promise((resolve, reject) => {
     let command =
       "rm -rf build " +
-      "&& parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache " +
-      "&& parcel build ./src/projects/*.pug --out-dir build/projects --public-url ./ --no-minify --no-cache " +
-      "&& parcel build ./src/achievements/*.pug ./src/projects/*.pug --out-dir build/achievements --public-url ./ --no-minify --no-cache " +
+      "&& parcel build ./src/index.pug ./src/projects/*.pug ./src/achievements/*.pug --out-dir build --public-url / --no-minify --no-cache " +
       "&& cp -a ./src/images ./build/images " +
       "&& exit 0";
     if (process.platform === "win32")
       command =
         'rmdir /s /q "build" 2> nul ' +
         "& mkdir build " +
-        "&& parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache " +
-        "&& parcel build ./src/projects/*.pug --out-dir build/projects --public-url ./ --no-minify --no-cache " +
-        "&& parcel build ./src/achievements/*.pug --out-dir build/achievements --public-url ./ --no-minify --no-cache " +
+        "&& parcel build ./src/index.pug ./src/projects/*.pug ./src/achievements/*.pug --out-dir build --public-url / --no-minify --no-cache " +
         "&& mkdir .\\build\\images " +
         "&& xcopy /E .\\src\\images .\\build\\images\\ " +
         "&& exit 0";
