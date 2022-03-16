@@ -117,42 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"N0LX":[function(require,module,exports) {
-window.addEventListener("scroll", scrollFunction, {
-  passive: true
-});
-var children = Array.from(document.getElementById("pageContentParent").children);
-var headersChildren = Array.from(document.getElementById("headerElements").children);
-var lastActive = 0;
+})({"AaGI":[function(require,module,exports) {
 
-function scrollFunction() {
-  var obj = document.getElementById("header");
-
-  if (window.scrollY > 50) {
-    obj.setAttribute("scroll", "true");
-  } else {
-    obj.setAttribute("scroll", "false");
-  }
-
-  var activeTab = lastActive;
-
-  for (var i = 0; i < children.length; i++) {
-    if (window.scrollY + window.innerHeight / 4 * 3 >= children[i].offsetTop) {
-      activeTab = i;
-    }
-  }
-
-  if (activeTab !== lastActive) {
-    setTab(activeTab);
-  }
-}
-
-function setTab(activeTab) {
-  headersChildren[lastActive].setAttribute("active", "false");
-  headersChildren[activeTab].setAttribute("active", "true");
-  lastActive = activeTab;
-}
-
-setTab(lastActive);
-},{}]},{},["N0LX"], null)
-//# sourceMappingURL=/header.9599579a.js.map
+},{}]},{},["AaGI"], null)
+//# sourceMappingURL=../dist/service-worker.js.map

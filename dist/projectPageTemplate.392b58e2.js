@@ -117,21 +117,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"lDcJ":[function(require,module,exports) {
-var parallaxInstance;
-var enabled = window.innerWidth < 1000;
-window.addEventListener("resize", setParallax);
-
-function setParallax() {
-  if (window.innerWidth < 1000 && enabled) {
-    if (parallaxInstance) parallaxInstance.destroy();
-    enabled = false;
-  } else if (!enabled) {
-    parallaxInstance = new Parallax(document.getElementById("scene"));
-    enabled = true;
+})({"WznH":[function(require,module,exports) {
+var swiper = new Swiper(".projectsSwiperParent", {
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  pagination: {
+    el: ".projectsSwiperPagination",
+    clickable: true
   }
-}
-
-setParallax();
-},{}]},{},["lDcJ"], null)
-//# sourceMappingURL=/about.552ef0a9.js.map
+});
+},{}]},{},["WznH"], null)
+//# sourceMappingURL=../dist/projectPageTemplate.392b58e2.js.map

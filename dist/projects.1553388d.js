@@ -615,4 +615,4 @@ gallery.setActiveView(Math.floor(_projectsData.default.length / 2));
 updateProjectsInfo();
 document.getElementById("projects__tags__all").checked = true;
 },{"../data/projectsData":"rSus","../gallery/gallery":"Z6W6"}]},{},["TB2l"], null)
-//# sourceMappingURL=/projects.1553388d.js.map
+//# sourceMappingURL=../dist/projects.1553388d.js.map
