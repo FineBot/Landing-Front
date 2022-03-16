@@ -20,10 +20,11 @@ task(
     "parse staff.md",
     "parse equipment.md",
     // "createEnv",
-    "buildFrontProd",
+    "buildFrontProd"
     // "create service-worker",
   ],
-  function () {}
+  function() {
+  }
 );
 
 desc("Generate projects file");
@@ -36,7 +37,7 @@ task("parse achievements.md", generateAchievementsFile);
  *  equipment
  */
 desc("Creating equipment.json file from /info/equipment.md");
-task("parse equipment.md", function () {
+task("parse equipment.md", function() {
   return new Promise((resolve, reject) => {
     let data = fs.readFileSync("./data/equipment/equipment.md", "utf-8");
     let list = parseMD(data);
@@ -64,7 +65,7 @@ task("parse equipment.md", function () {
  *  STAFF.MD
  */
 desc("Creating staff.json file from /info/staff.md");
-task("parse staff.md", function () {
+task("parse staff.md", function() {
   return new Promise((resolve, reject) => {
     let data = fs.readFileSync("./data/staff/staff.md", "utf-8");
     let list = parseMD(data);
@@ -84,7 +85,7 @@ task("parse staff.md", function () {
 desc(
   "Create new service-worker.js file from serviceWorkerSample.js with new cache version and new caching links"
 );
-task("create service-worker", function () {
+task("create service-worker", function() {
   return new Promise((resolve, reject) => {
     let list = [];
 
@@ -133,7 +134,7 @@ task("create service-worker", function () {
  *  .env file
  */
 desc("Create .env file with year of build");
-task("createEnv", function () {
+task("createEnv", function() {
   return new Promise((resolve) => {
     try {
       let data;
@@ -160,20 +161,26 @@ task("createEnv", function () {
  */
 
 desc("Build Landing Front prod");
-task("buildFrontProd", function () {
+task("buildFrontProd", function() {
   return new Promise((resolve, reject) => {
     let command =
       "rm -rf build " +
-      "&& parcel build ./src/index.pug ./src/projects/*.pug ./src/achievements/*.pug --out-dir build --public-url / --no-minify --no-cache " +
+      "&& parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache " +
+      "&& parcel build ./src/projects/*.pug --out-dir build/projects --public-url ./ --no-minify --no-cache " +
+      "&& parcel build ./src/achievements/*.pug --out-dir build/achievements --public-url ./ --no-minify --no-cache " +
       "&& cp -a ./src/images ./build/images " +
+      "&& node ./postbuild.js && node ./postbuild.js projects && node ./postbuild.js achievements"+
       "&& exit 0";
     if (process.platform === "win32")
       command =
-        'rmdir /s /q "build" 2> nul ' +
+        "rmdir /s /q \"build\" 2> nul " +
         "& mkdir build " +
-        "&& parcel build ./src/index.pug ./src/projects/*.pug ./src/achievements/*.pug --out-dir build --public-url / --no-minify --no-cache " +
+        "&& parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache " +
+        "&& parcel build ./src/projects/*.pug --out-dir build/projects --public-url ./ --no-minify --no-cache " +
+        "&& parcel build ./src/achievements/*.pug --out-dir build/achievements --public-url ./ --no-minify --no-cache " +
         "&& mkdir .\\build\\images " +
         "&& xcopy /E .\\src\\images .\\build\\images\\ " +
+        "&& node .\\postbuild.js && node .\\postbuild.js projects && node .\\postbuild.js achievements"+
         "&& exit 0";
     exec(command, (err, stdout, stderr) => {
       if (err) {
