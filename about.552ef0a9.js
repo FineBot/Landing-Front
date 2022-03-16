@@ -134,4 +134,4 @@ function setParallax() {
 
 setParallax();
 },{}]},{},["lDcJ"], null)
-//# sourceMappingURL=about.552ef0a9.js.map
+//# sourceMappingURL=/about.552ef0a9.js.map

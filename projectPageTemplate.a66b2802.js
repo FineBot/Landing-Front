@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"WznH":[function(require,module,exports) {
+})({"zO5S":[function(require,module,exports) {
 var swiper = new Swiper(".projectsSwiperParent", {
   slidesPerView: "auto",
   spaceBetween: 15,
@@ -126,5 +126,5 @@ var swiper = new Swiper(".projectsSwiperParent", {
     clickable: true
   }
 });
-},{}]},{},["WznH"], null)
-//# sourceMappingURL=projectPageTemplate.392b58e2.js.map
+},{}]},{},["zO5S"], null)
+//# sourceMappingURL=/projectPageTemplate.a66b2802.js.map

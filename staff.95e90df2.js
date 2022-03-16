@@ -132,4 +132,4 @@ var swiper = new Swiper(".staff__swiper", {
   speed: 2200
 });
 },{}]},{},["yeke"], null)
-//# sourceMappingURL=staff.95e90df2.js.map
+//# sourceMappingURL=/staff.95e90df2.js.map
