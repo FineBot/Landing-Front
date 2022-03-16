@@ -140,4 +140,4 @@ module.exports = {
   "background_color": "#ffffff"
 };
 },{}]},{},["Sx6z"], null)
-//# sourceMappingURL=manifest.js.map
+//# sourceMappingURL=/manifest.js.map
