@@ -117,27 +117,19 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"Sx6z":[function(require,module,exports) {
-module.exports = {
-  "short_name": "RTUITLab",
-  "name": "RTUITLab",
-  "icons": [{
-    "src": "/images/logo.png",
-    "sizes": "64x64 32x32 24x24 16x16",
-    "type": "image/png"
-  }, {
-    "src": "/images/logo.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }, {
-    "src": "/images/logo.png",
-    "type": "image/png",
-    "sizes": "512x512"
-  }],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
-};
-},{}]},{},["Sx6z"], null)
-//# sourceMappingURL=/manifest.js.map
+})({"yeke":[function(require,module,exports) {
+var swiper = new Swiper(".staff__swiper", {
+  spaceBetween: 10,
+  slidesPerView: "auto",
+  freeMode: true,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 00,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true
+  },
+  speed: 2200
+});
+},{}]},{},["yeke"], null)
+//# sourceMappingURL=../dist/staff.95e90df2.js.map

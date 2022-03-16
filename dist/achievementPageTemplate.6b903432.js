@@ -117,29 +117,20 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"nEPs":[function(require,module,exports) {
+})({"S3uK":[function(require,module,exports) {
 
-},{}],"jM7F":[function(require,module,exports) {
-
-},{}],"XEZO":[function(require,module,exports) {
+},{}],"TqLU":[function(require,module,exports) {
 "use strict";
 
-require("./indexStyles.scss");
+require("../../layout/achievementPageTemplate/achievementPageTemplate.scss");
 
-require("./js/gallery/gallery.scss");
-
-require("./layout/header/header.scss");
-
-require("./layout/about/about.scss");
-
-require("./layout/projects/projects.scss");
-
-require("./layout/achievements/achievements.scss");
-
-require("./layout/equipment/equipment.scss");
-
-require("./layout/staff/staff.scss");
-
-require("./layout/footer/footer.scss");
-},{"./indexStyles.scss":"nEPs","./js/gallery/gallery.scss":"nEPs","./layout/header/header.scss":"nEPs","./layout/about/about.scss":"nEPs","./layout/projects/projects.scss":"nEPs","./layout/achievements/achievements.scss":"nEPs","./layout/equipment/equipment.scss":"nEPs","./layout/staff/staff.scss":"nEPs","./layout/footer/footer.scss":"nEPs"}]},{},["XEZO"], null)
-//# sourceMappingURL=/styles.9daa71ef.js.map
+var swiper = new Swiper(".achievementsSwiperParent", {
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  pagination: {
+    el: ".achievementsSwiperPagination",
+    clickable: true
+  }
+});
+},{"../../layout/achievementPageTemplate/achievementPageTemplate.scss":"S3uK"}]},{},["TqLU"], null)
+//# sourceMappingURL=../dist/achievementPageTemplate.6b903432.js.map

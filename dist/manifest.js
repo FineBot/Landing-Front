@@ -117,20 +117,27 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"XH5M":[function(require,module,exports) {
-
-},{}],"vmBW":[function(require,module,exports) {
-"use strict";
-
-require("../../layout/achievementPageTemplate/achievementPageTemplate.scss");
-
-var swiper = new Swiper(".achievementsSwiperParent", {
-  slidesPerView: "auto",
-  spaceBetween: 15,
-  pagination: {
-    el: ".achievementsSwiperPagination",
-    clickable: true
-  }
-});
-},{"../../layout/achievementPageTemplate/achievementPageTemplate.scss":"XH5M"}]},{},["vmBW"], null)
-//# sourceMappingURL=/achievementPageTemplate.60444398.js.map
+})({"Sx6z":[function(require,module,exports) {
+module.exports = {
+  "short_name": "RTUITLab",
+  "name": "RTUITLab",
+  "icons": [{
+    "src": "/images/logo.png",
+    "sizes": "64x64 32x32 24x24 16x16",
+    "type": "image/png"
+  }, {
+    "src": "/images/logo.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }, {
+    "src": "/images/logo.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+};
+},{}]},{},["Sx6z"], null)
+//# sourceMappingURL=../dist/manifest.js.map

@@ -117,7 +117,29 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"AaGI":[function(require,module,exports) {
+})({"nEPs":[function(require,module,exports) {
 
-},{}]},{},["AaGI"], null)
-//# sourceMappingURL=/service-worker.js.map
+},{}],"jM7F":[function(require,module,exports) {
+
+},{}],"XEZO":[function(require,module,exports) {
+"use strict";
+
+require("./indexStyles.scss");
+
+require("./js/gallery/gallery.scss");
+
+require("./layout/header/header.scss");
+
+require("./layout/about/about.scss");
+
+require("./layout/projects/projects.scss");
+
+require("./layout/achievements/achievements.scss");
+
+require("./layout/equipment/equipment.scss");
+
+require("./layout/staff/staff.scss");
+
+require("./layout/footer/footer.scss");
+},{"./indexStyles.scss":"nEPs","./js/gallery/gallery.scss":"nEPs","./layout/header/header.scss":"nEPs","./layout/about/about.scss":"nEPs","./layout/projects/projects.scss":"nEPs","./layout/achievements/achievements.scss":"nEPs","./layout/equipment/equipment.scss":"nEPs","./layout/staff/staff.scss":"nEPs","./layout/footer/footer.scss":"nEPs"}]},{},["XEZO"], null)
+//# sourceMappingURL=../dist/styles.9daa71ef.js.map

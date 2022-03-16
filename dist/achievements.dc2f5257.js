@@ -127,4 +127,4 @@ var swiper = new Swiper(".achievements__swiperParent", {
   }
 });
 },{}]},{},["NENU"], null)
-//# sourceMappingURL=/achievements.dc2f5257.js.map
+//# sourceMappingURL=../dist/achievements.dc2f5257.js.map
