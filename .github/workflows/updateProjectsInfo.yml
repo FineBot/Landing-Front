@@ -34,6 +34,7 @@ jobs:
     - run: echo $projectName
     - run: mkdir ./Landing-Front/projects/$projectName || true
     - run: cp ./LANDING.md ./Landing-Front/projects/$projectName
+    - run: ls ./Landing-Front/projects
     - run: git add .
     - run: git commit -m "Update ${{ github.repository }} info"
     - run: git push
