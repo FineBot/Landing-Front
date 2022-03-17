@@ -35,5 +35,13 @@ jobs:
     - run: cp ./LANDING.md ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: cd ./Landing-Front && git add .
     - run: cd ./Landing-Front && git commit -m "Update ${{ github.repository }} info"
-    - run: cd ./Landing-Front && git push origin data
+    
+    - name: Checkout static files
+      uses: actions/checkout@v2
+      with:
+        repository: baikinkirill/Landing-Front
+        path: data
+        lfs: true
+          
+    - run: git push origin data
     - run: echo ${{ github.repository }}
