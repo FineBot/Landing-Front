@@ -35,8 +35,7 @@ jobs:
         
     - run: git config --global user.email "bk@finebot.site"
     - run: git config --global user.name "baikinkirill"
-    - run: cd ./Landing-Front
-    - run: ls
+    - run: cd ./Landing-Front && ls
     - run: cd ./Landing-Front && git switch data
     - run: mkdir ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o) || true
     - run: echo $(echo "${{ github.repository }}" | grep '[^/]*$' -o)
