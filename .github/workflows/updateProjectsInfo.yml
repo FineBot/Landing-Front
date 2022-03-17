@@ -30,10 +30,11 @@ jobs:
     - run: git config --global user.name "baikinkirill"
     - run: cd ./Landing-Front
     - run: cd ./Landing-Front && git switch data
+    - run: cd ./Landing-Front && git checkout -b sync/${{ github.repository }}
     - run: mkdir ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o) || true
     - run: echo $(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: cp ./LANDING.md ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: cd ./Landing-Front && git add .
     - run: cd ./Landing-Front && git commit -m "Update ${{ github.repository }} info"
-    - run: cd ./Landing-Front && git push origin data
+    - run: cd ./Landing-Front && git push origin sync/${{ github.repository }}
     - run: echo ${{ github.repository }}
