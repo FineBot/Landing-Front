@@ -43,5 +43,6 @@ jobs:
         path: data
         lfs: true
           
-    - run: git push origin data
+    - run: ls
+    - run: cd ./Landing-Front && git push origin data
     - run: echo ${{ github.repository }}
