@@ -26,8 +26,8 @@ jobs:
         
     - uses: actions/checkout@v2
     - run: git clone https://github.com/baikinkirill/Landing-Front.git
-    - run: git config --global user.email "bk@finebot.site"
-    - run: git config --global user.name "Baikin Kirill"
+    - run: git config --global user.email "kirill.baikin@gmail.com"
+    - run: git config --global user.name "baikinkirill"
     - run: cd ./Landing-Front
     - run: cd ./Landing-Front && git switch data
     - run: mkdir ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o) || true
