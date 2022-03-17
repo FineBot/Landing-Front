@@ -29,6 +29,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: baikinkirill/Landing-Front
+        ref: data
         path: Landing-Front
         lfs: true
         
