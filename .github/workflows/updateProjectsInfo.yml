@@ -5,6 +5,13 @@ name: Node.js CI
 
 on:
   workflow_call:
+    inputs:
+      username:
+        required: false
+        type: string
+    secrets:
+      envPAT:
+        required: false
 
 jobs:
   build:
