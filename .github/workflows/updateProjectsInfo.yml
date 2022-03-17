@@ -18,12 +18,12 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        ref: master
+        
     - uses: actions/checkout@v2
     - run: git clone https://github.com/baikinkirill/Landing-Front.git
     - run: cd Landing-Front
