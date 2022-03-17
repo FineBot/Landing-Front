@@ -29,10 +29,9 @@ jobs:
     - run: ls
     - run: cd ./Landing-Front
     - run: cd ./Landing-Front && git switch data
-    - run: export projectName=$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
-    - run: echo $projectName
-    - run: mkdir ./Landing-Front/projects/$projectName || true
-    - run: cp ./LANDING.md ./Landing-Front/projects/$projectName
+    - run: mkdir ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o) || true
+    - run: echo $(echo "${{ github.repository }}" | grep '[^/]*$' -o)
+    - run: cp ./LANDING.md ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: ls ./Landing-Front/projects
     - run: git add .
     - run: git commit -m "Update ${{ github.repository }} info"
