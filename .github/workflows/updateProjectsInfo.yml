@@ -28,7 +28,7 @@ jobs:
     - run: git clone https://github.com/baikinkirill/Landing-Front.git
     - run: ls
     - run: cd ./Landing-Front
-    - run: git checkout -b data
+    - run: ./Landing-Front git checkout -b data
     - run: ls ./Landing-Front
     - run: cp ../LANDING.md ./projects/${{ github.repository }}
     - run: git add .
