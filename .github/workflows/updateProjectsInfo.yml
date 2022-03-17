@@ -29,7 +29,7 @@ jobs:
     - run: ls
     - run: cd ./Landing-Front
     - run: git checkout -b data
-    - run: ls
+    - run: ls ./Landing-Front
     - run: cp ../LANDING.md ./projects/${{ github.repository }}
     - run: git add .
     - run: git commit -m "Update ${{ github.repository }} info"
