@@ -29,8 +29,7 @@ jobs:
     - run: ls
     - run: cd ./Landing-Front
     - run: cd ./Landing-Front && git switch data
-    - run: echo "${{ github.repository }}" | grep '[^/]*$' -o > branchName
-    - run: export projectName=$(cat branchName)
+    - run: export projectName=$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: echo $projectName
     - run: mkdir ./Landing-Front/projects/$projectName || true
     - run: cp ./LANDING.md ./Landing-Front/projects/$projectName
