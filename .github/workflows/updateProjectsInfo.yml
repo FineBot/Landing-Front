@@ -31,8 +31,8 @@ jobs:
     - run: cd ./Landing-Front && git switch data
     - run: echo "${{ github.repository }}" | grep '[^/]*$' -o > branchName
     - run: export projectName=$(cat branchName)
-    - run: cat branchName && echo $projectName
-    - run: mkdir ./Landing-Front/projects/$projectName
+    - run: echo $projectName
+    - run: mkdir ./Landing-Front/projects/$projectName || true
     - run: cp ./LANDING.md ./Landing-Front/projects/$projectName
     - run: git add .
     - run: git commit -m "Update ${{ github.repository }} info"
