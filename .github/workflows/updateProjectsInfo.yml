@@ -26,14 +26,14 @@ jobs:
         
     - uses: actions/checkout@v2
     - run: git clone https://github.com/baikinkirill/Landing-Front.git
-    - run: ls
+    - run: git config --global user.email "bk@finebot.site"
+    - run: git config --global user.name "Baikin Kirill"
     - run: cd ./Landing-Front
     - run: cd ./Landing-Front && git switch data
     - run: mkdir ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o) || true
     - run: echo $(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: cp ./LANDING.md ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
-    - run: ls ./Landing-Front/projects
-    - run: git add .
-    - run: git commit -m "Update ${{ github.repository }} info"
-    - run: git push
+    - run: cd ./Landing-Front && git add .
+    - run: cd ./Landing-Front && git commit -m "Update ${{ github.repository }} info"
+    - run: cd ./Landing-Front && git push
     - run: echo ${{ github.repository }}
