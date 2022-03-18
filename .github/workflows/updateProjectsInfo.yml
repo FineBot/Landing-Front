@@ -54,6 +54,19 @@ jobs:
         branch: 'sync/${{ github.repository }}'
         delete-branch: true
         
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        path: Landing-Front
+        token: ${{ secrets.envPAT }}
+        committer: GitHub <noreply@github.com>
+        author: GitHub <noreply@github.com>
+        commit-message: update information about ${{ github.repository }}
+        title: Update information about ${{ github.repository }}
+        branch: 'data'
+        base: 'sync/${{ github.repository }}'
+        delete-branch: false
+        
     - name: checkoug Landing-Front
       uses: actions/checkout@v2
       with:
