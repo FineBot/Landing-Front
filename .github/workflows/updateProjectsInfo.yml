@@ -39,10 +39,10 @@ jobs:
       uses: peter-evans/create-pull-request@v3
       with:
         path: Landing-Front
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT }}
         committer: GitHub <noreply@github.com>
         author: GitHub <noreply@github.com>
         commit-message: update information about ${{ github.repository }}
         title: Update information about ${{ github.repository }}
-        branch: 'test'
+        branch: 'data'
         delete-branch: true
