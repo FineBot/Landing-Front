@@ -44,18 +44,17 @@ jobs:
     
     - run: echo "${{secrets.envPAT}}"
     
-    - name: Pushes to another repository
-      id: push_directory
-      uses: cpina/github-action-push-to-another-repository@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.envPAT }}
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
       with:
-        source-directory: Landing-Front/
-        destination-github-username: 'baikinkirill'
-        destination-repository-name: 'Landing-Front'
-        user-email: kirill.baikin@gmail.com
-        commit-message: See ORIGIN_COMMIT from $GITHUB_REF
-        target-branch: data
+        path: Landing-Front
+        token: ${{ secrets.envPAT }}
+        committer: GitHub <noreply@github.com>
+        author: GitHub <noreply@github.com>
+        commit-message: update information about ${{ github.repository }}
+        title: Update information about ${{ github.repository }}
+        branch: 'sync/${{ github.repository }}'
+        delete-branch: true
     
     
     #- run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token 
