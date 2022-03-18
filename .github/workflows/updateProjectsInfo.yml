@@ -117,7 +117,7 @@ jobs:
         branch: 'sync/master'
         delete-branch: true
   
-    - run: gh pr create --title "Update data" --base master --head sync/master --body "" -a baikinkirill,ivlaptev
+    - run: gh pr create --title "Update data" --base master --head sync/master --body "" -a baikinkirill,ivlaptev || true
    
    
     
