@@ -11,7 +11,7 @@ on:
         type: string
     secrets:
       envPAT:
-        required: false
+        required: true
 
 jobs:
   build:
@@ -41,6 +41,9 @@ jobs:
     - run: cp ./LANDING.md ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: cd ./Landing-Front && git add .
     - run: cd ./Landing-Front && git commit -m "Update LANDING.md"
+    
+    - run: echo "${{secrets.envPAT}}"
+    
     - name: Pushes to another repository
       id: push_directory
       uses: cpina/github-action-push-to-another-repository@main
