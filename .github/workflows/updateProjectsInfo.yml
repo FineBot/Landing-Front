@@ -54,6 +54,14 @@ jobs:
         branch: 'sync/${{ github.repository }}'
         delete-branch: true
         
+    - name: checkoug Landing-Front
+      uses: actions/checkout@v2
+      with:
+        repository: baikinkirill/Landing-Front
+        ref: data
+        path: Landing-Front
+        lfs: true
+        
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
@@ -63,9 +71,8 @@ jobs:
         author: GitHub <noreply@github.com>
         commit-message: update information about ${{ github.repository }}
         title: Update information about ${{ github.repository }}
-        branch: 'data'
-        base: 'sync/${{ github.repository }}'
-        delete-branch: false
+        branch: 'sync/${{ github.repository }}'
+        delete-branch: true
     
     
     #- run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token 
