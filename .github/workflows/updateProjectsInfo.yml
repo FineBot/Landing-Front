@@ -102,6 +102,7 @@ jobs:
     - run: cd ./Landing-Front && git submodule update --init --recursive -j 8
     - run: cd ./Landing-Front/data && git checkout data
     - run: cd ./Landing-Front/data && git pull
+    - run: cd ./Landing-Front && git add .
     - run: cd ./Landing-Front && git commit -m "Pulled down update to data"
     
     - name: Create Pull Request
