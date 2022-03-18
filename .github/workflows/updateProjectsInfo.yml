@@ -44,7 +44,7 @@ jobs:
     - name: Pushes to another repository
       uses: cpina/github-action-push-to-another-repository@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.PAT }}
+        API_TOKEN_GITHUB: ${{ secrets.token }}
       with:
         source-directory: 'Landing-Front'
         destination-github-username: 'baikinkirill'
