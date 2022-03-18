@@ -210,7 +210,7 @@ var data = [{
   }],
   "link": "WebVRShoot"
 }, {
-  "title": "Шfddfой реал56ьности56",
+  "title": "хелп",
   "description": "Шутер в формате виртуальной реальности, позволяющий оттачивать стрельбу из оружия разных видов и уворачиваться от вражеских пуль. В игре можно бросить вызов сразу нескольким противникам, либо сначала потренироваться в спокойной обстановке. В таком режиме у пользователя есть возможность стрелять по бутылкам в баре и мишеням в тире. На выбор представлено 5 моделей оружия, 4 локации и 3 уровня сложности.",
   "images": ["/images/projects/trpp-second-1/148579235-a4f9e25e-dc3c-49d8-b1a6-7dbabfa52a99.jpg?as=webp", "/images/projects/trpp-second-1/148580147-297f79e2-15e3-4b34-8108-9550982b0fe2.jpg?as=webp", "/images/projects/trpp-second-1/148580160-84ee7b40-83f9-439c-a37e-4e1184bd4dd5.jpg?as=webp", "/images/projects/trpp-second-1/148580059-71f366be-9f6c-44bf-a662-abf7e3e00003.jpg?as=webp"],
   "videos": [],
@@ -629,4 +629,4 @@ gallery.setActiveView(Math.floor(_projectsData.default.length / 2));
 updateProjectsInfo();
 document.getElementById("projects__tags__all").checked = true;
 },{"../data/projectsData":"rSus","../gallery/gallery":"Z6W6"}]},{},["TB2l"], null)
-//# sourceMappingURL=../dist/projects.93cf7a39.js.map
+//# sourceMappingURL=../dist/projects.864c0bc0.js.map
