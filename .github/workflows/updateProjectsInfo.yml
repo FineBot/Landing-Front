@@ -49,5 +49,5 @@ jobs:
         author: GitHub <noreply@github.com>
         commit-message: update information about ${{ github.repository }}
         title: Update information about ${{ github.repository }}
-        branch: 'data'
+        branch: 'test'
         delete-branch: true
