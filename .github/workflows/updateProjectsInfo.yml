@@ -33,7 +33,7 @@ jobs:
         path: Landing-Front
         lfs: true
         
-    - run: printf "protocol=https\nhost=github.com\nusername=baikinkirill\npassword=${{ secrets.PAT }}" | git credential fill
+    #- run: printf "protocol=https\nhost=github.com\nusername=baikinkirill\npassword=${{ secrets.PAT }}" | git credential fill
   
     - run: git config --global user.email "bk@finebot.site"
     - run: git config --global user.name "baikinkirill"
@@ -41,7 +41,17 @@ jobs:
     - run: cp ./LANDING.md ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: cd ./Landing-Front && git add .
     - run: cd ./Landing-Front && git commit -m "Update LANDING.md"
-    - run: cd ./Landing-Front && git push
+    - name: Pushes to another repository
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.PAT }}
+      with:
+        source-directory: 'Landing-Front'
+        destination-github-username: 'baikinkirill'
+        destination-repository-name: 'Landing-Front'
+        user-email: kirill.baikin@gmail.com
+        target-branch: data
+    #- run: cd ./Landing-Front && git push
     
     
     #- run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token 
