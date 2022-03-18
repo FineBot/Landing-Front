@@ -33,10 +33,7 @@ jobs:
         path: Landing-Front
         lfs: true
         
-    - run: git config --global user.email "bk@finebot.site"
-    - run: git config --global user.name "baikinkirill"
     - run: mkdir ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o) || true
-    - run: echo $(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: cp ./LANDING.md ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
