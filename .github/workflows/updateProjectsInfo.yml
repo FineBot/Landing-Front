@@ -40,8 +40,21 @@ jobs:
     - run: cp ./LANDING.md ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: cd ./Landing-Front && git add .
     - run: cd ./Landing-Front && git commit -m "Update LANDING.md"
-    - run: cd ./Landing-Front && git push
+    #- run: cd ./Landing-Front && git push
     
     
-    - run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token 
-    - run: gh pr create --title "New landing build" --base origin/data --head data --body "" -a baikinkirill
+    #- run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token 
+   # - run: gh pr create --title "New landing build" --base origin/data --head data --body "" -a baikinkirill
+   
+   
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        path: Landing-Front
+        token: ${{ secrets.PAT }}
+        committer: GitHub <noreply@github.com>
+        author: GitHub <noreply@github.com>
+        commit-message: update information about ${{ github.repository }}
+        title: Update information about ${{ github.repository }}
+        branch: 'sync/${{ github.repository }}'
+        delete-branch: true
