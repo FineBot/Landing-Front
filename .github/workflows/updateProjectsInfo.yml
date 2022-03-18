@@ -33,6 +33,7 @@ jobs:
         path: Landing-Front
         lfs: true
         
+    - run: git checkout -b sync/$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: git config --global user.email "bk@finebot.site"
     - run: git config --global user.name "baikinkirill"
     - run: cd ./Landing-Front && ls
@@ -42,5 +43,5 @@ jobs:
     - run: cd ./Landing-Front && git add .
     - run: cd ./Landing-Front && git commit -m "Update ${{ github.repository }} info"          
     - run: ls
-    - run: cd ./Landing-Front && git push
+    - run: cd ./Landing-Front && git push --set-upstream origin sync/$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: echo ${{ github.repository }}
