@@ -41,19 +41,7 @@ jobs:
     - run: cp ./LANDING.md ./Landing-Front/projects/$(echo "${{ github.repository }}" | grep '[^/]*$' -o)
     - run: cd ./Landing-Front && git add .
     - run: cd ./Landing-Front && git commit -m "Update LANDING.md"
-    
-    - name: Pushes to another repository
-      id: push_directory
-      uses: cpina/github-action-push-to-another-repository@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.token }}
-      with:
-        source-directory: Landing-Front/
-        destination-github-username: 'baikinkirill'
-        destination-repository-name: 'Landing-Front'
-        user-email: kirill.baikin@gmail.com
-        commit-message: See ORIGIN_COMMIT from $GITHUB_REF
-        target-branch: data
+    - run: echo "${{secrets.token}}"
     #- run: cd ./Landing-Front && git push
     
     
