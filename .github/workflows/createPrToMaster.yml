@@ -11,7 +11,8 @@ jobs:
 
     steps:
 
-     ########################
+    - run: git config --global user.email "bk@finebot.site"
+    - run: git config --global user.name "baikinkirill"
 
     - run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
 
