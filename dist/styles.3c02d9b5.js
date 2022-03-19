@@ -117,21 +117,29 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"lDcJ":[function(require,module,exports) {
-var parallaxInstance;
-var enabled = window.innerWidth < 1000;
-window.addEventListener("resize", setParallax);
+})({"nEPs":[function(require,module,exports) {
 
-function setParallax() {
-  if (window.innerWidth < 1000 && enabled) {
-    if (parallaxInstance) parallaxInstance.destroy();
-    enabled = false;
-  } else if (!enabled) {
-    parallaxInstance = new Parallax(document.getElementById("scene"));
-    enabled = true;
-  }
-}
+},{}],"jM7F":[function(require,module,exports) {
 
-setParallax();
-},{}]},{},["lDcJ"], null)
-//# sourceMappingURL=../dist/about.552ef0a9.js.map
+},{}],"XEZO":[function(require,module,exports) {
+"use strict";
+
+require("./indexStyles.scss");
+
+require("./js/gallery/gallery.scss");
+
+require("./layout/header/header.scss");
+
+require("./layout/about/about.scss");
+
+require("./layout/projects/projects.scss");
+
+require("./layout/achievements/achievements.scss");
+
+require("./layout/equipment/equipment.scss");
+
+require("./layout/staff/staff.scss");
+
+require("./layout/footer/footer.scss");
+},{"./indexStyles.scss":"nEPs","./js/gallery/gallery.scss":"nEPs","./layout/header/header.scss":"nEPs","./layout/about/about.scss":"nEPs","./layout/projects/projects.scss":"nEPs","./layout/achievements/achievements.scss":"nEPs","./layout/equipment/equipment.scss":"nEPs","./layout/staff/staff.scss":"nEPs","./layout/footer/footer.scss":"nEPs"}]},{},["XEZO"], null)
+//# sourceMappingURL=../dist/styles.3c02d9b5.js.map

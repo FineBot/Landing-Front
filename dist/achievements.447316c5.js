@@ -117,19 +117,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"yeke":[function(require,module,exports) {
-var swiper = new Swiper(".staff__swiper", {
-  spaceBetween: 10,
+})({"NENU":[function(require,module,exports) {
+var swiper = new Swiper(".achievements__swiperParent", {
   slidesPerView: "auto",
-  freeMode: true,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 00,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true
-  },
-  speed: 2200
+  spaceBetween: 15,
+  pagination: {
+    el: ".achievements__swiperPagination",
+    clickable: true
+  }
 });
-},{}]},{},["yeke"], null)
-//# sourceMappingURL=../dist/staff.95e90df2.js.map
+},{}]},{},["NENU"], null)
+//# sourceMappingURL=../dist/achievements.447316c5.js.map

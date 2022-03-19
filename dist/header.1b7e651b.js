@@ -117,14 +117,42 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"WznH":[function(require,module,exports) {
-var swiper = new Swiper(".projectsSwiperParent", {
-  slidesPerView: "auto",
-  spaceBetween: 15,
-  pagination: {
-    el: ".projectsSwiperPagination",
-    clickable: true
-  }
+})({"N0LX":[function(require,module,exports) {
+window.addEventListener("scroll", scrollFunction, {
+  passive: true
 });
-},{}]},{},["WznH"], null)
-//# sourceMappingURL=../dist/projectPageTemplate.392b58e2.js.map
+var children = Array.from(document.getElementById("pageContentParent").children);
+var headersChildren = Array.from(document.getElementById("headerElements").children);
+var lastActive = 0;
+
+function scrollFunction() {
+  var obj = document.getElementById("header");
+
+  if (window.scrollY > 50) {
+    obj.setAttribute("scroll", "true");
+  } else {
+    obj.setAttribute("scroll", "false");
+  }
+
+  var activeTab = lastActive;
+
+  for (var i = 0; i < children.length; i++) {
+    if (window.scrollY + window.innerHeight / 4 * 3 >= children[i].offsetTop) {
+      activeTab = i;
+    }
+  }
+
+  if (activeTab !== lastActive) {
+    setTab(activeTab);
+  }
+}
+
+function setTab(activeTab) {
+  headersChildren[lastActive].setAttribute("active", "false");
+  headersChildren[activeTab].setAttribute("active", "true");
+  lastActive = activeTab;
+}
+
+setTab(lastActive);
+},{}]},{},["N0LX"], null)
+//# sourceMappingURL=../dist/header.1b7e651b.js.map
