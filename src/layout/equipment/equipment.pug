@@ -7,20 +7,23 @@ article(class="equipment__parent" id="equipment")
   div(class="equipment__content")
     h1 Оборудование
     while i < equipmentData.length
-      .equipment__elements(invert=((i+1)%2===0).toString() lastelem=(i+1===equipmentData.length).toString() hidden=(i>0).toString()) 
+      .equipment__elements(invert=((i+1)%2===0).toString() lastelem=(i+1===equipmentData.length).toString() hidden=(i>0).toString())
         each obj in equipmentData[i]
-          if(!obj.style)
-            .equipment__element(style=`background: url("${obj.img}"), black;`)
+          if(obj.style)
+            .equipment__element(style=`background: black;`)
+              img(src=obj.img style=obj.style)
               span
                 = obj.name
               span.equipment__count
                 = obj.count
           else
-            .equipment__element(style=`background: url("${obj.img}"), black; ` + obj.style)
+            .equipment__element(style=`background: black;`)
+              img(src=obj.img)
               span
                 = obj.name
               span.equipment__count
                 = obj.count
+
 
       - i++
   button(onclick='for(let i of document.querySelectorAll(".equipment__elements[hidden=true]")) i.setAttribute("hidden","false"); this.style.display="none";')
