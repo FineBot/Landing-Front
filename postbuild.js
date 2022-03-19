@@ -64,7 +64,7 @@ fs.readdir(`./${baseDir}`, (err, files) => {
       let options = {
         files: path.join("./build/"+ENV_PATH, file),
         from: new RegExp(escapeRegExp(name), "g"),
-        to: "./"+staticDir + "/" + name.split("/").at(-1),
+        to: "/"+staticDir + "/" + name.split("/").at(-1),
       };
       try {
         let changedFiles = replace.sync(options);
@@ -77,7 +77,7 @@ fs.readdir(`./${baseDir}`, (err, files) => {
       let options = {
         files: path.join("./build/"+ENV_PATH, file),
         from: new RegExp(escapeRegExp(name), "g"),
-        to: "./"+assetsDir + "/" + name.split("/").at(-1),
+        to: "/"+assetsDir + "/" + name.split("/").at(-1),
       };
       try {
         let changedFiles = replace.sync(options);
