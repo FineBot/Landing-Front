@@ -37,7 +37,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         committer: GitHub <noreply@github.com>
         author: GitHub <noreply@github.com>
-        commit-message: update information about ${{ github.repository }}
+        commit-message: Update information in data branch
         title: Update information about ${{ github.repository }}
         branch: 'sync/master'
         delete-branch: true
