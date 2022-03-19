@@ -1,7 +1,7 @@
-# Hololens
+# EPSON BT-35E
 
-- count: 3 устройства
-- img: /images/hololens.webp
+- count: 2 устройства
+- img: ../data/equipment/images/EPSON BT-35E.png
 
 # Hololens
 
