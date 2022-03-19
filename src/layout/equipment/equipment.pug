@@ -1,4 +1,4 @@
-include ../../js/data/equipment.pug 
+include ../../js/data/equipment.pug
 
 -
   let i = 0;
@@ -11,14 +11,14 @@ article(class="equipment__parent" id="equipment")
         each obj in equipmentData[i]
           if(obj.style)
             .equipment__element(style=`background: black;`)
-              img(src=obj.img style=obj.style alt="" loading='lazy')
+              img(src=obj.img style=obj.style alt="" loading='auto')
               span
                 = obj.name
               span.equipment__count
                 = obj.count
           else
             .equipment__element(style=`background: black;`)
-              img(src=obj.img alt="" loading='lazy')
+              img(src=obj.img alt="" loading='auto')
               span
                 = obj.name
               span.equipment__count
