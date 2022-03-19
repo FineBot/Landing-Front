@@ -1,17 +1,17 @@
-# EPSON BT-35E
+# ZOTAC VR GO 2.0
 
-- count: 2 устройства
-- img: ../data/equipment/images/EPSON BT-35E.png
+- count: 1 устройство
+- img: ../data/equipment/images/ZOTAC VR GO 2.0.png
+
+# HTC VIVE Cosmos
+
+- count: 1 устройство
+- img: ../data/equipment/images/HTC VIVE Cosmos.png
 
 # Hololens
 
-- count: 6 устройств
-- img: images/htc_vive.webp
-
-# Hololens
-
-- count: 6
-- img: /images/hololens.webp
+- count: 9 устройств
+- img: ../data/equipment/images/HoloLens.png
 
 # Hololens
 
