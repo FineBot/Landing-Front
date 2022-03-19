@@ -13,35 +13,35 @@
 - count: 9 устройств
 - img: ../data/equipment/images/HoloLens.png
 
-# Hololens
+# HTC Vive Pro
 
-- count: 6
-- img: /images/hololens.webp
+- count: 2 устройства
+- img: ../data/equipment/images/HTC Vive Pro.png
 
-# Hololens
+# HTC Vive
 
-- count: 6
-- img: /images/hololens.webp
+- count: 8 устройств
+- img: ../data/equipment/images/HTC Vive.png
 
-# Hololens
+# EPSON BT-35E
 
-- count: 6
-- img: /images/hololens.webp
+- count: 2 устройства
+- img: ../data/equipment/images/EPSON BT-35E.png
 
-# Hololens
+# EPSON BT-300 H756A
 
-- count: 6
-- img: /images/hololens.webp
+- count: 3 устройства
+- img: ../data/equipment/images/EPSON BT-300 H756A.png
 
-# Hololens
+# Oculus Quest
 
-- count: 6
-- img: /images/hololens.webp
+- count: 2 устройства
+- img: ../data/equipment/images/Oculus Quest.png
 
-# Hololens
+# Microsoft Azure Kinect
 
-- count: 6
-- img: /images/hololens.webp
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
 
 # Hololens
 
