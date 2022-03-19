@@ -51,3 +51,80 @@
 - count: 4 устройства
 - img: ../data/equipment/images/Microsoft Azure Kinect.png
 - style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- style:
