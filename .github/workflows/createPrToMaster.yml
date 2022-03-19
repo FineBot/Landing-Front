@@ -1,4 +1,4 @@
-name: Create pr to data ref
+name: Update information in data branch
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
         committer: GitHub <noreply@github.com>
         author: GitHub <noreply@github.com>
         commit-message: Update information in data branch
-        title: Update information about ${{ github.repository }}
+        title: Update information in data branch
         branch: 'sync/master'
         delete-branch: true
 
