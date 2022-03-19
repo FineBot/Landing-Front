@@ -274,7 +274,7 @@ function GalleryItem(_ref) {
       _ref$hide = _ref.hide,
       hide = _ref$hide === void 0 ? false : _ref$hide;
   return /*#__PURE__*/React.createElement("div", {
-    className: "gallery__galleryItem noselect",
+    className: 'gallery__galleryItem noselect',
     hide: hide.toString(),
     draggable: false
   }, children);
@@ -317,7 +317,7 @@ function gallery(elem, onMouseDown, onMouseUp, onChange) {
   var clearStyles = function clearStyles(i) {
     var children = elem.children;
     Array.from(children).forEach(function (e, index) {
-      e.style.opacity = "0";
+      e.style.opacity = '0';
 
       if (index < i) {
         e.style.transform = "translate(".concat(calculateX(-ratio * 2 - 20), "px,0px) scale(").concat(calculateScale(-2 * ratio - 20), ")");
@@ -364,10 +364,10 @@ function gallery(elem, onMouseDown, onMouseUp, onChange) {
 
   var setOpacity = function setOpacity(x) {
     var i = Number(x);
-    var children = elem.querySelectorAll(".gallery__parent > *");
+    var children = elem.querySelectorAll('.gallery__parent > *');
     var childrenArr = Array.from(children);
     childrenArr.forEach(function (e) {
-      e.style.opacity = "0";
+      e.style.opacity = '0';
     });
     var current = elem.children[i];
     if (current) current.style.opacity = 1;
@@ -391,8 +391,8 @@ function gallery(elem, onMouseDown, onMouseUp, onChange) {
     clearStyles(i);
     setZ(i);
     setOpacity(i);
-    current[i].style.transform = "";
-    current[i].style.filter = "";
+    current[i].style.transform = '';
+    current[i].style.filter = '';
     var currentArr = Array.from(elem.children);
     var l = 0;
 
@@ -425,7 +425,7 @@ function gallery(elem, onMouseDown, onMouseUp, onChange) {
 
   var onTouchEnd = function onTouchEnd() {
     elem.ontouchmove = null;
-    elem.classList.add("gallery__anim");
+    elem.classList.add('gallery__anim');
     var buff = localActiveView + Math.round((lastX - newX) / ratio);
 
     if (buff >= 0 && elem.children.length > buff) {
@@ -442,7 +442,7 @@ function gallery(elem, onMouseDown, onMouseUp, onChange) {
     }
 
     setTimeout(function () {
-      elem.classList.remove("gallery__anim");
+      elem.classList.remove('gallery__anim');
     }, 250);
   };
 
@@ -452,9 +452,9 @@ function gallery(elem, onMouseDown, onMouseUp, onChange) {
     onTouchEnd();
 
     if (isMobile()) {
-      window.removeEventListener("touchend", deleteEventListener);
+      window.removeEventListener('touchend', deleteEventListener);
     } else {
-      window.removeEventListener("mouseup", deleteEventListener);
+      window.removeEventListener('mouseup', deleteEventListener);
     }
 
     onMouseUp(e);
@@ -465,18 +465,18 @@ function gallery(elem, onMouseDown, onMouseUp, onChange) {
     if (wd > 1150) return 200;else if (wd > 1020) return 150;else if (wd > 820) return 130;else if (wd > 640) return 100;else if (wd > 520) return 80;else if (wd > 370) return 60;else return 50;
   }
 
-  elem.classList.add("gallery__anim");
+  elem.classList.add('gallery__anim');
   ratio = calculateRatio();
   setCurrentActivePanel(0);
-  window.addEventListener("resize", function () {
+  window.addEventListener('resize', function () {
     ratio = calculateRatio();
     setCurrentActivePanel(localActiveView);
   });
 
   if (isMobile()) {
     elem.ontouchstart = function (e) {
-      elem.classList.remove("gallery__anim");
-      window.addEventListener("touchend", deleteEventListener, {
+      elem.classList.remove('gallery__anim');
+      window.addEventListener('touchend', deleteEventListener, {
         passive: true
       });
       lastX = e.touches[0].clientX;
@@ -489,8 +489,8 @@ function gallery(elem, onMouseDown, onMouseUp, onChange) {
     };
   } else {
     elem.onmousedown = function (e) {
-      elem.classList.remove("gallery__anim");
-      window.addEventListener("mouseup", deleteEventListener, {
+      elem.classList.remove('gallery__anim');
+      window.addEventListener('mouseup', deleteEventListener, {
         passive: true
       });
       lastX = e.clientX;
@@ -507,10 +507,10 @@ function gallery(elem, onMouseDown, onMouseUp, onChange) {
     setActiveView: function setActiveView(i) {
       if (elem.children.length <= i) return false;
       localActiveView = i;
-      elem.classList.add("gallery__anim");
+      elem.classList.add('gallery__anim');
       setCurrentActivePanel(i);
       setTimeout(function () {
-        elem.classList.remove("gallery__anim");
+        elem.classList.remove('gallery__anim');
       }, 250);
     },
     galleryDestroy: function galleryDestroy() {
@@ -571,6 +571,7 @@ function updateProjectsInfo() {
   projectsInfo.classList.remove("projects__hide");
   currentProjectTitle.innerText = displayedProjects[currentActiveTab].title;
   currentProjectLink.href = "projects/" + displayedProjects[currentActiveTab].link;
+  currentProjectLink.style.display = "block";
 }
 
 function onChange(e) {
@@ -601,6 +602,7 @@ var generateProjects = function generateProjects(e) {
     generateStatusBar(0);
     galleryParent.append("Тут пусто :(");
     currentProjectTitle.innerHTML = "";
+    currentProjectLink.style.display = "none";
   } else {
     projects.forEach(function (e) {
       var newChild = document.createElement("div");
@@ -657,4 +659,4 @@ gallery.setActiveView(Math.floor(_projectsData.default.length / 2));
 updateProjectsInfo();
 document.getElementById("projects__tags__all").checked = true;
 },{"../data/projectsData":"rSus","../gallery/gallery":"Z6W6"}]},{},["TB2l"], null)
-//# sourceMappingURL=../dist/projects.3d51a678.js.map
+//# sourceMappingURL=../dist/projects.c71ffc57.js.map
