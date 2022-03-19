@@ -42,6 +42,7 @@ env/
 /src/js/data/
 /src/images/projects
 /src/images/achievements
+/src/achievements
 
 
 __pycache__
