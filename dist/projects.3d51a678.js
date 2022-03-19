@@ -125,6 +125,20 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var data = [{
+  "title": "CourseWork1213213223",
+  "description": "Шутер в формате виртуальной реальности, позволяющий оттачивать стрельбу из оружия разных видов и уворачиваться от вражеских пуль. В игре можно бросить вызов сразу нескольким противникам, либо сначала потренироваться в спокойной обстановке. В таком режиме у пользователя есть возможность стрелять по бутылкам в баре и мишеням в тире. На выбор представлено 5 моделей оружия, 4 локации и 3 уровня сложности.",
+  "images": ["/images/projects/CourseWork/148579235-a4f9e25e-dc3c-49d8-b1a6-7dbabfa52a99.jpg?as=webp", "/images/projects/CourseWork/148580147-297f79e2-15e3-4b34-8108-9550982b0fe2.jpg?as=webp", "/images/projects/CourseWork/148580160-84ee7b40-83f9-439c-a37e-4e1184bd4dd5.jpg?as=webp", "/images/projects/CourseWork/148580059-71f366be-9f6c-44bf-a662-abf7e3e00003.jpg?as=webp"],
+  "videos": [],
+  "tags": ["VR", "Game"],
+  "tech": ["Unity", "C#"],
+  "developers": ["Егоркин Н.Е.", "Шорин И.А."],
+  "site": "",
+  "sourcecode": [{
+    "name": "Исходный код",
+    "link": "https://github.com/RTUITLab/VRDuel"
+  }],
+  "link": "CourseWork"
+}, {
   "title": "Многопользовательская сборка ракетного двигателя",
   "description": "Приложение дает пользователям возможность осуществлять процесс сборки предоставленной модели в формате виртуальной реальности. Люди могут собирать ракетный двигатель как самостоятельно, так и в многопользовательской комнате, объединившись с напарниками. Процесс сопровождают различные подсказки и тексты с описаниями деталей. Все это, вкупе с глубоким погружением, способствует быстрому усвоению материала. При окончании сборки модель становится анимированной и демонстрирует свой принцип работы.",
   "images": ["/images/projects/Engine-VR/141160470-a31d20dd-86bd-4be8-9308-a631227b5ba0.png?as=webp", "/images/projects/Engine-VR/141155619-bb28a0e8-fd3b-4359-97e5-36f3d1cf71c3.png?as=webp", "/images/projects/Engine-VR/141155697-f247130d-e9a9-4f7d-812c-7a328e3022af.png?as=webp", "/images/projects/Engine-VR/141155722-2e5c8eab-dfef-42f7-ae67-daf43e1756d6.png?as=webp"],
@@ -209,6 +223,34 @@ var data = [{
     "link": "https://github.com/RTUITLab/WebVRShoot"
   }],
   "link": "WebVRShoot"
+}, {
+  "title": "SFSDLFJSLDF5432",
+  "description": "Шутер в формате виртуальной реальности, позволяющий оттачивать стрельбу из оружия разных видов и уворачиваться от вражеских пуль. В игре можно бросить вызов сразу нескольким противникам, либо сначала потренироваться в спокойной обстановке. В таком режиме у пользователя есть возможность стрелять по бутылкам в баре и мишеням в тире. На выбор представлено 5 моделей оружия, 4 локации и 3 уровня сложности.",
+  "images": ["/images/projects/googletest/148579235-a4f9e25e-dc3c-49d8-b1a6-7dbabfa52a99.jpg?as=webp", "/images/projects/googletest/148580147-297f79e2-15e3-4b34-8108-9550982b0fe2.jpg?as=webp", "/images/projects/googletest/148580160-84ee7b40-83f9-439c-a37e-4e1184bd4dd5.jpg?as=webp", "/images/projects/googletest/148580059-71f366be-9f6c-44bf-a662-abf7e3e00003.jpg?as=webp"],
+  "videos": [],
+  "tags": ["VR", "Game"],
+  "tech": ["Unity", "C#"],
+  "developers": ["Егоркин Н.Е.", "Шорин И.А."],
+  "site": "",
+  "sourcecode": [{
+    "name": "Исходный код",
+    "link": "https://github.com/RTUITLab/VRDuel"
+  }],
+  "link": "googletest"
+}, {
+  "title": "хелп5",
+  "description": "Шутер в формате виртуальной реальности, позволяющий оттачивать стрельбу из оружия разных видов и уворачиваться от вражеских пуль. В игре можно бросить вызов сразу нескольким противникам, либо сначала потренироваться в спокойной обстановке. В таком режиме у пользователя есть возможность стрелять по бутылкам в баре и мишеням в тире. На выбор представлено 5 моделей оружия, 4 локации и 3 уровня сложности.",
+  "images": ["/images/projects/trpp-second-1/148579235-a4f9e25e-dc3c-49d8-b1a6-7dbabfa52a99.jpg?as=webp", "/images/projects/trpp-second-1/148580147-297f79e2-15e3-4b34-8108-9550982b0fe2.jpg?as=webp", "/images/projects/trpp-second-1/148580160-84ee7b40-83f9-439c-a37e-4e1184bd4dd5.jpg?as=webp", "/images/projects/trpp-second-1/148580059-71f366be-9f6c-44bf-a662-abf7e3e00003.jpg?as=webp"],
+  "videos": [],
+  "tags": ["VR", "Game"],
+  "tech": ["Unity", "C#"],
+  "developers": ["Егоркин Н.Е.", "Шорин И.А."],
+  "site": "",
+  "sourcecode": [{
+    "name": "Исходный код",
+    "link": "https://github.com/RTUITLab/VRDuel"
+  }],
+  "link": "trpp-second-1"
 }];
 var _default = data;
 exports.default = _default;
@@ -615,4 +657,4 @@ gallery.setActiveView(Math.floor(_projectsData.default.length / 2));
 updateProjectsInfo();
 document.getElementById("projects__tags__all").checked = true;
 },{"../data/projectsData":"rSus","../gallery/gallery":"Z6W6"}]},{},["TB2l"], null)
-//# sourceMappingURL=../dist/projects.6da2e4fd.js.map
+//# sourceMappingURL=../dist/projects.3d51a678.js.map
