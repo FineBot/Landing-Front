@@ -23,20 +23,20 @@ meta(name='twitter:site' content='https://rtuitlab.dev')
 // Twitter
 // Google
 script(type='application/ld+json').
-  {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "url": "https://rtuitlab.dev",
-  "logo": "https://rtuitlab.dev/images/logo.png",
-  "address": {
-  "@type": "PostalAddress",
-  "addressLocality": "Москва, Россия",
-  "postalCode": "119454",
-  "streetAddress": "пр. Вернадского 78"
-  },
-  "email": "contact@rtuitlab.dev",
-  "name": "RTUITLab"
-  }
+	{
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	"url": "https://rtuitlab.dev",
+	"logo": "https://rtuitlab.dev/images/logo.png",
+	"address": {
+	"@type": "PostalAddress",
+	"addressLocality": "Москва, Россия",
+	"postalCode": "119454",
+	"streetAddress": "пр. Вернадского 78"
+	},
+	"email": "contact@rtuitlab.dev",
+	"name": "RTUITLab"
+	}
 // Google
 // END SEO BLOCK
 link(rel='apple-touch-icon' href='images/logo.png')
@@ -45,32 +45,32 @@ meta(name='apple-mobile-web-app-capable' content='yes')
 title RTUITLab
 script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-160294645-1')
 script.
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-  dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-  gtag("config", "UA-160294645-1");
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+	dataLayer.push(arguments);
+	}
+	gtag("js", new Date());
+	gtag("config", "UA-160294645-1");
 script.
-  if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function () {
-  navigator.serviceWorker
-  .register("service-worker.js")
-  .then(
-  function (registration) {
-  console.log(
-  "ServiceWorker registration successful with scope: ",
-  registration.scope
-  );
-  },
-  function (err) {
-  console.log("ServiceWorker registration failed: ", err);
-  }
-  )
-  .catch(function (err) {
-  console.log(err);
-  });
-  });
-  } else {
-  console.log("Service worker is not supported");
-  }
+	if ("serviceWorker" in navigator) {
+	window.addEventListener("load", function () {
+	navigator.serviceWorker
+	.register("service-worker.js")
+	.then(
+	function (registration) {
+	console.log(
+	"ServiceWorker registration successful with scope: ",
+	registration.scope
+	);
+	},
+	function (err) {
+	console.log("ServiceWorker registration failed: ", err);
+	}
+	)
+	.catch(function (err) {
+	console.log(err);
+	});
+	});
+	} else {
+	console.log("Service worker is not supported");
+	}
