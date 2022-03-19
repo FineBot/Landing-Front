@@ -150,8 +150,8 @@ module.exports.generateProjectsFile = function () {
       exec(cmd, () => {
         for (let i in result) {
           // проверяем, есть ли у нас в папке проекта файл index.pug
-          if(fs.existsSync(`/data/projects/${dir[i]}/index.pug`)){
-            let content = fs.readFileSync(`/data/projects/${dir[i]}/index.pug`,"utf-8")
+          if(fs.existsSync(`./data/projects/${dir[i]}/index.pug`)){
+            let content = fs.readFileSync(`./data/projects/${dir[i]}/index.pug`,"utf-8")
             fs.writeFileSync( `./src/projects/${dir[i]}.pug`,content,"utf-8")
           }else{
             fs.writeFileSync(
