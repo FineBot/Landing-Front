@@ -92,7 +92,7 @@
 
 - count: 4 устройства
 - img: ../data/equipment/images/Microsoft Azure Kinect.png
-- style:
+- style: background-color:red;
 
 # Microsoft Azure Kinect
 
