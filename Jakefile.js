@@ -150,7 +150,7 @@ task("buildFrontProd", function () {
 			+ "&& mkdir .\\build\\images "
 			+ "&& xcopy /E .\\src\\images .\\build\\images\\ "
 			+ "&& node .\\postbuild.js && node .\\postbuild.js projects && node .\\postbuild.js achievements"
-			+ "&& xcopy /E .\\robots.txt .\\build\\"
+			+ "&& xcopy .\\robots.txt .\\build\\"
 			+ "&& exit 0";
 		exec(command, (err, stdout, stderr) => {
 			if (err) {
