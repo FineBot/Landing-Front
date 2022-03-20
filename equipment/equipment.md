@@ -82,10 +82,41 @@
 - img: ../data/equipment/images/Insta360 Pro 1.png
 - style: bottom: -20px;
 
-# Microsoft Azure Kinect
+# Lenovo VR HeadSet
 
-- count: 4 устройства456
-- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- count: 1 устройство
+- img: ../data/equipment/images/Lenovo VR HeadSet.png
+- style: top: 15px;
+
+# Unitree A1
+
+- count: 2 устройства
+- img: ../data/equipment/images/Unitree A1.webp
+- style: top: -10px; min-width: 540px; height: fit-content; object-fit: contain;
+
+# Leap Motion Controller
+
+- count: 4 устройства
+- img: ../data/equipment/images/Leap Motion Controller.png
+- style: bottom: 20px;
+
+# Insta360 Pro 2
+
+- count: 1 устройство
+- img: ../data/equipment/images/Insta360 Pro 2.png
+- style: bottom: -15px;
+
+# MacBook Pro
+
+- count: 4 устройства
+- img: ../data/equipment/images/MacBook Pro (13-inch, 2016, TouchBar).png
+- style: transform: scale(1.3); top: 15px;
+
+# Magic Leap One
+
+- count: 1 устройство
+- img: ../data/equipment/images/Magic Leap One.png
+- style: top: 20%;
 
 # Microsoft Azure Kinect
 
@@ -97,6 +128,25 @@
 - count: 4 устройства
 - img: ../data/equipment/images/Microsoft Azure Kinect.png
 
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+
+
 # Microsoft Azure Kinect
 
 - count: 4 устройства
@@ -107,7 +157,17 @@
 - count: 4 устройства
 - img: ../data/equipment/images/Microsoft Azure Kinect.png
 
+
 # Microsoft Azure Kinect
 
 - count: 4 устройства
 - img: ../data/equipment/images/Microsoft Azure Kinect.png
+
+
+
+# Microsoft Azure Kinect
+
+- count: 4 устройства
+- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- 
+- 

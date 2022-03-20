@@ -1,29 +1,9 @@
-EPSON BT-35E x2
-EPSON BT-300 H756A x3
 EPSON ELPAC01 x3
-HoloLens x9
-HoloLens 2 x2
-HTC Vive x8
-HTC VIVE Cosmos x1
-HTC Vive Pro x2
 Insta360 farsight x1
-Insta360 Pro 2 x1
-Insta360 Pro 1 x1
-Magic Leap One x1
 Intel RealSense sr300 VF0810 x2
-Leap Motion Controller x4
 Lenovo VR HeadSet x1
-Microsoft Azure Kinect x4
-Oculus Quest x2
-Oculus Rift CV1 x11
-ODG R7 x1
 QNAP 4D Pro x1
-ZOTAC VR GO 2.0 x1
 Unitree Aliengo x1
-Unitree A1 x2
-Asus ROG G531G x5
 ASUS ROG GL502VS-FY062T x3
 ASUS ROG GL502VS-GZ415T x23
 ASUS ROG GL703GS x2
-MacBook Pro (13-inch, 2016, TouchBar) x4
-Microsoft Azure Kinect x4
