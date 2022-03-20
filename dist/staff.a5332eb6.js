@@ -122,7 +122,7 @@ var swiper = new Swiper('.staff__swiper', {
   spaceBetween: 10,
   slidesPerView: 'auto',
   freeMode: true,
-  loop: true,
+  loop: false,
   loopFillGroupWithBlank: true,
   autoplay: {
     delay: 00,
@@ -132,4 +132,4 @@ var swiper = new Swiper('.staff__swiper', {
   speed: 2200
 });
 },{}]},{},["yeke"], null)
-//# sourceMappingURL=../dist/staff.7dacc5d2.js.map
+//# sourceMappingURL=../dist/staff.a5332eb6.js.map
