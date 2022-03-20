@@ -138,8 +138,20 @@ task("createEnv", function () {
 desc("Build Landing Front prod");
 task("buildFrontProd", function () {
 	return new Promise((resolve, reject) => {
-		let command = "rm -rf build " + "&& parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache " + "&& parcel build ./src/projects/*.pug --out-dir build/projects --public-url ./ --no-minify --no-cache " + "&& parcel build ./src/achievements/*.pug --out-dir build/achievements --public-url ./ --no-minify --no-cache " + "&& cp -a ./src/images ./build/images " + "&& node ./postbuild.js && node ./postbuild.js projects && node ./postbuild.js achievements" + "&& exit 0";
-		if (process.platform === "win32") command = "rmdir /s /q \"build\" 2> nul " + "& mkdir build " + "&& parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache " + "&& parcel build ./src/projects/*.pug --out-dir build/projects --public-url ./ --no-minify --no-cache " + "&& parcel build ./src/achievements/*.pug --out-dir build/achievements --public-url ./ --no-minify --no-cache " + "&& mkdir .\\build\\images " + "&& xcopy /E .\\src\\images .\\build\\images\\ " + "&& node .\\postbuild.js && node .\\postbuild.js projects && node .\\postbuild.js achievements" + "&& exit 0";
+		let command = "rm -rf build " + "&& parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache " + "&& parcel build ./src/projects/*.pug --out-dir build/projects --public-url ./ --no-minify --no-cache " + "&& parcel build ./src/achievements/*.pug --out-dir build/achievements --public-url ./ --no-minify --no-cache "
+			+ "&& cp -a ./src/images ./build/images "
+			+ "&& node ./postbuild.js && node ./postbuild.js projects && node ./postbuild.js achievements"
+			+ "&& cp -a ./robots.txt ./build/"
+			+ "&& exit 0";
+		if (process.platform === "win32") command = "rmdir /s /q \"build\" 2> nul "
+			+ "& mkdir build " + "&& parcel build ./src/index.pug --out-dir build --public-url ./ --no-minify --no-cache "
+			+ "&& parcel build ./src/projects/*.pug --out-dir build/projects --public-url ./ --no-minify --no-cache "
+			+ "&& parcel build ./src/achievements/*.pug --out-dir build/achievements --public-url ./ --no-minify --no-cache "
+			+ "&& mkdir .\\build\\images "
+			+ "&& xcopy /E .\\src\\images .\\build\\images\\ "
+			+ "&& node .\\postbuild.js && node .\\postbuild.js projects && node .\\postbuild.js achievements"
+			+ "&& xcopy /E .\\robots.txt .\\build\\"
+			+ "&& exit 0";
 		exec(command, (err, stdout, stderr) => {
 			if (err) {
 				console.error(stderr);
