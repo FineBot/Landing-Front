@@ -26,7 +26,7 @@
 
 - count: 2 устройства
 - img: ../data/equipment/images/HTC Vive Pro.png
-- style: transform: rotate(-15deg); top: -20px; right: -20%; 
+- style: transform: rotate(-15deg); top: -20px; right: -20%;
 
 # HTC Vive
 
@@ -40,11 +40,11 @@
 - img: ../data/equipment/images/Oculus Rift CV1.png
 - style: top: -10px; transform: scaleX(-1);
 
-# Oculus Quest
+# Unitree Aliengo
 
-- count: 2 устройства
-- img: ../data/equipment/images/Oculus Quest.png
-- style: top: 20%; transform: scale(1.5);
+- count: 1 устройство
+- img: ../data/equipment/images/Unitree Aliengo.png
+- style: top: 50px; transform: scale(1.4); width: 60vw; max-width: 670px;
 
 # Microsoft Azure Kinect
 
@@ -91,8 +91,8 @@
 # Unitree A1
 
 - count: 2 устройства
-- img: ../data/equipment/images/Unitree A1.webp
-- style: top: -10px; min-width: 540px; height: fit-content; object-fit: contain;
+- img: ../data/equipment/images/Unitree A1.png
+- style: top: -15px; width: 60vw; max-width: 670px; object-fit: contain;
 
 # Leap Motion Controller
 
@@ -118,56 +118,44 @@
 - img: ../data/equipment/images/Magic Leap One.png
 - style: top: 20%;
 
-# Microsoft Azure Kinect
+# ASUS ROG GL502VS-GZ415T
 
-- count: 4 устройства
-- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- count: 23 устройства
+- img: ../data/equipment/images/ASUS ROG GL502VS-GZ415T.png
+- style: bottom: 15px; transform: scale(0.9);
 
-# Microsoft Azure Kinect
+# Intel RealSense sr300 VF0810
 
-- count: 4 устройства
-- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- count: 2 устройства
+- img: ../data/equipment/images/Intel RealSense sr300 VF0810.png
+- style: bottom: -15px;
 
+# ASUS ROG GL502VS-FY062T
 
-# Microsoft Azure Kinect
+- count: 3 устройства
+- img: ../data/equipment/images/ASUS ROG GL502VS-FY062T.png
+- style: top: 0px;
 
-- count: 4 устройства
-- img: ../data/equipment/images/Microsoft Azure Kinect.png
+# Oculus Quest
 
+- count: 2 устройства
+- img: ../data/equipment/images/Oculus Quest.png
+- style: top: 20%; transform: scale(1.5);
 
-# Microsoft Azure Kinect
+# ASUS ROG GL703GS
 
-- count: 4 устройства
-- img: ../data/equipment/images/Microsoft Azure Kinect.png
+- count: 2 устройства
+- img: ../data/equipment/images/ASUS ROG GL703GS.png
+- style: transform: scale(0.8); bottom: -10px;
 
+# QNAP 4D Pro
 
-# Microsoft Azure Kinect
+- count: 1 устройство
+- img: ../data/equipment/images/QNAP 4D Pro.png
+- style: bottom: 10px; transform: scale(0.8);
 
-- count: 4 устройства
-- img: ../data/equipment/images/Microsoft Azure Kinect.png
+# Insta360 farsight
 
-
-# Microsoft Azure Kinect
-
-- count: 4 устройства
-- img: ../data/equipment/images/Microsoft Azure Kinect.png
-
-# Microsoft Azure Kinect
-
-- count: 4 устройства
-- img: ../data/equipment/images/Microsoft Azure Kinect.png
-
-
-# Microsoft Azure Kinect
-
-- count: 4 устройства
-- img: ../data/equipment/images/Microsoft Azure Kinect.png
-
-
-
-# Microsoft Azure Kinect
-
-- count: 4 устройства
-- img: ../data/equipment/images/Microsoft Azure Kinect.png
-- 
-- 
+- count: 1 устройство
+- img: ../data/equipment/images/Insta360 farsight.png
+- style: top: 10px;
