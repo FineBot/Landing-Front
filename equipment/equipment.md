@@ -139,7 +139,7 @@
 # Oculus Quest
 
 - count: 2 устройства
-- img: ../data/equipment/images/Oculus Quest.png
+- img: ../data/equipment/images/Oculus Quest.webp
 - style: top: 20%; transform: scale(1.5);
 
 # ASUS ROG GL703GS
