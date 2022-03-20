@@ -20,136 +20,136 @@
 
 # Оля Быковская
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Дмитрий Цуканов
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Михаил Корчиков
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Иван Шошников
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Илья Иерусалимов
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Артём Сергеев
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Анастас Мисаилиди
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Александр Шиханов
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Александр Левандровский
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Кирилл Шутов
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Данила Валяев
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Дмитрий Макаров
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Иван Шорин
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Никита Егоркин
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Никита Новаков
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Марина Баканова
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Ярослав Акатьев
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Никита Миронов
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Сергей Китанин
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Михаил Красовский
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Карл Романов
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Михаил Щеглов
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Саша Корольков
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Иван Малов
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Даниил Демин
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Ярослав Смирнов
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Рома Суринов
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Юрий Фоменков
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Кирилл Баикин
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Alex Chentsov
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Кирилл Подольский
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Семён Летягин
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Никита Морошкин
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
 
 # Александр Запорожских
 - img: ../data/staff/images/default.webp
-- tags None
+- tags: None
