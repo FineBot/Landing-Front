@@ -41,7 +41,7 @@
 # Иван Шошников
 
 - img: ../data/staff/images/Shoshnikov.webp
-- tags: ???
+- tags: 3D Modeling
 
 # Илья Иерусалимов
 
@@ -81,7 +81,7 @@
 # Дмитрий Макаров
 
 - img: ../data/staff/images/Makarov.webp
-- tags: GameDev, Unity
+- tags: GameDev, Unity, VR
 
 # Иван Шорин
 
@@ -121,7 +121,7 @@
 # Михаил Красовский
 
 - img: ../data/staff/images/default.webp
-- tags: ???
+- tags: GameDev, VR
 
 # Егор Парамошкин
 
@@ -151,7 +151,7 @@
 # Ярослав Смирнов
 
 - img: ../data/staff/images/default.webp
-- tags: GameDev, Unity
+- tags: GameDev, Unity, VR
 
 # Рома Суринов
 
@@ -186,7 +186,7 @@
 # Никита Морошкин
 
 - img: ../data/staff/images/default.webp
-- tags: ???
+- tags: ML
 
 # Александр Запорожских
 
