@@ -1,6 +1,6 @@
 # Андрей Сергеевич
 
-- img ../data/staff/images/Zuev.webp
+- img: ../data/staff/images/Zuev.webp
 - tags: CEO
 
 # Максим Макущенко
