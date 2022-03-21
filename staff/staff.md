@@ -1,4 +1,4 @@
-# Андрей Сергеевич
+# Зуев Андрей Сергеевич
 
 - img: ../data/staff/images/Zuev.webp
 - tags: CEO
