@@ -35,7 +35,6 @@
 # Images
 
 - ../data/achievements/ymnik2022/images/img.png
-- https://www.wallpapers13.com/wp-content/uploads/2015/12/Burning_sun_wallpaper-95486.jpg
 
 ---
 
