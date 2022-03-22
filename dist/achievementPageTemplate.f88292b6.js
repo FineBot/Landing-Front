@@ -117,13 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"S3uK":[function(require,module,exports) {
-
-},{}],"TqLU":[function(require,module,exports) {
-"use strict";
-
-require("../../layout/achievementPageTemplate/achievementPageTemplate.scss");
-
+})({"TqLU":[function(require,module,exports) {
 var swiper = new Swiper(".achievementsSwiperParent", {
   slidesPerView: "auto",
   spaceBetween: 15,
@@ -132,5 +126,5 @@ var swiper = new Swiper(".achievementsSwiperParent", {
     clickable: true
   }
 });
-},{"../../layout/achievementPageTemplate/achievementPageTemplate.scss":"S3uK"}]},{},["TqLU"], null)
-//# sourceMappingURL=../dist/achievementPageTemplate.70372780.js.map
+},{}]},{},["TqLU"], null)
+//# sourceMappingURL=../dist/achievementPageTemplate.f88292b6.js.map
