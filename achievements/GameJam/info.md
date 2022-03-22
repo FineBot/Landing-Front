@@ -7,6 +7,7 @@
 # ShortDescription
 
 17 февраля завершился 48-часовой хакатон GAME JAM HTO от всероссийского сообщества «Кружковое движение» и проектов ПАО «СберБанк» – SberGames, Школа 21, SberZ и SberStudent.
+
 ---
 
 # LongDescription
