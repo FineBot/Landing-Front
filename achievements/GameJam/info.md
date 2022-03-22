@@ -35,7 +35,7 @@
 
 # Images
 
-- ../../data/achievements/GameJam/images/img.png
+- ../data/achievements/GameJam/images/img.png
 
 ---
 
