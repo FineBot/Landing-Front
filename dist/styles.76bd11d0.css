@@ -789,7 +789,7 @@ h1 {
   max-width: 100%;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  height: 100%;
+  height: 350px;
   object-fit: cover;
 }
 .equipment__parent {
@@ -1166,4 +1166,4 @@ h1 {
   color: #f3f3f3;
 }
 
-/*# sourceMappingURL=styles.63194265.css.map */
+/*# sourceMappingURL=styles.76bd11d0.css.map */
