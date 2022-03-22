@@ -1,5 +1,8 @@
 block variables
 
+-
+	var time =new Date(Date.parse(achievementData.date))
+
 doctype html
 html(lang="ru")
 	head
@@ -82,6 +85,9 @@ html(lang="ru")
 				article.info
 					h3 О событии
 					section#longdescription
+					p
+						strong
+							|Дата проведения: #{(time).toLocaleDateString("ru")}
 
 			section.members
 				h2 Участники
