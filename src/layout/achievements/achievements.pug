@@ -21,12 +21,12 @@ article#achievemtns.achievements__achievementsParent
 						.swiper-slide
 							.achievementCard__parent
 								h1
-									=obj.title
+									=obj.title.replaceAll("\\n","")
 								article.achievementCard__desc
 									p
-										=obj.shortdescription
+										=obj.shortdescription.replaceAll("\\n","")
 								a(href="achievements/" + obj.link) Подробнее
-								img(src='/images/background.webp' alt='Обложка достижения' loading='lazy')
+								img(src=obj.images[0] alt='Обложка достижения' loading='lazy')
 					.swiper-slide
 						div(style="width:5vw;")
 
