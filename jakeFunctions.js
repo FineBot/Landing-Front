@@ -133,8 +133,8 @@ function downloadImages(i, j) {
   return new Promise((resolve, reject) => {
 
     let result = [];
-    let res = exec(`curl -H "Authorization: token ${process.env.token}" --ssl-no-revoke --header 'Accept: application/vnd.github.v3.raw' -o ./src/images/projects/${i}/${j.match(/([^\/]*)$/gim)[0]} --location https://api.github.com/repos/rtuitlab/${i}/contents/${j}?ref=master`, (error, stdout) => {
-      console.log(i, j,stdout,error);
+    let res = exec(`curl -H "Authorization: token ${process.env.token}" --ssl-no-revoke --header 'Accept: application/vnd.github.v3.raw' -o ./src/images/projects/${i}/${j.match(/([^\/]*)$/gim)[0]} --location https://api.github.com/repos/rtuitlab/${i}/contents/${j}?ref=master`, (error, stdout, stderror) => {
+      console.log(i, j,stdout,error,stderror);
 
       try {
         let buff = JSON.parse(stdout);
