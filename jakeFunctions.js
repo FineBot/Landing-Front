@@ -157,14 +157,19 @@ async function downloadImagesMain(buff, i, type = 'projects') {
 		if (buff.images) {
 			let newImages = [];
 			for (let j of buff.images) {
-				console.log(i,j,j.match(/^(https?\:\/\/)/gim),j.startsWith('../'))
 				if (j.match(/^(https?\:\/\/)/gim)) {
+					console.log(i,j,j.match(/^(https?\:\/\/)/gim),j.startsWith('../'))
+
 					newImages.push(`/images/${type}/` + i + '/' + j.match(/([^\/]*)$/gim)[0] + '?as=webp');
 					let newPromise = download(j, `./src/images/${type}/` + i + '/' + j.match(/([^\/]*)$/gim)[0]);
 					result.push(newPromise);
 				} else if (j.startsWith('../')) {
+					console.log(i,j,j.match(/^(https?\:\/\/)/gim),j.startsWith('../'))
+
 					newImages.push(j);
 				} else {
+					console.log(i,j,j.match(/^(https?\:\/\/)/gim),j.startsWith('../'))
+
 					let newPromise = downloadImages(i, j);
 					result.push(newPromise);
 					newImages.push(`/images/${type}/` + i + '/' + j.match(/([^\/]*)$/gim)[0] + '?as=webp');
