@@ -132,9 +132,9 @@ function secondDownloadMethod(i, j) {
 function downloadImages(i, j) {
   return new Promise((resolve, reject) => {
     let result = [];
-    let res = exec(`curl -H "Authorization: token ${process.env.token}" --ssl-no-revoke --header 'Accept: application/vnd.github.v3.raw' -o ./src/images/projects/${i}/${j.match(/([^\/]*)$/gim)[0]} --location https://api.github.com/repos/rtuitlab/${i}/contents/${j}?ref=master`, () => {
+    let res = exec(`curl -H "Authorization: token ${process.env.token}" --ssl-no-revoke --header 'Accept: application/vnd.github.v3.raw' -o ./src/images/projects/${i}/${j.match(/([^\/]*)$/gim)[0]} --location https://api.github.com/repos/rtuitlab/${i}/contents/${j}?ref=master`, (error, stdout) => {
       try {
-        let buff = JSON.parse(res);
+        let buff = JSON.parse(stdout);
         if (buff.download_url) {
           result.push(download(buff.download_url, `./src/images/projects/${i}/${j.match(/([^\/]*)$/gim)[0]}`));
         } else {
