@@ -137,13 +137,13 @@ function downloadImages(i, j) {
 
       try {
         let buff = JSON.parse(stdout);
+        console.log(i,buff.download_url)
         if (buff.download_url) {
           result.push(download(buff.download_url, `./src/images/projects/${i}/${j.match(/([^\/]*)$/gim)[0]}`));
         } else {
           result.push(secondDownloadMethod(i, j).then(resolve));
         }
       } catch (e) {
-        console.log(i, j,error,stderror);
         result.push(secondDownloadMethod(i, j).then(resolve));
       }
       Promise.allSettled(result).then((e) => {
