@@ -158,17 +158,17 @@ async function downloadImagesMain(buff, i, type = 'projects') {
 			let newImages = [];
 			for (let j of buff.images) {
 				if (j.match(/^(https?\:\/\/)/gim)) {
-					console.log(i,j,j.match(/^(https?\:\/\/)/gim),j.startsWith('../'))
+					console.log(i,j,j.match(/^(https?\:\/\/)/gim),j.startsWith('../'),111)
 
 					newImages.push(`/images/${type}/` + i + '/' + j.match(/([^\/]*)$/gim)[0] + '?as=webp');
 					let newPromise = download(j, `./src/images/${type}/` + i + '/' + j.match(/([^\/]*)$/gim)[0]);
 					result.push(newPromise);
 				} else if (j.startsWith('../')) {
-					console.log(i,j,j.match(/^(https?\:\/\/)/gim),j.startsWith('../'))
+					console.log(i,j,j.match(/^(https?\:\/\/)/gim),j.startsWith('../'),222)
 
 					newImages.push(j);
 				} else {
-					console.log(i,j,j.match(/^(https?\:\/\/)/gim),j.startsWith('../'))
+					console.log(i,j,j.match(/^(https?\:\/\/)/gim),j.startsWith('../'),333)
 
 					let newPromise = downloadImages(i, j);
 					result.push(newPromise);
