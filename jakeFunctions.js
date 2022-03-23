@@ -134,7 +134,6 @@ function downloadImages(i, j) {
 
 		let result = [];
 		let res = exec(`curl -H "Authorization: token ${process.env.token}" --ssl-no-revoke --header 'Accept: application/vnd.github.v3.raw' -o ./src/images/projects/${i}/${j.match(/([^\/]*)$/gim)[0]} --location https://api.github.com/repos/rtuitlab/${i}/contents/${j}?ref=master`, (error, stdout) => {
-			console.log(i,j,stdout)
 			try {
 				let buff = JSON.parse(stdout);
 				if (buff.download_url) {
@@ -158,7 +157,7 @@ async function downloadImagesMain(buff, i, type = 'projects') {
 		if (buff.images) {
 			let newImages = [];
 			for (let j of buff.images) {
-				console.log(j)
+				console.log(i,j,j.match(/^(https?\:\/\/)/gim),j.startsWith('../'))
 				if (j.match(/^(https?\:\/\/)/gim)) {
 					newImages.push(`/images/${type}/` + i + '/' + j.match(/([^\/]*)$/gim)[0] + '?as=webp');
 					let newPromise = download(j, `./src/images/${type}/` + i + '/' + j.match(/([^\/]*)$/gim)[0]);
