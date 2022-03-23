@@ -60,7 +60,7 @@ html(lang="ru")
             .swiper-wrapper
               each object in obj.images.splice(1,obj.images.length)
                 .swiper-slide
-                  img(src="../../src"+object, alt="" loading='lazy')
+                  img(src="../"+object, alt="" loading='lazy')
           .swiper-pagination.projectsSwiperPagination
 
         section.info
@@ -93,4 +93,3 @@ html(lang="ru")
 
       section.otherInfo 
         block otherInfo
-

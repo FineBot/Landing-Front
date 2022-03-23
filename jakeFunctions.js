@@ -31,22 +31,6 @@ module.exports.ParseDirectory = async function ParseDirectory(resolve, list, dir
 	}
 };
 
-async function downloadImagesMain(buff, i, type = "projects") {
-	if (buff.images) {
-		let newImages = [];
-		for (let j of buff.images) {
-			if (j.match(/^(https?\:\/\/)/gim)) {
-				newImages.push(`/images/${type}/` + i + "/" + j.match(/([^\/]*)$/gim)[0] + "?as=webp");
-				await download(j, `./src/images/${type}/` + i + "/" + j.match(/([^\/]*)$/gim)[0]);
-			} else {
-				await downloadImages(i, j);
-				newImages.push(`/images/${type}/` + i + "/" + j.match(/([^\/]*)$/gim)[0] + "?as=webp");
-			}
-		}
-		buff.images = newImages;
-	}
-}
-
 module.exports.generateAchievementsFile = function () {
 	return new Promise(async (resolve, reject) => {
 		if (!process.env.token) reject("No token specified");
@@ -153,5 +137,23 @@ async function downloadImages(i, j) {
 		}
 	} catch (e) {
 		secondDownloadMethod(i, j);
+	}
+}
+
+async function downloadImagesMain(buff, i, type = "projects") {
+	if (buff.images) {
+		let newImages = [];
+		for (let j of buff.images) {
+			if (j.match(/^(https?\:\/\/)/gim)) {
+				newImages.push(`/images/${type}/` + i + "/" + j.match(/([^\/]*)$/gim)[0] + "?as=webp");
+				await download(j, `./src/images/${type}/` + i + "/" + j.match(/([^\/]*)$/gim)[0]);
+			} else if(j.startsWith("../")) {
+				newImages.push(j);
+			}else{
+				await downloadImages(i, j);
+				newImages.push(`/images/${type}/` + i + "/" + j.match(/([^\/]*)$/gim)[0] + "?as=webp");
+			}
+		}
+		buff.images = newImages;
 	}
 }
