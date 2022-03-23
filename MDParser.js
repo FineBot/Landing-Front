@@ -69,7 +69,10 @@ module.exports.parseMD2 = function(str) {
   }
 
   let result = {};
-  let strArray = str.split(/^\-\-\-$/gim);
+  let strArray = str.split(/^((\-\-\-)*\n*\#)/gim);
+
+  strArray=strArray.filter((e)=>!!e).map((e)=>'#'+e).map((e)=>e.replaceAll(/^(\-\-\-)/gmi,""))
+
   let names = [];
   strArray.forEach((e) => {
     let find = /#\s*(.*)/gim.exec(e);
