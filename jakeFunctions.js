@@ -133,7 +133,7 @@ function downloadImages(i, j) {
   return new Promise((resolve, reject) => {
 
     let result = [];
-    let res = exec(`curl --header "Authorization: token ${process.env.token}" --header 'Accept: application/vnd.github.v3.raw' -o ./src/images/projects/${i}/${j.match(/([^\/]*)$/gim)[0]} --ssl-no-revoke --location "https://api.github.com/repos/RTUITLab/${i}/contents/${j}"`, (error, stdout, stderror) => {
+    let res = exec(`curl --header "Authorization: token ${process.env.token}" --header 'Accept: application/vnd.github+json' -o ./src/images/projects/${i}/${j.match(/([^\/]*)$/gim)[0]} --ssl-no-revoke --location "https://api.github.com/repos/RTUITLab/${i}/contents/${j}"`, (error, stdout, stderror) => {
 
       try {
         let buff = JSON.parse(stdout);
