@@ -46,7 +46,7 @@ module.exports.parseMD2 = function(str) {
     if (saveBreaks) {
       str = str
         .replaceAll(/(\\n)/gim, '\\n')
-        .replaceAll(/([\n\r])/gim, '\\n')
+        .replaceAll(/([\n\r])/gim, '\\n');
     } else {
       str = str
         .replaceAll(/(\\n)/gim, ' ')
@@ -70,8 +70,7 @@ module.exports.parseMD2 = function(str) {
 
   let result = {};
   let strArray = str.split(/^((\-\-\-)*\n*\#)/gim);
-
-  strArray=strArray.filter((e)=>!!e).map((e)=>'#'+e).map((e)=>e.replaceAll(/^(\-\-\-)/gmi,""))
+  strArray = strArray.filter((e) => !!e).map((e) => '#' + e).map((e) => e.replaceAll(/^(\-\-\-)/gmi, ''));
 
   let names = [];
   strArray.forEach((e) => {
@@ -89,10 +88,7 @@ module.exports.parseMD2 = function(str) {
       case 'shortdescription':
       case 'date':
       default:
-        if(e.toLowerCase()==="longdescription")
-          result[e.toLowerCase()] = clearString(clearString(strArray[i], true).split(getNameRegex(e))[2], true);
-        else
-          result[e.toLowerCase()] = clearString(clearString(strArray[i], false).split(getNameRegex(e))[2], false);
+        if (e.toLowerCase() === 'longdescription') result[e.toLowerCase()] = clearString(clearString(strArray[i], true).split(getNameRegex(e))[2], true); else result[e.toLowerCase()] = clearString(clearString(strArray[i], false).split(getNameRegex(e))[2], false);
         break;
       case 'tags':
       case 'members':
@@ -141,64 +137,3 @@ module.exports.parseMD2 = function(str) {
   delete result[''];
   return result;
 };
-
-this.parseMD2(`
-
-# Title
-Сервис проектов RTUITLab
-
----
-# Description
-Сервис позволяет отслеживать проекты лаборатории, мониторить их прогресс
-Возможность хранить файлы, относящиеся к проекту, оставлять новости
-А также распределение ролей
-
----
-# Tags
-* Backend
-* Golang
-
----
-# Tech
-* Go
-* MongoDB
-
----
-# Developers
-* Демин Д.Д.
-* Миронов Н.М.
-* Лаптев И.А.
-* Корольков А.Д.
-* Баикин К.Е.
-
----
-
-# Images
-* ![list](landing/list.png)
-* ![show_ArtWay](landing/show_ArtWay.png)
-* ![show_ArtWay2](landing/show_ArtWay2.png)
-* ![show_VIKA](landing/show_VIKA.png)
-* ![edit_VIKA](landing/edit_VIKA.png)
-
----
-
-# Videos
-
----
-
-# Site
-https://manage.rtuitlab.dev/projects
-
----
-
-# SourceCode
-| name     | link                                             |
-| ---------| ------------------------------------------------ |
-| Бекенд   | https://github.com/RTUITLab/ITLab-Projects       |
-| Фронтенд | https://github.com/RTUITLab/ITLab-Projects-Front |
-
-
----
-
-
-`);
