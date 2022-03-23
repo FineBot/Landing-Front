@@ -125,7 +125,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var data = [{
+  "#": "",
   "title": "ARtillery",
+  "---": "",
   "description": "``` Игровое приложение в дополненной реальности для Android (ранее Android, iOS). Задача игрока – продержаться как можно дольше, отстреливаясь от противников, появляющихся в пространстве вокруг него. Для защиты игрок может перемещать и наклонять телефон, а также сбивать летящие в него снаряды. Для стрельбы нужно коснуться экрана. Со временем сложность увеличивается. Существует три типа противников с разными моделями поведения и сложностью, каждый из которых появляется реже или чаще других. Приложение реализовано с использованием ARCore, что позволяет ему работать без привязки к печатной метке. Ранняя версия приложения была реализована с использованием Vuforia, для работы требуется распечатать метку.",
   "images": ["/images/projects/ARtillery/ARtillery_Moment3.jpg?as=webp", "/images/projects/ARtillery/ARtillery_Moment-min.jpg?as=webp", "/images/projects/ARtillery/ARtillery_Moment2-min.jpg?as=webp", "/images/projects/ARtillery/ARtilleryAction.gif?as=webp"],
   "videos": ["https://youtu.be/BIoWlE25bD4"],
@@ -138,7 +140,9 @@ var data = [{
   }],
   "link": "ARtillery"
 }, {
+  "#": "",
   "title": "Многопользовательская сборка ракетного двигателя",
+  "---": "",
   "description": "``` Приложение дает пользователям возможность осуществлять процесс сборки предоставленной модели в формате виртуальной реальности. Люди могут собирать ракетный двигатель как самостоятельно, так и в многопользовательской комнате, объединившись с напарниками. Процесс сопровождают различные подсказки и тексты с описаниями деталей. Все это, вкупе с глубоким погружением, способствует быстрому усвоению материала. При окончании сборки модель становится анимированной и демонстрирует свой принцип работы.",
   "images": ["/images/projects/Engine-VR/141160470-a31d20dd-86bd-4be8-9308-a631227b5ba0.png?as=webp", "/images/projects/Engine-VR/141155619-bb28a0e8-fd3b-4359-97e5-36f3d1cf71c3.png?as=webp", "/images/projects/Engine-VR/141155697-f247130d-e9a9-4f7d-812c-7a328e3022af.png?as=webp", "/images/projects/Engine-VR/141155722-2e5c8eab-dfef-42f7-ae67-daf43e1756d6.png?as=webp"],
   "videos": ["https://youtu.be/6FTMDRp5fN4"],
@@ -152,7 +156,9 @@ var data = [{
   }],
   "link": "Engine-VR"
 }, {
+  "#": "",
   "title": "GameCenter (система рекордов)",
+  "---": "",
   "description": "Система предназначена для формирования очереди на выставочные стенды, для контроля посещаемости проектов лаборатории ИТ и предоставления игровой статистики пользователей. Также предусмотрено администрирование рекордов пользователей, игр, очередей.",
   "images": ["/images/projects/GameCenter-Front/1.png?as=webp", "/images/projects/GameCenter-Front/2.png?as=webp", "/images/projects/GameCenter-Front/3.png?as=webp", "/images/projects/GameCenter-Front/4.png?as=webp"],
   "videos": [],
@@ -169,7 +175,9 @@ var data = [{
   }],
   "link": "GameCenter-Front"
 }, {
+  "#": "",
   "title": "GeoHelper",
+  "---": "",
   "description": "``` Проект для реализации AR-слоя мира, в котором отображаются объекты дополненной реальности в зависимости от заданного географического положения. Проект состоит из сайта и приложений для платформ Android и IOS. Сайт предназначен для менеджмента данными, представляемых в AR-слое. Мобильное приложение служит для отображения AR-слоя мира на экране используемого устройства.",
   "images": ["/images/projects/GeoHelperUnity/1.png?as=webp", "/images/projects/GeoHelperUnity/2.png?as=webp", "/images/projects/GeoHelperUnity/3.png?as=webp", "/images/projects/GeoHelperUnity/4.png?as=webp"],
   "videos": [],
@@ -189,7 +197,9 @@ var data = [{
   }],
   "link": "GeoHelperUnity"
 }, {
+  "#": "",
   "title": "GyroBall",
+  "---": "",
   "description": "Мобильное приложение – игра для проверки удобства использования механики акселерометра.\nИспользование поворотов телефона для управления шариком. У шарика предполагается 4 состояния, соответствующих стихиям, каждое состояние несёт в себе определённую соответствующую механику. Локации к игре будут соответствовать стихийной тематике.",
   "images": ["/images/projects/GyroBall/23.JPG?as=webp", "/images/projects/GyroBall/21.JPG?as=webp", "/images/projects/GyroBall/1.png?as=webp", "/images/projects/GyroBall/2.png?as=webp", "/images/projects/GyroBall/3.png?as=webp"],
   "videos": [],
@@ -203,7 +213,9 @@ var data = [{
   }],
   "link": "GyroBall"
 }, {
+  "#": "",
   "title": "ITLab (система управления лабораторией)",
+  "---": "",
   "description": "Для организации работы людей в лаборатории создана система, учитывающая активность людей, участие в мероприятиях, оплату работы сотрудников. Система позволяет распределять нагрузку, обеспечивать прозрачность выполняемых действий и мероприятий. Сайт создан для внутреннего использования и доступ к имеют только сотрудники лаборатории. Проект состоит из нескольких бекендов, написанный на разных языках программирования, таких как C#, GO, Kotlin. Фронтенд реализован на фреймворке Vue.JS. Мобильное приложение для iOS реализовано на языке Swift с использованием фреймворка SwiftUI. Так же система имеет возможность уведомлять людей о изменениях, при помощи бота вконтакте или почты.",
   "images": ["/images/projects/ITLab/1.png?as=webp", "/images/projects/ITLab/2.png?as=webp", "/images/projects/ITLab/ios_1.png?as=webp", "/images/projects/ITLab/ios_2.png?as=webp"],
   "videos": [],
@@ -232,7 +244,9 @@ var data = [{
   }],
   "link": "ITLab"
 }, {
+  "#": "",
   "title": "Сервис проектов RTUITLab",
+  "---": "",
   "description": "Сервис позволяет отслеживать проекты лаборатории, мониторить их прогресс\nВозможность хранить файлы, относящиеся к проекту, оставлять новости\nА также распределение ролей",
   "tags": ["Backend", "Golang"],
   "tech": ["Go", "MongoDB"],
@@ -249,7 +263,9 @@ var data = [{
   }],
   "link": "ITLab-Projects"
 }, {
+  "#": "",
   "title": "Owl Cabin - Летай - созерцай - собирай - улучшай",
+  "---": "",
   "description": "Приложение представляет собой казуальную мобильную игру. Описание игрового процесса: пользователь заходит в приложение, выбирает локацию, собирает звёздочки и параллельно улучшает свой самолёт, после сбора определенного количества звёзд — игра завершается и можно выбрать локацию снова.\nИгра сделана простой как в логике, так и в управлении, потому что заточена под вовлечение пользователя не в процесс игры, а расслабление и наслаждение от полёта.\nНа фоне играет успокаивающая музыка, управление только голой.",
   "images": ["/images/projects/OwlCabin/1.png?as=webp", "/images/projects/OwlCabin/2.png?as=webp", "/images/projects/OwlCabin/3.png?as=webp", "/images/projects/OwlCabin/4.png?as=webp", "/images/projects/OwlCabin/5.png?as=webp", "/images/projects/OwlCabin/6.png?as=webp", "/images/projects/OwlCabin/7.png?as=webp"],
   "videos": [],
@@ -263,7 +279,9 @@ var data = [{
   }],
   "link": "OwlCabin"
 }, {
+  "#": "",
   "title": "Plane crash simulator",
+  "---": "",
   "description": "Симулятор, помещающий пользователя в ситуацию, когда он находится в падающем самолете",
   "images": ["/images/projects/PlaneCrashSimulator/1.png?as=webp", "/images/projects/PlaneCrashSimulator/2.png?as=webp", "/images/projects/PlaneCrashSimulator/3.png?as=webp"],
   "videos": [],
@@ -277,7 +295,9 @@ var data = [{
   }],
   "link": "PlaneCrashSimulator"
 }, {
+  "#": "",
   "title": "ЗИЛ",
+  "---": "",
   "description": "Проект для futurift кресла, который помещает игрока в зону боевых действий, где необходимо оторваться от преследования.",
   "images": ["/images/projects/Project-3IL/0.png?as=webp", "/images/projects/Project-3IL/1.png?as=webp", "/images/projects/Project-3IL/2.png?as=webp", "/images/projects/Project-3IL/3.png?as=webp"],
   "videos": [],
@@ -291,7 +311,9 @@ var data = [{
   }],
   "link": "Project-3IL"
 }, {
+  "#": "",
   "title": "Виртуальный ситуационный центр",
+  "---": "",
   "description": "Виртуальный ситуационный центр позволяет множеству людей в любой точке планеты взаимодействовать между собой в единой среде виртуальной реальности. При этом возможно использование любого доступного на данный момент шлема виртуальной реальности. Также сервисом можно пользоваться без шлема, используя клавиатуру и мышь. В сервисе реализована концепция комнат, к которым подключаются люди, и их общение происходит только внутри данного пространства. Разговоры и обмен файлами не выйдут за пределы выделенного пространства, что обеспечивает конфиденциальность приватного общения. Внутри выделенного виртуального пространства люди могут общаться при помощи голосового чата, могут обмениваться документами из облачных хранилищ (OneDrive, Google drive…), просматривать их, комментировать и обсуждать. В данный момент сервис находится на стадии открытого тестирования.",
   "images": ["/images/projects/SC/1.png?as=webp", "/images/projects/SC/2.png?as=webp"],
   "videos": ["https://youtu.be/HRFRQa3tMcI"],
@@ -302,7 +324,9 @@ var data = [{
   "sourcecode": [],
   "link": "SC"
 }, {
+  "#": "",
   "title": "StuDo",
+  "---": "",
   "description": "Сервис предназначен для людей, кто желает найти себе партнёров или команду для осуществления своей мечты! В чём заключается задача сервиса: это платформа для поиска людей или команды. Как происходит поиск команды: Вы выкладываете объявление, в котором кратко сообщаете о том, что хотите сделать, что собираетесь сделать именно Вы, и какие люди нужны вам в команды. Другие же просматривают ленту объявлений (или ищут по тегам) и видят ваше объявление и сообщают вам, что готовы принять участие в вашем проекте. На данный момент проект находится в разработке, в скором времени будет доступен для публичного тестирования. Данный сервис реализован на мобильных устройствах и разрабатывается под браузер.",
   "images": ["/images/projects/StuDo/1.png?as=webp", "/images/projects/StuDo/2.png?as=webp", "/images/projects/StuDo/3.png?as=webp"],
   "videos": ["https://youtu.be/WyLDHwuZedc"],
@@ -325,7 +349,9 @@ var data = [{
   }],
   "link": "StuDo"
 }, {
+  "#": "",
   "title": "Шутер в виртуальной реальности",
+  "---": "",
   "description": "Шутер в формате виртуальной реальности, позволяющий оттачивать стрельбу из оружия разных видов и уворачиваться от вражеских пуль. В игре можно бросить вызов сразу нескольким противникам, либо сначала потренироваться в спокойной обстановке. В таком режиме у пользователя есть возможность стрелять по бутылкам в баре и мишеням в тире. На выбор представлено 5 моделей оружия, 4 локации и 3 уровня сложности.",
   "images": ["/images/projects/VRDuel/148579235-a4f9e25e-dc3c-49d8-b1a6-7dbabfa52a99.jpg?as=webp", "/images/projects/VRDuel/148580147-297f79e2-15e3-4b34-8108-9550982b0fe2.jpg?as=webp", "/images/projects/VRDuel/148580160-84ee7b40-83f9-439c-a37e-4e1184bd4dd5.jpg?as=webp", "/images/projects/VRDuel/148580059-71f366be-9f6c-44bf-a662-abf7e3e00003.jpg?as=webp"],
   "videos": [],
@@ -339,7 +365,9 @@ var data = [{
   }],
   "link": "VRDuel"
 }, {
+  "#": "",
   "title": "VRTherapy - Приложение для релаксации в VR со множеством разнообразных активностей",
+  "---": "",
   "description": "В VRTherapy вы можете погрузиться в захватывающую и успокаивающую виртуальную реальность с приятным звуковым сопровождением. Отдохните у виртуального костра, прогуляйтесь по летнему лесу, послушайте шум прибоя или же сыграйте в мини-игру, где вам предстоит управлять бумажным самолётиком на ветру. Данная игра предназначена исключительно для запуска в портативном VR-шлеме для Android, например, Google Cardboard.",
   "images": ["/images/projects/VRTherapy/screenshot1.png?as=webp", "/images/projects/VRTherapy/screenshot2.png?as=webp", "/images/projects/VRTherapy/screenshot3.png?as=webp", "/images/projects/VRTherapy/screenshot4.png?as=webp"],
   "videos": [],
@@ -354,7 +382,9 @@ var data = [{
   "разработчики": "",
   "link": "VRTherapy"
 }, {
+  "#": "",
   "title": "BunnyHuntVR - Web VR шутер",
+  "---": "",
   "description": "VR игра, обороняйте грядки от проворных и назойливых зайцев. Узнайте сколько морковки вы сможете сохранить.",
   "images": ["/images/projects/WebVRShoot/BunnyHuntVR.png?as=webp", "/images/projects/WebVRShoot/BunnyHuntVR2.png?as=webp"],
   "videos": [],
@@ -775,4 +805,4 @@ gallery.setActiveView(Math.floor(_projectsData.default.length / 2));
 updateProjectsInfo();
 document.getElementById("projects__tags__all").checked = true;
 },{"../data/projectsData":"rSus","../gallery/gallery":"Z6W6"}]},{},["TB2l"], null)
-//# sourceMappingURL=../dist/projects.2c298541.js.map
+//# sourceMappingURL=../dist/projects.1b129bc6.js.map
