@@ -41,7 +41,7 @@
 
 # Images
 
-- ../data/achievements/SamsungITAcademy/images/img.png
+- ../data/achievements/SamsungITAcademy/images/img.webp
 
 ---
 

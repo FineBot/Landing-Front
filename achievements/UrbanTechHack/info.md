@@ -34,7 +34,7 @@
 
 # Images
 
-- ../data/achievements/UrbanTechHack/images/img.png
+- ../data/achievements/UrbanTechHack/images/img.webp
 
 ---
 

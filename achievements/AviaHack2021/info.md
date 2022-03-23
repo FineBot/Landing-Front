@@ -52,7 +52,7 @@ RealityGang – одна из наших новых команд, и мы оче
 
 # Images
 
-- ../data/achievements/AviaHack2021/images/img.png
+- ../data/achievements/AviaHack2021/images/img.webp
 
 ---
 

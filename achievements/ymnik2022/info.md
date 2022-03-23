@@ -34,7 +34,7 @@
 
 # Images
 
-- ../data/achievements/ymnik2022/images/img.png
+- ../data/achievements/ymnik2022/images/img.webp
 
 ---
 

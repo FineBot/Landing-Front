@@ -65,7 +65,7 @@ RealityGaze.
 
 # Images
 
-- ../data/achievements/LeadersOfDigital2021/images/img.png
+- ../data/achievements/LeadersOfDigital2021/images/img.webp
 
 ---
 

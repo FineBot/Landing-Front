@@ -41,7 +41,7 @@
 
 # Images
 
-- ../data/achievements/LeadersOfDigitalRTK2021/images/img.png
+- ../data/achievements/LeadersOfDigitalRTK2021/images/img.webp
 
 ---
 

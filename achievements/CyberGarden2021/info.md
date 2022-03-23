@@ -46,7 +46,7 @@
 
 # Images
 
-- ../data/achievements/CyberGarden2021/images/img.png
+- ../data/achievements/CyberGarden2021/images/img.webp
 
 ---
 
