@@ -11,14 +11,14 @@ article(class="equipment__parent" id="equipment")
         each obj in equipmentData[i]
           if(obj.style)
             .equipment__element(style=`background: black;`)
-              img(src=obj.img style=obj.style alt=obj.name title=obj.name loading='auto')
+              img(src=obj.img style=obj.style alt=obj.name title=obj.name loading='lazy')
               span
                 = obj.name
               span.equipment__count
                 = obj.count
           else
             .equipment__element(style=`background: black;`)
-              img(src=obj.img alt=obj.name title=obj.name loading='auto')
+              img(src=obj.img alt=obj.name title=obj.name loading='lazy')
               span
                 = obj.name
               span.equipment__count
