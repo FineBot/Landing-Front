@@ -206,12 +206,14 @@ function convertImages(path, type = 'projects') {
       gif: {
         engine: 'gif2webp', command: ['--colors', '60', '--use-col=web'],
       },
-    }, async (result) => {
-      const DIR = await readdir(path);
-      for (let i of DIR) {
-       await resizeImagesMain(path + '/' + i, type);
+    }, async (_,completed) => {
+      if(completed===true){
+        const DIR = await readdir(path);
+        for (let i of DIR) {
+          await resizeImagesMain(path + '/' + i, type);
+        }
+        resolve();
       }
-      resolve();
     });
   });
 }
