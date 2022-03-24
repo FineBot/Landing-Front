@@ -14,7 +14,7 @@ var generateAchievementsFile = require("./jakeFunctions").generateAchievementsFi
 desc("Build Landing Front for production");
 task("default", [
 	"generate projects file",
-	"parse achievements.md", "parse staff.md", "parse equipment.md", // "createEnv",
+	"parse achievements.md", "parse staff.md", "parse equipment.md", "createEnv",
 	"buildFrontProd"
 	// "create service-worker",
 ], function () {

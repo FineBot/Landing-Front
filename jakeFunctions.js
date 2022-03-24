@@ -76,7 +76,6 @@ module.exports.generateProjectsFile = function() {
       let buff = parseMD2(fs.readFileSync(`./data/projects/${i}/LANDING.md`, 'utf-8'));
       buff.link = i;
       await downloadImagesMain(buff, i);
-
       result.push(buff);
     }
 
@@ -158,23 +157,60 @@ async function downloadImagesMain(buff, i, type = 'projects') {
     if (buff.images) {
       let newImages = [];
       for (let j of buff.images) {
+        const FILE_NAME=j.replaceAll(/\?\.*$/gmi,"").match(/([^\/]*)$/gim)[0]
         if (j.match(/^(https?\:\/\/)/gim)) {
-          newImages.push(`/images/${type}/` + i + '/' + j.match(/([^\/]*)$/gim)[0] + '?as=webp');
-          let newPromise = download(j, `./src/images/${type}/` + i + '/' + j.match(/([^\/]*)$/gim)[0]);
+          newImages.push(`/images/${type}/` + i + '/' + getNewName(FILE_NAME));
+          let newPromise = download(j, `./src/images/${type}/` + i + '/' + getNewName(FILE_NAME));
           result.push(newPromise);
         } else if (j.startsWith('../')) {
-          newImages.push(j);
+          if(j.startsWith("../data")){
+            convertImages(j.replaceAll(/\?\.*$/gmi,"").replace("../","./"));
+          }
+          newImages.push(getNewName(j));
         } else {
           let newPromise = downloadImages(i, j);
           result.push(newPromise);
-          newImages.push(`/images/${type}/` + i + '/' + j.match(/([^\/]*)$/gim)[0] + '?as=webp');
+          newImages.push(`/images/${type}/` + i + '/' + getNewName(FILE_NAME));
         }
       }
       buff.images = newImages;
     }
     Promise.allSettled(result)
       .then((e) => {
+        convertImages(`./src/images/projects/${i}`);
         resolve();
       });
   });
+}
+
+
+function convertImages(path) {
+  const compress_images = require('compress-images');
+
+  compress_images(path + '/*', path + '/', {
+    compress_force: false, statistic: true, autoupdate: true,
+  }, false, { jpg: { engine: 'webp', command: ['quality', '80'] } }, {
+    png: {
+      engine: 'webp', command: ['quality', '80'],
+    },
+  }, { svg: { engine: 'svgo', command: '--multipass' } }, {
+    gif: {
+      engine: 'gif2webp', command: ['--colors', '64', '--use-col=web'],
+    },
+  },()=>{});
+}
+
+function getNewName(str) {
+  switch (str.match(/\..*$/gmi)[0].toLowerCase()) {
+    case '.png':
+    case '.jpg':
+      return str.replace(/\..*$/gmi, '.webp');
+      break;
+    case 'gif':
+      return str;
+      break;
+    default:
+      return str;
+      break;
+  }
 }
