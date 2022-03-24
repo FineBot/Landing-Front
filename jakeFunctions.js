@@ -157,14 +157,14 @@ async function downloadImagesMain(buff, i, type = 'projects') {
     if (buff.images) {
       let newImages = [];
       for (let j of buff.images) {
-        const FILE_NAME=j.replaceAll(/\?\.*$/gmi,"").match(/([^\/]*)$/gim)[0]
+        const FILE_NAME = j.replaceAll(/\?\.*$/gmi, '').match(/([^\/]*)$/gim)[0];
         if (j.match(/^(https?\:\/\/)/gim)) {
           newImages.push(`/images/${type}/` + i + '/' + getNewName(FILE_NAME));
-          let newPromise = download(j, `./src/images/${type}/` + i + '/' + getNewName(FILE_NAME));
+          let newPromise = download(j, `./src/images/${type}/` + i + '/' + FILE_NAME);
           result.push(newPromise);
         } else if (j.startsWith('../')) {
-          if(j.startsWith("../data")){
-            convertImages(j.replaceAll(/\?\.*$/gmi,"").replace("../","./"));
+          if (j.startsWith('../data')) {
+            convertImages(j.replaceAll(/\?\.*$/gmi, '').replace('../', './'));
           }
           newImages.push(getNewName(j));
         } else {
@@ -189,7 +189,9 @@ function convertImages(path) {
 
   compress_images(path + '/*', path + '/', {
     compress_force: false, statistic: true, autoupdate: true,
-  }, false, { jpg: { engine: 'webp', command: ['quality', '60'] } }, {
+  }, false, {
+    jpg: { engine: 'webp', command: ['quality', '60'] },
+  }, {
     png: {
       engine: 'webp', command: ['quality', '60'],
     },
@@ -197,7 +199,8 @@ function convertImages(path) {
     gif: {
       engine: 'gif2webp', command: ['--colors', '60', '--use-col=web'],
     },
-  },()=>{});
+  }, () => {
+  });
 }
 
 function getNewName(str) {
