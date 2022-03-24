@@ -4,6 +4,8 @@ const request = require('request');
 const fs = require('fs');
 const { resolve } = require('path/posix');
 const { parseMD2 } = require('./MDParser');
+const sharp = require('sharp');
+const compress_images = require('compress-images');
 
 let count = 0;
 module.exports.ParseDirectory = async function ParseDirectory(resolve, list, dirPath) {
@@ -120,15 +122,15 @@ const download = function(uri, filename) {
   });
 };
 
-function secondDownloadMethod(i, j) {
+function secondDownloadMethod(i, j, type) {
   return new Promise((resolve, _) => {
-    execSync(`curl -H \"Authorization: token ${process.env.token}\" -o ./src/images/projects/${i}/${j.match(/([^\/]*)$/gim)[0]} --ssl-no-revoke https://raw.githubusercontent.com/RTUITLab/${i}/master/${j}`);
+    execSync(`curl -H \"Authorization: token ${process.env.token}\" -o ./src/images/${type}/${i}/${j.match(/([^\/]*)$/gim)[0]} --ssl-no-revoke https://raw.githubusercontent.com/RTUITLab/${i}/master/${j}`);
     resolve();
-
   });
 }
 
-function downloadImages(i, j) {
+function downloadImages(i, j, type) {
+  const PATH = `./src/images/${type}/${i}/${j.match(/([^\/]*)$/gim)[0]}`;
   return new Promise((resolve, reject) => {
 
     let result = [];
@@ -137,14 +139,14 @@ function downloadImages(i, j) {
       try {
         let buff = JSON.parse(stdout);
         if (buff.download_url) {
-          result.push(download(buff.download_url, `./src/images/projects/${i}/${j.match(/([^\/]*)$/gim)[0]}`));
+          result.push(download(buff.download_url, PATH));
         } else {
-          result.push(secondDownloadMethod(i, j).then(resolve));
+          result.push(secondDownloadMethod(i, j, type).then(resolve));
         }
       } catch (e) {
-        result.push(secondDownloadMethod(i, j).then(resolve));
+        result.push(secondDownloadMethod(i, j, type).then(resolve));
       }
-      Promise.allSettled(result).then((e) => {
+      Promise.allSettled(result).then(async (e) => {
         resolve();
       });
     });
@@ -152,23 +154,28 @@ function downloadImages(i, j) {
 }
 
 async function downloadImagesMain(buff, i, type = 'projects') {
-  return new Promise((resolve, reject) => {
+  return new Promise(async (resolve, reject) => {
     let result = [];
     if (buff.images) {
       let newImages = [];
       for (let j of buff.images) {
         const FILE_NAME = j.replaceAll(/\?\.*$/gmi, '').match(/([^\/]*)$/gim)[0];
+        const FILE_PATH = j.replaceAll(/\?\.*$/gmi, '');
+        const FILE_TYPE = FILE_NAME.match(/[^\.]*$/gmi)[0];
+
         if (j.match(/^(https?\:\/\/)/gim)) {
           newImages.push(`/images/${type}/` + i + '/' + getNewName(FILE_NAME));
-          let newPromise = download(j, `./src/images/${type}/` + i + '/' + FILE_NAME);
+          let newPromise = download(j, `./src/images/${type}/${i}/${FILE_NAME}`);
           result.push(newPromise);
         } else if (j.startsWith('../')) {
-          if (j.startsWith('../data')) {
-            convertImages(j.replaceAll(/\?\.*$/gmi, '').replace('../', './'));
-          }
-          newImages.push(getNewName(j));
+          result.push(new Promise((resolve) => {
+            fs.copyFile(FILE_PATH.replace('../', './'), `./src/images/${type}/${i}/${FILE_NAME}`, () => {
+              resolve();
+            });
+          }));
+          newImages.push(getNewName(`/images/${type}/` + i + '/' + getNewName(FILE_NAME)));
         } else {
-          let newPromise = downloadImages(i, j);
+          let newPromise = downloadImages(i, j, type);
           result.push(newPromise);
           newImages.push(`/images/${type}/` + i + '/' + getNewName(FILE_NAME));
         }
@@ -176,38 +183,51 @@ async function downloadImagesMain(buff, i, type = 'projects') {
       buff.images = newImages;
     }
     Promise.allSettled(result)
-      .then((e) => {
-        convertImages(`./src/images/projects/${i}`);
+      .then(async (e) => {
+        await convertImages(`./src/images/${type}/${i}`, type);
         resolve();
       });
   });
 }
 
 
-function convertImages(path) {
+function convertImages(path, type = 'projects') {
   const compress_images = require('compress-images');
-
-  compress_images(path + '/*', path + '/', {
-    compress_force: false, statistic: true, autoupdate: true,
-  }, false, {
-    jpg: { engine: 'webp', command: ['quality', '60'] },
-  }, {
-    png: {
-      engine: 'webp', command: ['quality', '60'],
-    },
-  }, { svg: { engine: 'svgo', command: '--multipass' } }, {
-    gif: {
-      engine: 'gif2webp', command: ['--colors', '60', '--use-col=web'],
-    },
-  }, () => {
+  return new Promise((resolve) => {
+    compress_images(path + '/*', path + '/', {
+      compress_force: false, statistic: true, autoupdate: true,
+    }, false, {
+      jpg: { engine: 'webp', command: ['quality', '60'] },
+    }, {
+      png: {
+        engine: 'webp', command: ['quality', '60'],
+      },
+    }, { svg: { engine: 'svgo', command: '--multipass' } }, {
+      gif: {
+        engine: 'gif2webp', command: ['--colors', '60', '--use-col=web'],
+      },
+    }, async (result) => {
+      const DIR = await readdir(path);
+      for (let i of DIR) {
+        await resizeImagesMain(path + '/' + i, type);
+      }
+      resolve();
+    });
   });
 }
 
 function getNewName(str) {
+
+  const FILE_NAME = str.replaceAll(/\?\.*$/gmi, '').match(/([^\/]*)$/gim)[0];
+  const FILE_PATH = str.replaceAll(/\?\.*$/gmi, '');
+
+  if (FILE_NAME.startsWith('resized_')) return str;
+
   switch (str.match(/\..*$/gmi)[0].toLowerCase()) {
     case '.png':
     case '.jpg':
-      return str.replace(/\..*$/gmi, '.webp');
+    case '.webp':
+      return FILE_PATH.replace(FILE_NAME, 'resized_' + FILE_NAME.replace(/\..*$/gmi, '.webp'));
       break;
     case 'gif':
       return str;
@@ -215,5 +235,36 @@ function getNewName(str) {
     default:
       return str;
       break;
+  }
+}
+
+async function resizeImagesMain(path, type) {
+  switch (type) {
+    case 'projects':
+      await resizeImage(path, 700, 400);
+      break;
+    case 'achievements':
+      await resizeImage(path, 450, 350);
+      break;
+  }
+}
+
+async function resizeImage(path, width, height) {
+  const sharp = require('sharp');
+
+  const FILE_NAME = path.replaceAll(/\?\.*$/gmi, '').match(/([^\/]*)$/gim)[0];
+  const FILE_PATH = path.replaceAll(/\?\.*$/gmi, '');
+
+  if (FILE_NAME.startsWith('resized_')) return null;
+
+  try {
+    const semiTransparentRedPng = await sharp(path)
+      .rotate()
+      .resize(width)
+      .jpeg({ mozjpeg: true })
+      .toFile(FILE_PATH.replace(FILE_NAME, 'resized_' + FILE_NAME));
+  } catch (e) {
+    fs.rename(FILE_PATH, FILE_PATH.replace(FILE_NAME, 'resized_' + FILE_NAME), () => {
+    });
   }
 }
