@@ -209,7 +209,7 @@ function convertImages(path, type = 'projects') {
     }, async (result) => {
       const DIR = await readdir(path);
       for (let i of DIR) {
-        await resizeImagesMain(path + '/' + i, type);
+       await resizeImagesMain(path + '/' + i, type);
       }
       resolve();
     });
@@ -221,13 +221,14 @@ function getNewName(str) {
   const FILE_NAME = str.replaceAll(/\?\.*$/gmi, '').match(/([^\/]*)$/gim)[0];
   const FILE_PATH = str.replaceAll(/\?\.*$/gmi, '');
 
-  if (FILE_NAME.startsWith('resized_')) return str;
+  if(FILE_NAME.startsWith("resized_"))
+    return str;
 
   switch (str.match(/\..*$/gmi)[0].toLowerCase()) {
     case '.png':
     case '.jpg':
     case '.webp':
-      return FILE_PATH.replace(FILE_NAME, 'resized_' + FILE_NAME.replace(/\..*$/gmi, '.webp'));
+      return FILE_PATH.replace(FILE_NAME,"resized_"+FILE_NAME.replace(/\..*$/gmi, '.webp'))
       break;
     case 'gif':
       return str;
@@ -241,10 +242,10 @@ function getNewName(str) {
 async function resizeImagesMain(path, type) {
   switch (type) {
     case 'projects':
-      await resizeImage(path, 700, 400);
+      await resizeImage(path, 800, 400);
       break;
     case 'achievements':
-      await resizeImage(path, 450, 350);
+      await resizeImage(path, 650, 350);
       break;
   }
 }
