@@ -242,10 +242,10 @@ function getNewName(str) {
 async function resizeImagesMain(path, type) {
   switch (type) {
     case 'projects':
-      await resizeImage(path, 900, 400);
+      await resizeImage(path, 1200, 400);
       break;
     case 'achievements':
-      await resizeImage(path, 650, 350);
+      await resizeImage(path, 800, 350);
       break;
   }
 }
