@@ -7,7 +7,7 @@ article(class="equipment__parent" id="equipment")
   div(class="equipment__content")
     h1 Оборудование
     while i < equipmentData.length
-      .equipment__elements(invert=((i+1)%2===0).toString() lastelem=(i+1===equipmentData.length).toString() hidden=((i>0).toString()))
+      .equipment__elements(invert=((i+1)%2===0).toString() lastelem=(i+1===equipmentData.length).toString())
         each obj in equipmentData[i]
           if(obj.style)
             .equipment__element(style=`background: black;`)
