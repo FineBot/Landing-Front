@@ -239,6 +239,8 @@
 		min-width: 250px;
 		max-width: calc(100% - 30px);
 		max-height: calc(100% - 30px);
+		height: fit-content;
+		min-height: 20%;
 		object-fit: cover;
 		z-index: 1;
 	}
