@@ -9,13 +9,15 @@ var parseMD = require("./MDParser").parseMD;
 var ParseDirectory = require("./jakeFunctions").ParseDirectory;
 var GenerateProjectsFile = require("./jakeFunctions").generateProjectsFile;
 var generateAchievementsFile = require("./jakeFunctions").generateAchievementsFile;
+var minifyPath = require("./jakeFunctions").minifyPath;
 
 
 desc("Build Landing Front for production");
 task("default", [
 	"generate projects file",
 	"parse achievements.md", "parse staff.md", "parse equipment.md", "createEnv",
-	"buildFrontProd"
+	"buildFrontProd",
+	"minify build"
 	// "create service-worker",
 ], function () {
 });
@@ -163,3 +165,13 @@ task("buildFrontProd", function () {
 		});
 	});
 });
+
+task("minify build",function(){
+	return new Promise(async (_) => {
+		await minifyPath('./build/achievements')
+		await minifyPath('./build/projects')
+		await minifyPath('./build/dist')
+		await minifyPath('./build/')
+		_()
+	})
+})

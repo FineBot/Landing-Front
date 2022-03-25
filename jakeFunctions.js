@@ -2,10 +2,9 @@ const { readdir } = require('fs').promises;
 const { execSync, exec } = require('child_process');
 const request = require('request');
 const fs = require('fs');
-const { resolve } = require('path/posix');
 const { parseMD2 } = require('./MDParser');
-const sharp = require('sharp');
-const compress_images = require('compress-images');
+const tryToCatch = require('try-to-catch');
+const minify = require('minify');
 
 let count = 0;
 module.exports.ParseDirectory = async function ParseDirectory(resolve, list, dirPath) {
@@ -270,3 +269,43 @@ async function resizeImage(path, width, height) {
     });
   }
 }
+
+function minifyPath(path) {
+  const tryToCatch = require('try-to-catch');
+  const minify = require('minify');
+
+  const options = {
+    html: {
+      'removeComments': true,
+      'removeCommentsFromCDATA': true,
+      'removeCDATASectionsFromCDATA': true,
+      'collapseWhitespace': true,
+      'collapseBooleanAttributes': true,
+      'removeAttributeQuotes': true,
+      'removeRedundantAttributes': true,
+      'useShortDoctype': true,
+      'removeEmptyAttributes': true,
+      'removeEmptyElements': false,
+      'removeOptionalTags': true,
+      'removeScriptTypeAttributes': true,
+      'removeStyleLinkTypeAttributes': true,
+      'minifyJS': true,
+      'minifyCSS': true,
+    },
+  };
+  return new Promise(async (resolve) => {
+    let list = [];
+
+    const DIR = await readdir(path);
+    for (let i of DIR) {
+      list.push(tryToCatch(minify, path + '/' + i, options)
+        .then((data) => {
+          tryToCatch(fs.writeFileSync,path + '/' + i, data[1], 'utf-8');
+        }));
+    }
+    Promise.allSettled(list)
+      .then(resolve)
+  });
+}
+
+exports.minifyPath = minifyPath;
