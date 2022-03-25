@@ -196,14 +196,14 @@ function convertImages(path, type = 'projects') {
     compress_images(path + '/*', path + '/', {
       compress_force: false, statistic: true, autoupdate: true,
     }, false, {
-      jpg: { engine: 'webp', command: ['quality', '60'] },
+      jpg: { engine: 'webp', command: ['quality', '70'] },
     }, {
       png: {
-        engine: 'webp', command: ['quality', '60'],
+        engine: 'webp', command: ['quality', '70'],
       },
     }, { svg: { engine: 'svgo', command: '--multipass' } }, {
       gif: {
-        engine: 'gif2webp', command: ['--colors', '60', '--use-col=web'],
+        engine: 'gif2webp', command: ['--colors', '70', '--use-col=web'],
       },
     }, async (_, completed) => {
       if (completed === true) {
