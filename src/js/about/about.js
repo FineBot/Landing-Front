@@ -14,6 +14,7 @@ function setParallax() {
   }
 }
 
-window.addEventListener('load', () => {
-  setTimeout(setParallax)
-}, { passive: true });
+new Promise((_) => {
+  setParallax();
+  _();
+});

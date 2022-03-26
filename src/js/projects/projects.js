@@ -102,15 +102,14 @@ function setPointsAction() {
   }
 }
 
-function onLoad() {
+function onLoad(_) {
   setPointsAction.call(this);
   gallery = new GalleryConstrucor().init(document.getElementById('GalleryParent'), onMouseDown, onMouseUp, onChange);
   setActiveStatusBarPoint.call(this, Math.floor(projectsData.length / 2));
   gallery.setActiveView.call(this, Math.floor(projectsData.length / 2));
   updateProjectsInfo.call(this);
   document.getElementById('projects__tags__all').checked = true;
+  _();
 }
 
-window.addEventListener('load', function() {
-  setTimeout(onLoad.bind(this));
-}, { passive: true });
+new Promise(onLoad);
