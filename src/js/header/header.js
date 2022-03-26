@@ -36,5 +36,11 @@ function setTab(activeTab) {
 	lastActive = activeTab;
 }
 
-setScrollStatus(obj);
-setTab(findActiveTab(lastActive));
+/**
+ * Здесь timeout нужен для вызова функций ассинхронно,
+ * чтобы не было блокировок
+ */
+setTimeout(()=>{
+	setScrollStatus(obj);
+	setTab(findActiveTab(lastActive));
+})
