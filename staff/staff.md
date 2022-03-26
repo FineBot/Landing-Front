@@ -21,7 +21,7 @@
 # Дмитрий Снегирев
 
 - img: ../data/staff/images/Snegirev.webp
-- tags: ML, Python
+- tags: ML, Backend, Python
 
 # Оля Быковская
 
