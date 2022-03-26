@@ -6,6 +6,7 @@ const obj = document.getElementById('header');
 
 var staffSwiper = undefined;
 var achievementsSwiper = undefined;
+var equipmentHidden = false;
 
 function setScrollStatus(obj) {
   if (window.scrollY > 50) {
@@ -47,9 +48,24 @@ function initSwiper() {
   }
 }
 
+function hideEquipment() {
+  if (!equipmentHidden) {
+    new Promise((_) => {
+      let elems = Array.from(document.getElementsByClassName('equipment__content')[0].children);
+
+      for (let i = 2; i < elems.length; i++) {
+        elems[i].setAttribute('hidden', 'true');
+      }
+      _();
+    });
+    equipmentHidden = true;
+  }
+}
+
 function scrollFunction() {
 
   initSwiper();
+  hideEquipment();
 
   setScrollStatus(obj);
   let activeTab = lastActive;
