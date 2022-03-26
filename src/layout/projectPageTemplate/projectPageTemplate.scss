@@ -60,6 +60,7 @@
 					h1 {
 						margin: 10px 0px;
 						margin-top: 25px;
+						font-size: 30px;
 					}
 				}
 			}
@@ -105,6 +106,10 @@
 			color: #666666;
 			max-width: 550px;
 			margin: 0 auto;
+
+			@media (max-width: 550px) {
+				font-size: 18px;
+			}
 		}
 	}
 
