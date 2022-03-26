@@ -15,5 +15,5 @@ function setParallax() {
 }
 
 window.addEventListener('load', () => {
-  setParallax();
+  setTimeout(setParallax)
 }, { passive: true });

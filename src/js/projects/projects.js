@@ -111,4 +111,6 @@ function onLoad() {
   document.getElementById('projects__tags__all').checked = true;
 }
 
-window.addEventListener('load', onLoad.bind(this), { passive: true });
+window.addEventListener('load', function() {
+  setTimeout(onLoad.bind(this));
+}, { passive: true });
